@@ -1,0 +1,138 @@
+@import './varible';
+@import './loader.scss';
+@import './common/header.scss';
+@import './common/footer.scss';
+@import './home-page/home.scss';
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $primary $secondary;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// Arabic font
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
+body{
+    background-color: rgb(20 25 36/1);
+    color: $white;
+    overflow-x: hidden;
+    cursor: url('../img/global/bolt-solid.svg'), auto;
+}
+.dir-en{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.dir-ar{
+    direction: rtl;
+    font-family: "Zain", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#app {
+    overflow-x: hidden;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+section{
+    margin:40px 30px;
+    @media (max-width:768px) {
+        margin:40px 20px;
+    }
+}
+img.luminosity{
+    mix-blend-mode: luminosity !important;
+}
+.neon-text{
+    color: #fff;
+    text-shadow:
+    0 0 7px $primary,
+    0 0 10px $primary,
+    0 0 21px $primary,
+    0 0 42px $primary,
+    0 0 82px $primary,
+    0 0 92px $primary,
+    0 0 102px $primary,
+    0 0 151px $primary;
+}
+.overlay{
+    background: #000000b3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -100;
+    cursor: pointer;
+    &.open{
+        z-index: 99;
+        opacity: 1;
+    }
+}
+.section-card-title{
+    margin-bottom: 1rem;
+    span{
+        &:first-child{
+            color: $primary;
+            font-weight: 800;
+            margin-inline-end: .5rem;
+            font-family: Kanit,Inter,sans-serif;
+        }
+        &:last-child{
+            color: $light;
+        }
+    }
+}
+.navigation{
+    position: absolute;
+    z-index: 98;
+    top: 40%;
+    display: flex;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: space-between;
+    .myNext,.myPrev{
+        padding: 20px;
+        width: 145px;
+        height: 100%;
+        cursor: pointer;
+        transition: $transition;
+        opacity: .8;
+        filter: drop-shadow(8px 8px 15px #000);
+        &:hover{
+        opacity: 1;
+    }
+    }
+}

@@ -1,0 +1,60 @@
+.projects{
+    .section-card-title{
+        span{
+            font-size: 1.33333rem;
+        }
+    }
+    .projects-content{
+        width: 60%;
+        margin: 0 auto;
+        .swiper{
+            overflow: visible !important;
+            .swiper-slide{
+                position: relative;
+                opacity: .3;
+                transition: 1.5s;
+                &.swiper-slide-active{
+                    opacity: 1;
+                }
+                img{
+                    width: 100%;
+                    border-radius: .825rem;
+                    position: relative;
+                    z-index: 1;
+                }
+                .overlay-box{
+                    position: absolute;
+                    z-index: 2;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    bottom: 10%;
+                    .info{
+                        position: relative;
+                        max-width: 610px;
+                        width: 100%;
+                        padding: 25px 80px;
+                        &::after{
+                            position: absolute;
+                            z-index: -1;
+                            content: '';
+                            left: 0px;
+                            top: 0px;
+                            right: 0px;
+                            bottom: 0px;
+                            background-color: $secondary;
+                            box-shadow: 0px 0px 20px rgba(0,0,0,0.10);
+                            clip-path: polygon(5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+                        }
+                        h3{
+                            color: $primary;   
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+   
+}

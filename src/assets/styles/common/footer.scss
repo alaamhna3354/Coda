@@ -1,0 +1,92 @@
+footer{
+    background-color: $cardBackground;
+    padding: 5rem 20px;
+    border-radius: .875rem;
+    overflow: hidden;
+    position: relative;
+    @media (max-width:758px) {
+        text-align: center;
+        *{
+            text-align: center;
+            justify-content: center;
+        }
+    }
+    img.cover{
+        width: 70%;
+        position: absolute;
+        top: 0;
+        mix-blend-mode: luminosity;
+        z-index: 1;
+    }
+    .content{
+        position: relative;
+        z-index: 2;
+        .title{
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-weight: 800;
+        }
+        p{
+            font-size: 1rem;
+            color: $textgray;
+        }
+        h5{
+            margin-bottom:1rem;
+            font-weight: 800;
+            letter-spacing: .02rem;
+        }
+        .info-address{
+            i{
+                font-size: 20px;
+                margin-inline-end: 12px;
+            }
+        }
+        ul{
+            li{
+                a{
+                    font-size: 14px;
+                    color: $textgray;
+                    transition: .5s;
+                   
+                }
+                &:hover{
+                   a{
+                    color: #fff !important;
+                   }
+                }
+            }
+        }
+        .social{
+            li{
+                a{
+                    margin-inline-end: 12px;
+                    background-color: #334059;
+                    border-radius: .825rem;
+                    width: 45px;
+                    height: 45px;
+                    display: grid;
+                    place-content: center;
+                    transition: .5s;
+                    &:hover{
+                        background-color: #455878;
+                    }
+                }
+                i{
+                    font-size: 25px;
+                }
+            }
+          
+        }
+        .bottom-footer{
+            border-top: 1px solid rgb(51 64 89/1);
+            p{
+                text-align: center;
+                font-weight: 500;
+                margin-top: 0;
+                margin-bottom: .5rem;
+                font-size: 12px;
+            }
+        }
+    }
+   
+}

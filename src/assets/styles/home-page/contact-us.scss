@@ -1,0 +1,78 @@
+.contact-us{
+    .section-card-title{
+        span{
+            font-size: 1.33333rem;
+        }
+    }
+    video{
+        width: 50%;
+        border-radius: .845rem;
+        margin: 0 auto;
+    }
+}
+.field{
+    position: relative;
+    i{
+        position: absolute;
+        top:27px;
+        transform: translateY(-50%);
+        left: 15px;
+    }
+}
+.iti {
+    width: 100%;
+  }
+.iti__country-container{
+    left: 5px;
+    }
+.iti__country-list{
+    background-color: $cardBackground;
+}
+.iti--inline-dropdown .iti__dropdown-content{
+    border: 1px solid $primary !important;
+    z-index: 99 !important;
+}
+.iti__search-input{
+    padding: 10px 20px !important;
+}
+input,textarea{
+    background-color: $cardBackground;
+    width: 100%;
+    border: none;
+    padding: 15px 45px;
+    color: $white;
+    border-radius: .825rem;
+    &:focus{
+        outline: none;
+        box-shadow:  0 0 7px $primary,
+        0 0 10px $primary;
+      
+    }
+    &::placeholder{
+        color: $textgray;
+    }
+}
+textarea{
+    height: 130px;
+    resize: none;
+}
+.error-message{
+    color: #cd5f5b;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.dir-ar{
+    .field{
+        i{
+            left: auto;
+            right: 15px;
+        }
+    }
+    .iti__tel-input{
+        text-align: right;
+    }
+    .iti__country-container{
+        left: auto;
+        right: 5px;
+        }
+}
