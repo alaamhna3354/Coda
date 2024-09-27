@@ -1,6 +1,5 @@
 .hero-section {
-    background-color: $cardBackground;
-    padding: 5rem 20px;
+    padding: 1rem 20px;
     border-radius: .875rem;
     overflow: hidden;
     .info{
@@ -34,7 +33,7 @@
         display: grid;
         place-content: center;
         width: 100%;
-        height: 200px;
+        height: 300px;
        
         i{
             font-size: 150px;

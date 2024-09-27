@@ -1,5 +1,5 @@
 <template>
-    <section class="services">
+    <section class="services blur">
       <div class="row">
         <div class="col-md-4 ">
         </div>
@@ -15,7 +15,7 @@
         <div class="col-md-8">
             <h3>We Provide Exclusive <span class="neon-text">Digital</span> Service</h3>
             <p>
-                Passkeys provide a simpler and more secure alternative to traditional passwords. Neat, but there's only one problem: the implementation instructions are incredibly complicated. Don't worry, I know the feeling. In this series, work along with me to bring passkeys to Laravel, and gain all the insight you'll need to add passkeys to your own 
+                Passkeys provide a simpler and more secure alternative to traditional passwords.
             </p>
             <Btn style="padding: 10px 20px;"
             :Text="$t('Play Video')"

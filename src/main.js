@@ -15,8 +15,8 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import './assets/swiper/navigation.scss'
 import './assets/swiper/pagination.scss'
 import "swiper/swiper.scss";
-import SwiperCore, { Navigation, Pagination,Autoplay } from "swiper";
-SwiperCore.use([Navigation, Pagination,Autoplay]);
+import SwiperCore, { Navigation, Pagination,Autoplay,Mousewheel } from "swiper";
+SwiperCore.use([Navigation, Pagination,Autoplay,Mousewheel]);
 
 // *************** import i18n ***************
 // import Cookies 

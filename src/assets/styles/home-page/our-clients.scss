@@ -2,26 +2,26 @@
     padding: 50px 0;
     position: relative;
     overflow: hidden;
-    &::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        width: 120px;
-        height: 100%;
-        z-index: 9;
-        right: 0;
-        background: linear-gradient(to left, $secondary, transparent);
-    }
-    &::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        width: 120px;
-        height: 100%;
-        z-index: 9;
-        left: 0;
-        background: linear-gradient(to right, $secondary, transparent);
-    }
+    // &::before{
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     width: 120px;
+    //     height: 100%;
+    //     z-index: 9;
+    //     right: 0;
+    //     background: linear-gradient(to left, $secondary, transparent);
+    // }
+    // &::after{
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     width: 120px;
+    //     height: 100%;
+    //     z-index: 9;
+    //     left: 0;
+    //     background: linear-gradient(to right, $secondary, transparent);
+    // }
 
     .swiper-wrapper{
         transition-timing-function: linear !important;

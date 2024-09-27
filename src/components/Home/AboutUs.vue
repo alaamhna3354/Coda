@@ -1,11 +1,12 @@
 <template>
     <section class="about-us">
        
+       
+      <div class="card-content blur">
         <div class="section-card-title">
             <span >//</span>
             <span>{{ $t('About Our Agency') }}</span>
         </div>
-      <div class="card-content">
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-8 position-relative">
@@ -17,7 +18,7 @@
             <div class="col-md-4 mb-3">
                 <img class="luminosity" src="@/assets/img/home-page/about-us.svg" alt="">
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-8 mb-3">
                 <h2 class="title">
                     Your Trusted 
                     <span class="neon-text">partners</span>

@@ -1,5 +1,5 @@
 <template>
-    <div class="partner">
+    <section class="partner hero-section blur" style="display: grid;place-content: center;">
         <swiper class="swiper pb-5" 
         :speed="8000"
         :loop="true"
@@ -13,7 +13,7 @@
                 <img class="w-100" src="@/assets/img/home-page/about-us.svg" alt="">
             </swiper-slide>
         </swiper>
-    </div>
+    </section>
 
 </template>
 <script>

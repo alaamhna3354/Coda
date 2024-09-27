@@ -1,6 +1,5 @@
 .services {
-    background-color: $cardBackground;
-    padding: 5rem 20px;
+    padding: 1rem 20px;
     border-radius: .875rem;
     overflow: hidden;
     .cover{
@@ -25,7 +24,7 @@
     position: relative;
     z-index: 2;
     h3{
-        font-size: 3.75rem;
+        font-size: 1.75rem;
         @media (max-width:768px) {
             font-size: 1.75rem;
         }
@@ -46,18 +45,37 @@
         margin-bottom: 1rem;
         span{
             &:first-child{
-                color: $primary;
                 font-weight: 800;
                 margin-inline-end: .5rem;
                 font-family: Kanit,Inter,sans-serif;
+                color: #fff;
+                text-shadow:
+                0 0 7px $primary,
+                0 0 10px $primary,
+                0 0 21px $primary,
+                0 0 42px $primary,
+                0 0 82px $primary,
+                0 0 92px $primary,
+                0 0 102px $primary,
+                0 0 151px $primary;
             }
             &:last-child{
-                color: $light;
+                color: #fff;
+                text-shadow:
+                0 0 7px $primary,
+                0 0 10px $primary,
+                0 0 21px $primary,
+                0 0 42px $primary,
+                0 0 82px $primary,
+                0 0 92px $primary,
+                0 0 102px $primary,
+                0 0 151px $primary;
             }
         }
     }
     .item{
-        background-color: rgb(49 58 75/1);
+       background-color:#ffffff25;
+        backdrop-filter: blur(20px) saturate(80%);
         padding:1rem 2rem;
         text-align: center;
         border-radius: .875rem;
@@ -80,7 +98,8 @@
             transition: $transition;
         }
         &.active{
-            background-color: rgb(46 59 82/1) ;
+        backdrop-filter: blur(50px) saturate(80%) !important;
+
             img{
                 mix-blend-mode: normal;
             }

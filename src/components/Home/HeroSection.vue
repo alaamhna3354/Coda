@@ -1,7 +1,7 @@
 <template>
-    <section class="hero-section">
-       <div class="row">
-        <div class="col-md-7 info">
+    <section class="hero-section blur">
+       <div class="row ">
+        <div class="col-md-6 info">
            <h1 class="title neon-text">Lazurde</h1>
             <h3 class="description">
                 We Are Marketing The Avengers  
@@ -16,6 +16,7 @@
                </router-links>
             </div>
             <img src="@/assets/img/home-page/lary-footer.webp" alt="">
+           
         </div>
         <div class="col-md-5">
             
@@ -43,11 +44,15 @@ import { defineAsyncComponent } from 'vue';
 export default {
     data() {
         return {
-
+            show:false
         };
     },
     components: {
         BtnElctric: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Global/BtnElctric.vue') ),
+    },
+    mounted(){
+        
+
     }
 }
 </script>

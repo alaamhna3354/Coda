@@ -5,7 +5,7 @@
     <Transition name="fade-page" mode="out-in">
       <router-view />
     </Transition>
-    <Footer />
+    <!-- <Footer /> -->
   </main>
 </template>
 
@@ -20,7 +20,7 @@ export default {
   components: {
     Loader: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/Loader.vue')),
     Header: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Common/Header.vue')),
-    Footer: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Common/Footer.vue')),
+    // Footer: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Common/Footer.vue')),
 
   },
   computed: {

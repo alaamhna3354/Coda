@@ -31,7 +31,7 @@ html {
 // Arabic font
 @import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
 body{
-    background-color: rgb(20 25 36/1);
+    // background-color: rgb(20 25 36/1);
     color: $white;
     overflow-x: hidden;
     cursor: url('../img/global/bolt-solid.svg'), auto;
@@ -64,6 +64,8 @@ a{
 }
 section{
     margin:40px 30px;
+    margin-top:30px;
+    height: 432px;
     @media (max-width:768px) {
         margin:40px 20px;
     }
@@ -104,13 +106,31 @@ img.luminosity{
     margin-bottom: 1rem;
     span{
         &:first-child{
-            color: $primary;
             font-weight: 800;
             margin-inline-end: .5rem;
             font-family: Kanit,Inter,sans-serif;
+            color: #fff;
+            text-shadow:
+            0 0 7px $primary,
+            0 0 10px $primary,
+            0 0 21px $primary,
+            0 0 42px $primary,
+            0 0 82px $primary,
+            0 0 92px $primary,
+            0 0 102px $primary,
+            0 0 151px $primary;
         }
         &:last-child{
-            color: $light;
+            color: #fff;
+            text-shadow:
+            0 0 7px $primary,
+            0 0 10px $primary,
+            0 0 21px $primary,
+            0 0 42px $primary,
+            0 0 82px $primary,
+            0 0 92px $primary,
+            0 0 102px $primary,
+            0 0 151px $primary;
         }
     }
 }
@@ -134,5 +154,18 @@ img.luminosity{
         &:hover{
         opacity: 1;
     }
+    }
+}
+.blur{
+    backdrop-filter: blur(10px) saturate(70%);
+}
+.video-cover{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    video{
+        width: 100%;
     }
 }

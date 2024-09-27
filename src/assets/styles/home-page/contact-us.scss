@@ -36,7 +36,8 @@
     padding: 10px 20px !important;
 }
 input,textarea{
-    background-color: $cardBackground;
+    background-color: transparent;
+    backdrop-filter: blur(10px) saturate(70%);
     width: 100%;
     border: none;
     padding: 15px 45px;
@@ -49,7 +50,7 @@ input,textarea{
       
     }
     &::placeholder{
-        color: $textgray;
+        color: #fff;
     }
 }
 textarea{
