@@ -1,5 +1,5 @@
 <template>
-    <section class="projects blur">
+    <section class="projects ">
         <div class="section-card-title">
             <span >//</span>
             <span> {{ $t('Our Projects') }}</span>

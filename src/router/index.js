@@ -33,6 +33,22 @@ const routes = [
       title: cookie.get('languages') == 'ar' ? 'لازورد - من نحن' : 'Lazurde - About Us' ,
         },
   },
+  {
+    path: '/services',
+    name: cookie.get('languages') == 'ar' ? 'الخدمات' : 'Services' ,
+    component: () => import(/* webpackChunkName: "App" */'../views/pages/Services.vue'),
+    meta: {
+      title: cookie.get('languages') == 'ar' ? 'لازورد - الخدمات' : 'Lazurde - Services' ,
+        },
+  },
+  {
+    path: '/projects',
+    name: cookie.get('languages') == 'ar' ? 'المشاريع' : 'Projects' ,
+    component: () => import(/* webpackChunkName: "App" */'../views/pages/Projects.vue'),
+    meta: {
+      title: cookie.get('languages') == 'ar' ? 'لازورد - المشاريع' : 'Lazurde - Projects' ,
+        },
+  },
   { 
     path: '/:pathMatch(.*)*',
     name: 'error',
@@ -46,7 +62,7 @@ const router = createRouter({
 })
 //  for meta title
 router.beforeResolve((to) => {
-  document.title = to.meta.title || "إتمام"
+  document.title = to.meta.title || "Lazurde"
   if(to.meta.hasOwnProperty('metaTags')) {
     for(let x=0; x < to.meta.metaTags.length; x++) {
       let oldMeta = document.getElementsByTagName('meta');

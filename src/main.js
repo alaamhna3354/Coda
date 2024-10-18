@@ -39,7 +39,8 @@ const i18n = createI18n({
 // axios.defaults.baseURL = '';
 // axios.defaults.headers.common['language'] = cookie.get('lang')
 // axios.defaults.headers.common['Authorization'] = "Bearer ";
+
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-createApp(App).component("Swiper", Swiper).component('font-awesome-icon',FontAwesomeIcon)
-.component("SwiperSlide", SwiperSlide)
+createApp(App).component("Swiper", Swiper).component("SwiperSlide", SwiperSlide)
+.component('font-awesome-icon',FontAwesomeIcon)
 .use(store).use(router).use(i18n).mount('#app')

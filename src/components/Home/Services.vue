@@ -1,5 +1,5 @@
 <template>
-    <section class="services blur">
+    <section class="services">
       <div class="row">
         <div class="col-md-4 ">
         </div>

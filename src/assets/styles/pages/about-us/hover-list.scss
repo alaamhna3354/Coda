@@ -1,0 +1,43 @@
+
+.hover-list{
+    .about-list{
+       ul{
+        margin-top: 40px;
+        li{
+            padding-inline-start: 20px;
+            position: relative;
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+            color: #ecf5ff;
+            border-top: 1px solid #353648;
+            border-bottom: 1px solid #353648;
+            transition: $transition;
+            .dot{
+                margin-bottom: 4px;
+            }
+            img{
+                position: absolute;
+                right: 10%;
+                top: -150px;
+                opacity: 0;
+                border: 1px solid $primary;
+                z-index:-1;
+                visibility: hidden;
+                transition: $transition;
+                width: 285px;
+                height: 350px;
+            }
+            &:hover{
+                border-top: 1px solid $primary;
+                border-bottom: 1px solid $primary;
+                background-color: rgba(28, 132, 252, 0.05);
+                img{
+                    opacity: 1;
+                     z-index: 10;
+                     visibility: visible;
+            }
+            }
+        }
+       }
+    }
+}

@@ -1,18 +1,20 @@
 <template>
-    <section class="partner hero-section blur" style="display: grid;place-content: center;">
-        <swiper class="swiper pb-5" 
+    <section class="partner m-0">
+        <div class="content">
+            <swiper class="swiper pb-5" @swiper="onSwiper"
         :speed="8000"
-        :loop="true"
+        :loop="false"
         :autoplay="{
             delay: 0,
             disableOnInteraction: false,
             reverseDirection:true
         }" 
         :breakpoints="swiperOptions.breakpoints">
-            <swiper-slide class="item" v-for="item in 8" :key="item.id">
+            <swiper-slide class="item" v-for="item in 8" :key="item">
                 <img class="w-100" src="@/assets/img/home-page/about-us.svg" alt="">
             </swiper-slide>
         </swiper>
+        </div>
     </section>
 
 </template>
@@ -20,6 +22,7 @@
 export default {
     data() {
         return {
+            swiper: null,
             swiperOptions: {
                 breakpoints: {
 
@@ -48,11 +51,10 @@ export default {
             }
         }
     },
-    components: {
-    },
     methods: {
-    },
-    computed:{
+        onSwiper(swiper) {
+            this.swiper = swiper;
+        },
     },
    
 };
