@@ -14,7 +14,7 @@
       }
     },
     components: {
-    Auth: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/auth/auth.vue')),
+    Auth: defineAsyncComponent(() => import('@/components/auth/auth.vue')),
   
     },
   

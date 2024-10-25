@@ -125,8 +125,8 @@ export default {
         };
     },
     components:{
-        Btn: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Global/Btn.vue') ),
-        OverLay: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Global/OverLay.vue') ),
+        Btn: defineAsyncComponent( () => import('@/components/Global/Btn.vue') ),
+        OverLay: defineAsyncComponent( () => import('@/components/Global/OverLay.vue') ),
     },
     methods:{
         ShowMenuLang(){

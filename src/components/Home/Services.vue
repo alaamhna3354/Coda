@@ -69,7 +69,7 @@ export default {
         };
     },
     components: {
-        Btn: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Global/Btn.vue') ),
+        Btn: defineAsyncComponent( () => import('@/components/Global/Btn.vue') ),
        
     }
 }

@@ -90,7 +90,7 @@ export default {
         Form,
         Field,
         ErrorMessage,
-        BtnElctric: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/BtnElctric.vue')),
+        BtnElctric: defineAsyncComponent(() => import('@/components/Global/BtnElctric.vue')),
     },
     methods: {
         async handelForm(values) {

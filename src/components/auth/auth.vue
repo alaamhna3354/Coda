@@ -25,16 +25,13 @@
     </div>
 </template>
 <script>
-import { defineAsyncComponent } from 'vue';
 export default {
     data() {
         return {
 
         }
     },
-    components: {
-        Btn: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Global/Btn.vue') ),
-    }
+  
 
 };
 </script>

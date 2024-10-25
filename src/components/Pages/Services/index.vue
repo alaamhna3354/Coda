@@ -17,8 +17,8 @@ export default {
         };
     },
     components: {
-        Card: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Pages/Services/Card.vue')),
-        HeadSection: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/HeadSection.vue')),
+        Card: defineAsyncComponent(() => import('@/components/Pages/Services/Card.vue')),
+        HeadSection: defineAsyncComponent(() => import('@/components/Global/HeadSection.vue')),
     }
 }
 </script>

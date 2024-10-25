@@ -14,7 +14,7 @@ export default {
     }
   },
   components: {
-    Contact: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Home/Contact.vue') ),
+    Contact: defineAsyncComponent( () => import('@/components/Home/Contact.vue') ),
   },
  
 }
