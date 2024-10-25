@@ -11,13 +11,12 @@
         margin: 0 auto;
         height: 100%;
         .swiper{
-            // overflow: visible !important;
-        height: 100%;
+            overflow: visible !important;
         .swiper-slide{
                 position: relative;
                 opacity: .3;
                 transition: 1.5s;
-        height: 100%;
+                height: 100%;
         &.swiper-slide-active{
                     opacity: 1;
                 }

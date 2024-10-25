@@ -1,5 +1,6 @@
 .services {
-    padding: 1rem 20px;
+    background-color: $cardBackground;
+    padding: 5rem 20px 0;
     border-radius: .875rem;
     overflow: hidden;
     .cover{
@@ -24,7 +25,7 @@
     position: relative;
     z-index: 2;
     h3{
-        font-size: 1.75rem;
+        font-size: 3.75rem;
         @media (max-width:768px) {
             font-size: 1.75rem;
         }
@@ -74,8 +75,7 @@
         }
     }
     .item{
-       background-color:#ffffff25;
-        backdrop-filter: blur(20px) saturate(80%);
+        background-color: rgb(49 58 75/1);
         padding:1rem 2rem;
         text-align: center;
         border-radius: .875rem;
@@ -94,12 +94,10 @@
             width: 150%;
             position: relative;
             left: -25%;
-            mix-blend-mode: luminosity;
+            mix-blend-mode: luminosity ;
             transition: $transition;
         }
         &.active{
-        backdrop-filter: blur(50px) saturate(80%) !important;
-
             img{
                 mix-blend-mode: normal;
             }

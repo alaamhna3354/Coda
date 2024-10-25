@@ -6,7 +6,7 @@ export default createStore({
   state: {
    Lang: cookie.get('languages') || 'en',
    OverLay:false,
-   loader:false
+   loader:true
   },
   mutations: {
     SET_Lang(state, lang) {

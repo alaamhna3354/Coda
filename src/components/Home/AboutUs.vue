@@ -1,8 +1,6 @@
 <template>
     <section class="about-us">
-       
-       
-      <div class="card-content blur">
+      <div class="card-content">
         <div class="section-card-title">
             <span >//</span>
             <span>{{ $t('About Our Agency') }}</span>

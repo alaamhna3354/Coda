@@ -1,5 +1,5 @@
 <template>
-    <section class="services blur">
+    <section class="services">
       <div class="row">
         <div class="col-md-4 ">
         </div>
@@ -33,25 +33,25 @@
             <span>{{ $t('Offering Services') }}</span>
         </div>
         <div class="col-md-3 mb-3" @mouseenter="index = 1" >
-            <router-link to="/" class="item" :class="[index == 1 ? 'active' : '']">
+            <router-link to="/services/details/1" class="item" :class="[index == 1 ? 'active' : '']">
                 <div class="title">Digital Marketing</div>
                 <img src="@/assets/img/home-page/services-1.webp" alt="">
             </router-link>
         </div>
         <div class="col-md-3 mb-3" @mouseenter="index = 2">
-            <router-link to="/" class="item" :class="[index == 2 ? 'active' : '']">
+            <router-link to="/services/details/1" class="item" :class="[index == 2 ? 'active' : '']">
                 <div class="title">Email Marketing</div>
                 <img src="@/assets/img/home-page/services-2.webp" alt="">
             </router-link>
         </div>
         <div class="col-md-3 mb-3" @mouseenter="index = 3">
-            <router-link to="/" class="item" :class="[index == 3 ? 'active' : '']">
+            <router-link to="/services/details/1" class="item" :class="[index == 3 ? 'active' : '']">
                 <div class="title">Social Media Strategy</div>
                 <img src="@/assets/img/home-page/services-3.webp" alt="">
             </router-link>
         </div>
         <div class="col-md-3 mb-3" @mouseenter="index = 4">
-            <router-link to="/" class="item" :class="[index == 4 ? 'active' : '']">
+            <router-link to="/services/details/1" class="item" :class="[index == 4 ? 'active' : '']">
                 <div class="title">Reporting & Analyisis.</div>
                 <img src="@/assets/img/home-page/services-4.webp" alt="">
             </router-link>

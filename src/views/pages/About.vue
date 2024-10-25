@@ -1,6 +1,10 @@
 <template>
-    <div id="home">
-      <About />
+    <div id="about" class="position-relative">
+      <img class="body-cover" src="@/assets/img/about-us/background-spline.webp" alt="">
+      <HoverList :Title="`Our Vision`" />
+      <br>
+      <br>
+      <HoverList :Title="`Our Goals`" />
      </div>
 </template>
 
@@ -8,14 +12,13 @@
 import { defineAsyncComponent } from 'vue'
 
 export default {
-  name: 'Home Page',
+  name: 'About Page',
   data(){
     return{
     }
   },
   components: {
-    About: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Home/AboutUs.vue') ),
-
+    HoverList: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Pages/AboutUs/HoverList.vue') ),
   },
  
 }

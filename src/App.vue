@@ -1,11 +1,11 @@
 <template>
-  <Loader :class="[$store.state.loader ? 'open':'']" />
+  <Loader v-if="$store.state.loader" />
   <main id="main" :class="[Lang == 'en' ? 'dir-en' : 'dir-ar']">
     <Header />
     <Transition name="fade-page" mode="out-in">
       <router-view />
     </Transition>
-    <!-- <Footer /> -->
+    <Footer />
   </main>
 </template>
 
@@ -20,7 +20,7 @@ export default {
   components: {
     Loader: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/Loader.vue')),
     Header: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Common/Header.vue')),
-    // Footer: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Common/Footer.vue')),
+    Footer: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Common/Footer.vue')),
 
   },
   computed: {
@@ -28,14 +28,18 @@ export default {
       return this.$i18n.locale;
     }
   },
-  mounted(){
+  mounted() {
     setTimeout(() => {
-        this.$store.dispatch('SETLOADER',false);
+      this.$store.dispatch('SETLOADER', false);
     }, 3000);
   },
   watch: {
     $route() {
       $("html, body").animate({ scrollTop: 0 }, 500);
+      this.$store.dispatch('SETLOADER', true);
+      setTimeout(() => {
+        this.$store.dispatch('SETLOADER', false);
+      }, 2000);
     }
   },
 }

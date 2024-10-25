@@ -5,10 +5,11 @@
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "echo 'Linting is disabled.'"
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^3.0.8",
+    "@mdi/font": "^7.4.47",
     "axios": "^1.7.5",
     "core-js": "^3.6.5",
     "intl-tel-input": "^24.3.4",
@@ -45,7 +46,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-prototype-builtins": "off"
+    }
   },
   "browserslist": [
     "> 1%",

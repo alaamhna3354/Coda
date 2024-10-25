@@ -1,6 +1,6 @@
 header{
     position: relative;
-    z-index: 2;
+    z-index: 100;
     margin: 0 auto;
     border: 1px solid #ffffff08;
     margin-bottom: 2rem;
@@ -97,7 +97,7 @@ header{
         }
     }
     .search{
-        backdrop-filter: blur(10px) saturate(70%);
+        background-color: $gray;
         width: 40px;
         height: 40px;
         display: grid;
@@ -107,7 +107,7 @@ header{
         transition: $transition;
         cursor: pointer;
         &:hover{
-            backdrop-filter: blur(20px) saturate(70%);
+            background-color: $gray2;
         }
         i{
             font-size: 23px;
@@ -117,7 +117,7 @@ header{
         position: relative;
         i{
             margin-inline-end: 8px;
-            backdrop-filter: blur(10px) saturate(70%);
+            background-color: $gray;
             width: 40px;
             height: 40px;
             display: grid;
@@ -128,7 +128,7 @@ header{
             cursor: pointer;
             position: relative;
             &:hover{
-                 backdrop-filter: blur(20px) saturate(70%);
+                background-color: $gray2;
         }
         }
         .menu-lang{
