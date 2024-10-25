@@ -16,8 +16,8 @@ export default {
     }
   },
   components: {
-    Details: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Pages/Services/Details/Details.vue') ),
-    HeadSection: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/HeadSection.vue')),
+    Details: defineAsyncComponent( () => import('@/components/Pages/Services/Details/Details.vue') ),
+    HeadSection: defineAsyncComponent(() => import('@/components/Global/HeadSection.vue')),
 
   },
  

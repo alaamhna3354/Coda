@@ -18,7 +18,7 @@ export default {
     }
   },
   components: {
-    HoverList: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Pages/AboutUs/HoverList.vue') ),
+    HoverList: defineAsyncComponent( () => import('@/components/Pages/AboutUs/HoverList.vue') ),
   },
  
 }

@@ -50,7 +50,7 @@ export default {
         };
     },
     components: {
-        BtnElctric: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/BtnElctric.vue')),
+        BtnElctric: defineAsyncComponent(() => import('@/components/Global/BtnElctric.vue')),
     },
     mounted() {
 

@@ -30,7 +30,7 @@ export default {
         }
     },
     components: {
-        Card: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Pages/Projects/Card.vue')),
+        Card: defineAsyncComponent(() => import('@/components/Pages/Projects/Card.vue')),
     }
 }
 </script>
