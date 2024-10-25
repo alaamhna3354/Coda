@@ -1,45 +1,41 @@
 <template>
-    <div class="services-card-item">
-        <span class="icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-                stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M14.5 3.5C14.5 3.5 14.5 5.5 12 5.5C9.5 5.5 9.5 3.5 9.5 3.5H7.5L4.20711 6.79289C3.81658 7.18342 3.81658 7.81658 4.20711 8.20711L6.5 10.5V20.5H17.5V10.5L19.7929 8.20711C20.1834 7.81658 20.1834 7.18342 19.7929 6.79289L16.5 3.5H14.5Z" />
-            </svg>
-        </span>
-        <h4>Products</h4>
-        <p>
-            Standard chunk of Lorem Ipsum used since the 1500s is showed below
-            for those interested.
-        </p>
-        <div class="shine"></div>
-        <div class="background">
-            <div class="tiles">
-                <div class="tile tile-1"></div>
-                <div class="tile tile-2"></div>
-                <div class="tile tile-3"></div>
-                <div class="tile tile-4"></div>
-
-                <div class="tile tile-5"></div>
-                <div class="tile tile-6"></div>
-                <div class="tile tile-7"></div>
-                <div class="tile tile-8"></div>
-
-                <div class="tile tile-9"></div>
-                <div class="tile tile-10"></div>
+    <div class="projects-card-item">
+        <span class="dot dot-1"></span>
+        <span class="dot dot-2"></span>
+        <span class="dot dot-3"></span>
+        <span class="dot dot-4"></span>
+            <div class="image">
+                <img src="@/assets/img/projects/projects-card.webp" alt="">
             </div>
-
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
-        </div>
+            <div class="content-card">
+                <div class="slug">
+                    Ai
+                </div>
+                <h3 class="title mb-5">
+                    The AI Revolution
+                </h3>
+                <router-link class="d-flex" to="/projects/details/1">
+                    <Btn 
+                    :Text="$t('Discover More')"
+                    :Icon="`fa-solid fa-eye`"
+                    :Textcolor="`#b4d2f5`"
+                    :TextcolorHover="`#fff`"
+                    :backgroundColor="`transparent`"
+                    :backgroundColorHover="`#53b5ff`"
+                />
+                </router-link>
+            </div>
     </div>
 </template>
 <script>
+import { defineAsyncComponent } from 'vue';
 export default {
     data() {
         return {
         };
+    },
+    components: {
+        Btn: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/Btn.vue')),
     },
     mounted() {
    

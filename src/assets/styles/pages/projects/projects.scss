@@ -1,0 +1,21 @@
+@import './projects-cards.scss';
+@import './project-details.scss';
+.projects{
+    .filters{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        .item{
+            background-color: $gray;
+            padding: .4em .6em .35em;
+            border-radius: 3px;
+            margin-inline-end: 10px;
+            cursor: pointer;
+            transition: 1s;
+            &.active{
+                background-color: $primary;
+            }
+        }
+    }
+}

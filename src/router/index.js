@@ -36,19 +36,53 @@ const routes = [
   {
     path: '/services',
     name: cookie.get('languages') == 'ar' ? 'الخدمات' : 'Services' ,
-    component: () => import(/* webpackChunkName: "App" */'../views/pages/Services.vue'),
+    component: () => import(/* webpackChunkName: "App" */'../views/pages/Services/index.vue'),
     meta: {
       title: cookie.get('languages') == 'ar' ? 'لازورد - الخدمات' : 'Lazurde - Services' ,
         },
   },
   {
+    path: '/services/details/:id',
+    name: cookie.get('languages') == 'ar' ? 'تفاصيل الخدمة' : 'Services Details' ,
+    component: () => import(/* webpackChunkName: "App" */'../views/pages/Services/Details.vue'),
+    meta: {
+      title: cookie.get('languages') == 'ar' ? 'لازورد - تفاصيل الخدمة' : 'Lazurde - Services Details' ,
+        },
+  },
+  {
     path: '/projects',
     name: cookie.get('languages') == 'ar' ? 'المشاريع' : 'Projects' ,
-    component: () => import(/* webpackChunkName: "App" */'../views/pages/Projects.vue'),
+    component: () => import(/* webpackChunkName: "App" */'../views/pages/Projects/index.vue'),
     meta: {
       title: cookie.get('languages') == 'ar' ? 'لازورد - المشاريع' : 'Lazurde - Projects' ,
         },
   },
+  {
+    path: '/projects/details/:id',
+    name: cookie.get('languages') == 'ar' ? 'تفاصيل المشروع' : 'Project Details' ,
+    component: () => import(/* webpackChunkName: "App" */'../views/pages/Projects/Details.vue'),
+    meta: {
+      title: cookie.get('languages') == 'ar' ? 'لازورد - تفاصيل المشروع' : 'Lazurde - Project Details' ,
+        },
+  },
+  {
+    path: '/contact',
+    name: cookie.get('languages') == 'ar' ? 'تواصل معنا' : 'Contact Us' ,
+    component: () => import(/* webpackChunkName: "App" */'../views/pages/Contact.vue'),
+    meta: {
+      title: cookie.get('languages') == 'ar' ? 'لازورد - تواصل معنا' : 'Lazurde - Contact Us' ,
+        },
+  },
+    // ___________________ Auth  ___________________
+    {
+      path: '/auth',
+      name: cookie.get('lang') == 'ar' ? 'تسجيل الدخول او حساب' : 'Login Or SignUp',
+      component: () => import(/* webpackChunkName: "App" */'../views/auth/auth.vue'),
+      meta: {
+        title: cookie.get('lang') == 'ar' ? 'اتمام للخدمات - تسجيل الدخول او حساب' : 'Lazurde - Login Or SignUp' ,
+        requiresHome:true
+      }
+    },
   { 
     path: '/:pathMatch(.*)*',
     name: 'error',
@@ -63,26 +97,26 @@ const router = createRouter({
 //  for meta title
 router.beforeResolve((to) => {
   document.title = to.meta.title || "Lazurde"
-  if(to.meta.hasOwnProperty('metaTags')) {
-    for(let x=0; x < to.meta.metaTags.length; x++) {
-      let oldMeta = document.getElementsByTagName('meta');
-      for(let m=0; m < oldMeta.length; m++) {
-        if(oldMeta[m].name == to.meta.metaTags[x].name) {
-          oldMeta[m].remove()
+  if (Object.prototype.hasOwnProperty.call(to.meta, 'metaTags')) {
+    for (let x = 0; x < to.meta.metaTags.length; x++) {
+        let oldMeta = document.getElementsByTagName('meta');
+        for (let m = 0; m < oldMeta.length; m++) {
+            if (oldMeta[m].name == to.meta.metaTags[x].name) {
+                oldMeta[m].remove();
+            }
         }
-      }
-      let meta = document.createElement('meta')
-      if(to.meta.metaTags[x] && to.meta.metaTags[x].hasOwnProperty('name')) {
-        meta.name = to.meta.metaTags[x].name
-        meta.content = to.meta.metaTags[x].content
-      }
-      if(to.meta.metaTags[x].hasOwnProperty('property')) {
-        meta.property = to.meta.metaTags[x].name
-        meta.content = to.meta.metaTags[x].content
-      }
-      document.head.appendChild(meta)
+        let meta = document.createElement('meta');
+        if (to.meta.metaTags[x] && Object.prototype.hasOwnProperty.call(to.meta.metaTags[x], 'name')) {
+            meta.name = to.meta.metaTags[x].name;
+            meta.content = to.meta.metaTags[x].content;
+        }
+        if (Object.prototype.hasOwnProperty.call(to.meta.metaTags[x], 'property')) {
+            meta.property = to.meta.metaTags[x].name;
+            meta.content = to.meta.metaTags[x].content;
+        }
+        document.head.appendChild(meta);
     }
-  }
+}
   if (to.meta.requiresAuth && cookie.get('Userdata') == '') {
     return {
       path: '/login',

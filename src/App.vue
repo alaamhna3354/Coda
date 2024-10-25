@@ -1,5 +1,5 @@
 <template>
-  <Loader :class="[$store.state.loader ? 'open':'']" />
+  <Loader v-if="$store.state.loader" />
   <main id="main" :class="[Lang == 'en' ? 'dir-en' : 'dir-ar']">
     <Header />
     <Transition name="fade-page" mode="out-in">
@@ -28,14 +28,18 @@ export default {
       return this.$i18n.locale;
     }
   },
-  mounted(){
+  mounted() {
     setTimeout(() => {
-        this.$store.dispatch('SETLOADER',false);
+      this.$store.dispatch('SETLOADER', false);
     }, 3000);
   },
   watch: {
     $route() {
       $("html, body").animate({ scrollTop: 0 }, 500);
+      this.$store.dispatch('SETLOADER', true);
+      setTimeout(() => {
+        this.$store.dispatch('SETLOADER', false);
+      }, 2000);
     }
   },
 }

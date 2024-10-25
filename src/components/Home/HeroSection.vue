@@ -1,6 +1,9 @@
 <template>
     <section class="hero-section">
-        <img class="hero-cover" src="@/assets/img/home-page/hero-cover.jpg" alt="">
+        <!-- <img class="hero-cover" src="@/assets/img/home-page/hero-cover.jpg" alt=""> -->
+        <video class="hero-cover" autoplay loop>
+                    <source src="@/assets/video/hero-video.mp4" type="video/mp4">
+                </video>
         <div class="row ">
             <div class="col-md-6 info">
                 <h1 class="title neon-text">Lazurde</h1>
@@ -17,9 +20,9 @@
                 <img src="@/assets/img/home-page/lary-footer.webp" alt="">
 
             </div>
-            <!-- <div class="col-md-5">
-
-                <div class="gears">
+            <div class="col-md-5 position-relative">
+                <img src="@/assets/img/home-page/hero-side.png" alt="">
+                <!-- <div class="gears">
                     <div class="oil">
                         <div class="oil-bg">
                             <span>
@@ -33,8 +36,8 @@
                     </div>
                     <i class="gear-1 fa-solid fa-gear fa-spin fa-spin-reverse"></i>
                     <i class="gear-2 fa-solid fa-gear fa-spin"></i>
-                </div>
-            </div> -->
+                </div> -->
+            </div>
         </div>
     </section>
 </template>

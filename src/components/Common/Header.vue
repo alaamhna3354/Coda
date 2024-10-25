@@ -4,7 +4,9 @@
         <div class="row">
             <div class="col-md-3 col-3">
                 <div class="logo">
-                    <img src="@/assets/img/global/logo.svg" alt="logo">
+                    <router-link to="/" >
+                        <img src="@/assets/img/global/logo.svg" alt="logo">
+                    </router-link>
                 </div>
             </div>
             <div class="col-md-6 d-none d-md-block">
@@ -31,14 +33,15 @@
                             </li>
                         </ul>
                     </span>
-                    
-                    <Btn class="d-none d-md-flex"
-                    :Text=" $t('Sign In')" 
-                    :Textcolor="`#b4d2f5`"
-                    :TextcolorHover="`#fff`"
-                    :backgroundColor="`transparent`"
-                    :backgroundColorHover="`#53b5ff`"
-                    />
+                    <router-link to="/auth" >
+                        <Btn class="d-none d-md-flex"
+                        :Text=" $t('Sign In')" 
+                        :Textcolor="`#b4d2f5`"
+                        :TextcolorHover="`#fff`"
+                        :backgroundColor="`transparent`"
+                        :backgroundColorHover="`#53b5ff`"
+                        />
+                    </router-link>
                    
                   <span class="search d-grid d-md-none" @click="ShowMenu = !ShowMenu">
                     <i class="fa-solid fa-bars-staggered"></i>
@@ -57,10 +60,10 @@
                     </li>
                 </ul>
                 <div class="d-flex align-items-center justify-content-around auth-links">
-                    <router-link to="/signin" >
+                    <router-link to="/auth" >
                                 {{ $t('Sign In') }}
                     </router-link>
-                    <router-link to="/signup">
+                    <router-link to="/auth">
                                 {{ $t('Sign Up') }}
                     </router-link>
                 </div>

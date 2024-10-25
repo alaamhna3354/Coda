@@ -2,8 +2,8 @@
     <section class="partner m-0">
         <div class="content">
             <swiper class="swiper pb-5" @swiper="onSwiper"
-        :speed="8000"
-        :loop="false"
+        :speed="10000"
+        :loop="true"
         :autoplay="{
             delay: 0,
             disableOnInteraction: false,

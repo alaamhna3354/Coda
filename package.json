@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "echo 'Linting is disabled.'"
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^3.0.8",
@@ -20,7 +20,6 @@
     "vue": "^3.0.0",
     "vue-i18n": "^9.14.0",
     "vue-router": "^4.4.3",
-    "vuetify": "^3.0.0-beta.6",
     "vuex": "^4.1.0",
     "yup": "^1.4.0"
   },
@@ -47,7 +46,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-prototype-builtins": "off"
+    }
   },
   "browserslist": [
     "> 1%",

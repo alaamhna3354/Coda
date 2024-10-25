@@ -1,6 +1,6 @@
 <template>
     <div id="about" class="position-relative">
-      <img class="about-cover" src="@/assets/img/about-us/background-spline.webp" alt="">
+      <img class="body-cover" src="@/assets/img/about-us/background-spline.webp" alt="">
       <HoverList :Title="`Our Vision`" />
       <br>
       <br>
