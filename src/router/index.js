@@ -10,7 +10,7 @@ const routes = [
   {
     path: '/',
     name: cookie.get('languages') == 'ar' ? 'الصفحة الرئيسية' : 'Home Page' ,
-    component: () => import('../views/pages/Home.vue'),
+    component: () => import(/* webpackChunkName: "App" */'../views/pages/Home.vue'),
     meta: {
       title: cookie.get('languages') == 'ar' ? 'لازورد - الرئيسية' : 'Lazurde - Home Page' ,
       metaTags: [
@@ -28,7 +28,7 @@ const routes = [
   {
     path: '/about',
     name: cookie.get('languages') == 'ar' ? 'من نحن' : 'About Us' ,
-    component: () => import('../views/pages/About.vue'),
+    component: () => import(/* webpackChunkName: "App" */'../views/pages/About.vue'),
     meta: {
       title: cookie.get('languages') == 'ar' ? 'لازورد - من نحن' : 'Lazurde - About Us' ,
         },
@@ -36,7 +36,7 @@ const routes = [
   {
     path: '/services',
     name: cookie.get('languages') == 'ar' ? 'الخدمات' : 'Services' ,
-    component: () => import('../views/pages/Services/index.vue'),
+    component: () => import(/* webpackChunkName: "App" */'../views/pages/Services/index.vue'),
     meta: {
       title: cookie.get('languages') == 'ar' ? 'لازورد - الخدمات' : 'Lazurde - Services' ,
         },
@@ -44,7 +44,7 @@ const routes = [
   {
     path: '/services/details/:id',
     name: cookie.get('languages') == 'ar' ? 'تفاصيل الخدمة' : 'Services Details' ,
-    component: () => import('../views/pages/Services/Details.vue'),
+    component: () => import(/* webpackChunkName: "App" */'../views/pages/Services/Details.vue'),
     meta: {
       title: cookie.get('languages') == 'ar' ? 'لازورد - تفاصيل الخدمة' : 'Lazurde - Services Details' ,
         },
@@ -52,7 +52,7 @@ const routes = [
   {
     path: '/projects',
     name: cookie.get('languages') == 'ar' ? 'المشاريع' : 'Projects' ,
-    component: () => import('../views/pages/Projects/index.vue'),
+    component: () => import(/* webpackChunkName: "App" */'../views/pages/Projects/index.vue'),
     meta: {
       title: cookie.get('languages') == 'ar' ? 'لازورد - المشاريع' : 'Lazurde - Projects' ,
         },
@@ -60,7 +60,7 @@ const routes = [
   {
     path: '/projects/details/:id',
     name: cookie.get('languages') == 'ar' ? 'تفاصيل المشروع' : 'Project Details' ,
-    component: () => import('../views/pages/Projects/Details.vue'),
+    component: () => import(/* webpackChunkName: "App" */'../views/pages/Projects/Details.vue'),
     meta: {
       title: cookie.get('languages') == 'ar' ? 'لازورد - تفاصيل المشروع' : 'Lazurde - Project Details' ,
         },
@@ -68,7 +68,7 @@ const routes = [
   {
     path: '/contact',
     name: cookie.get('languages') == 'ar' ? 'تواصل معنا' : 'Contact Us' ,
-    component: () => import('../views/pages/Contact.vue'),
+    component: () => import(/* webpackChunkName: "App" */'../views/pages/Contact.vue'),
     meta: {
       title: cookie.get('languages') == 'ar' ? 'لازورد - تواصل معنا' : 'Lazurde - Contact Us' ,
         },
@@ -77,7 +77,7 @@ const routes = [
     {
       path: '/auth',
       name: cookie.get('lang') == 'ar' ? 'تسجيل الدخول او حساب' : 'Login Or SignUp',
-      component: () => import('../views/auth/auth.vue'),
+      component: () => import(/* webpackChunkName: "App" */'../views/auth/auth.vue'),
       meta: {
         title: cookie.get('lang') == 'ar' ? 'اتمام للخدمات - تسجيل الدخول او حساب' : 'Lazurde - Login Or SignUp' ,
         requiresHome:true
@@ -86,7 +86,7 @@ const routes = [
   { 
     path: '/:pathMatch(.*)*',
     name: 'error',
-    component: () => import('../views/Error.vue')
+    component: () => import(/* webpackChunkName: "App" */'../views/Error.vue')
  },  
 ]
 

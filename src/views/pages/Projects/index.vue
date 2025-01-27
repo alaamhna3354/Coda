@@ -16,8 +16,8 @@ export default {
     }
   },
   components: {
-    Index: defineAsyncComponent( () => import('@/components/Pages/Projects/index.vue') ),
-    HeadSection: defineAsyncComponent(() => import('@/components/Global/HeadSection.vue')),
+    Index: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Pages/Projects/index.vue') ),
+    HeadSection: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/HeadSection.vue')),
 
   },
  

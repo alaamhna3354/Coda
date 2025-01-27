@@ -27,8 +27,8 @@ export default {
         }
     },
     components: {
-        SideBar: defineAsyncComponent(() => import('@/components/Pages/Services/Details/SideBar.vue')),
-        CardContent: defineAsyncComponent(() => import('@/components/Pages/Services/Details/CardContent.vue')),
+        SideBar: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Pages/Services/Details/SideBar.vue')),
+        CardContent: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Pages/Services/Details/CardContent.vue')),
     }
 }
 </script>

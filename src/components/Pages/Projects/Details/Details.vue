@@ -28,8 +28,8 @@ export default {
         }
     },
     components: {
-        SideBar: defineAsyncComponent(() => import('@/components/Pages/Projects/Details/SideBar.vue')),
-        CardContent: defineAsyncComponent(() => import('@/components/Pages/Projects/Details/CardContent.vue')),
+        SideBar: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Pages/Projects/Details/SideBar.vue')),
+        CardContent: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Pages/Projects/Details/CardContent.vue')),
     }
 }
 </script>

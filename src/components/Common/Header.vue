@@ -2,7 +2,7 @@
     <OverLay @hide="Hide" />
     <header class="blur">
         <div class="row">
-            <div class="col-md-3 col-3">
+            <div class="col-md-1 col-3">
                 <div class="logo">
                     <router-link to="/" >
                         <img src="@/assets/img/global/logo.svg" alt="logo">
@@ -20,7 +20,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-3 col-9">
+            <div class="col-md-5 col-9">
                 <div class="d-flex align-items-center justify-content-end">
                     <span class="search">
                         <i class="fa-brands fa-searchengin"></i>
@@ -125,8 +125,8 @@ export default {
         };
     },
     components:{
-        Btn: defineAsyncComponent( () => import('@/components/Global/Btn.vue') ),
-        OverLay: defineAsyncComponent( () => import('@/components/Global/OverLay.vue') ),
+        Btn: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Global/Btn.vue') ),
+        OverLay: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Global/OverLay.vue') ),
     },
     methods:{
         ShowMenuLang(){

@@ -1,5 +1,9 @@
 <template>
-    <section class="partner m-0">
+    <section class="partner box-animation">
+        <h5 class="section-card-title mb-5" style="margin-inline-start: 50px;">
+            <span >//</span>
+            <span> {{ $t('Our Clinets') }}</span>
+        </h5>
         <div class="content">
             <swiper class="swiper pb-5" @swiper="onSwiper"
         :speed="10000"
@@ -15,6 +19,7 @@
             </swiper-slide>
         </swiper>
         </div>
+
     </section>
 
 </template>
@@ -22,7 +27,6 @@
 export default {
     data() {
         return {
-            swiper: null,
             swiperOptions: {
                 breakpoints: {
 
@@ -52,9 +56,6 @@ export default {
         }
     },
     methods: {
-        onSwiper(swiper) {
-            this.swiper = swiper;
-        },
     },
    
 };

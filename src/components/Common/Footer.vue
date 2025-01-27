@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="box-animation">
         <footer>
             <img class="cover" src="@/assets/img/home-page/lary-footer.webp" alt="">
             <div class="row content">

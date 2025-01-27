@@ -1,14 +1,30 @@
 .contact-us{
+    position: relative;
+    overflow: hidden;
+    .clock-cover{
+        position: absolute;
+        width: 1600px;
+        z-index: -1;
+        left: -100px;
+        top: -40px;
+        object-fit: cover;
+    }
+    padding: 3rem;
     .section-card-title{
         span{
             font-size: 1.33333rem;
         }
     }
     video{
-        width: 50%;
+        position: absolute;
+        width: 350px;
         border-radius: .845rem;
         margin: 0 auto;
+        border-radius: 9999px;
+        left: 223px;
+        top: 70px;
     }
+    
 }
 .field{
     position: relative;
