@@ -1,11 +1,17 @@
 <template>
-    <section class="contact-us">
+    <div class="contact-us">
+        <img class="clock-cover" src="@/assets/img/home-page/clock.8178f665.jpg" alt="">
         <div class="section-card-title">
             <span >//</span>
             <span> {{ $t('Contact Us') }}</span>
         </div>
         <div class="row">
-            <div class="col-md-8 mb-3">
+            <div class="col-md-6 d-flex">
+                <video class="m-auto mt-0" autoplay loop>
+                    <source src="@/assets/video/clock.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="col-md-6 mb-3">
                 <Form class="form-contact" @submit="handelForm" :validation-schema="schema">
                     <div class="row">
                         <div class="col-md-6 mb-3">
@@ -49,13 +55,9 @@
                     </div>
                 </Form>
             </div>
-            <div class="col-md-4 d-flex">
-                <video class="m-auto mt-0" autoplay loop>
-                    <source src="@/assets/video/thunder.mp4" type="video/mp4">
-                </video>
-            </div>
+            
         </div>
-    </section>
+    </div>
 </template>
 <script>
 import { defineAsyncComponent } from 'vue';
@@ -90,7 +92,7 @@ export default {
         Form,
         Field,
         ErrorMessage,
-        BtnElctric: defineAsyncComponent(() => import('@/components/Global/BtnElctric.vue')),
+        BtnElctric: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/BtnElctric.vue')),
     },
     methods: {
         async handelForm(values) {

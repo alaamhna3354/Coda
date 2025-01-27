@@ -14,7 +14,7 @@ export default {
     }
   },
   components: {
-    Index: defineAsyncComponent( () => import('@/components/Pages/Services/index.vue') ),
+    Index: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Pages/Services/index.vue') ),
 
   },
  

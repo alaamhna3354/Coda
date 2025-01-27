@@ -74,6 +74,9 @@ section{
         margin:40px 20px;
     }
 }
+
+
+ 
 img.luminosity{
     mix-blend-mode: luminosity !important;
 }
@@ -206,3 +209,36 @@ img.luminosity{
        
     }
 }
+
+.box-animation {
+    position: relative;
+  }
+  .box-animation:hover::before,.box-animation:hover::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #6ba3f9, #6ba3f9, #6ba3f9,#6ba3f9, #6ba3f9, #bf5d2e, 
+      #bf5d2e, #bf5d2e,#bf5d2e, #bf5d2e);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+    border-radius: 0.875rem;
+  }
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .box-animation:after {
+    filter: blur(50px);
+  }

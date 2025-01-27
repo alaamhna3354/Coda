@@ -1,5 +1,5 @@
 <template>
-    <section class="about-us">
+    <section class="about-us box-animation">
       <div class="card-content">
         <div class="section-card-title">
             <span >//</span>
@@ -61,7 +61,7 @@ export default {
         };
     },
     components: {
-        Btn: defineAsyncComponent( () => import('@/components/Global/Btn.vue') ),
+        Btn: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Global/Btn.vue') ),
     }
 }
 </script>

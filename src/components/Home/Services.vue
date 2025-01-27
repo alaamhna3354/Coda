@@ -1,9 +1,9 @@
 <template>
-    <section class="services">
+    <section class="services"  style="overflow: hidden;">
       <div class="row">
         <div class="col-md-4 ">
         </div>
-        <div class="col-md-8 position-relative">
+        <div class="col-md-8 position-relative" >
                 <img :class="[index == 1 ? 'show' : '']" class="cover" src="@/assets/img/home-page/services-1.svg" alt="">
                 <img :class="[index == 2 ? 'show' : '']" class="cover" src="@/assets/img/home-page/services-2.svg" alt="">
                 <img :class="[index == 3 ? 'show' : '']" class="cover" src="@/assets/img/home-page/services-3.svg" alt="">
@@ -69,7 +69,7 @@ export default {
         };
     },
     components: {
-        Btn: defineAsyncComponent( () => import('@/components/Global/Btn.vue') ),
+        Btn: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Global/Btn.vue') ),
        
     }
 }
