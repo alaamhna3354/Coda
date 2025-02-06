@@ -1,6 +1,9 @@
 <template>
     <div id="about" class="position-relative">
-      <img class="body-cover" src="@/assets/img/about-us/background-spline.webp" alt="">
+      <!-- <img class="body-cover" src="@/assets/img/about-us/background-spline.webp" alt=""> -->
+      <img class="body-cover absolute" src="@/assets/img/global/grid.svg" alt="">
+      <HeadSection :Title="`About Us`" />
+      <br>
       <HoverList :Title="`Our Vision`" />
       <br>
       <br>
@@ -18,6 +21,7 @@ export default {
     }
   },
   components: {
+    HeadSection: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/HeadSection.vue')),
     HoverList: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Pages/AboutUs/HoverList.vue') ),
   },
  

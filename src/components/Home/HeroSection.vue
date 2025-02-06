@@ -1,7 +1,7 @@
 <template>
-      <video class="hero-cover" autoplay loop>
+    <!-- <video class="hero-cover" autoplay loop>
                     <source src="@/assets/video/hero.mp4" type="video/mp4">
-        </video>
+        </video> -->
     <section class="hero-section">
         <div class="row ">
             <div class="col-md-6 info">
@@ -30,6 +30,7 @@ export default {
     },
     components: {
         BtnElctric: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/BtnElctric.vue')),
+      
     },
     mounted() {
 

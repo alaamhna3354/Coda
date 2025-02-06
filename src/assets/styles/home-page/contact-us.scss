@@ -52,11 +52,13 @@
     padding: 10px 20px !important;
 }
 input,textarea{
-    background-color: $cardBackground;
+    // background-color: $cardBackground;
+    background-color: transparent;
     width: 100%;
     border: none;
     padding: 15px 45px;
     color: $white;
+    border: 1px solid #fff;
     border-radius: .825rem;
     &:focus{
         outline: none;

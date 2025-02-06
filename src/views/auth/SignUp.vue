@@ -1,6 +1,6 @@
 <template>
     <div id="Auth">
-        <Auth />
+        <SignUp />
     </div>
   </template>
   
@@ -8,14 +8,13 @@
   import { defineAsyncComponent } from 'vue'
   
   export default {
-    name: 'Auth Page',
+    name: 'Sign Up Page',
     data() {
       return {
       }
     },
     components: {
-    Auth: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/auth/auth.vue')),
-  
+      SignUp: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/auth/SignUp.vue')),
     },
   
   }

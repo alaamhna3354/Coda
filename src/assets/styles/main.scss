@@ -34,6 +34,7 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
 body{
     background-color: rgb(20 25 36/1);
+    // #151b1e
     color: $white;
     overflow-x: hidden;
     // cursor: url('../img/global/bolt-solid.svg'), auto;
@@ -175,6 +176,7 @@ img.luminosity{
     opacity: .8;
     position: absolute;
         height: 70%;
+        max-height: 450px;
     }
 }
 .dot{
@@ -220,11 +222,12 @@ img.luminosity{
     top: -2px;
     background: linear-gradient(45deg, #6ba3f9, #6ba3f9, #6ba3f9,#6ba3f9, #6ba3f9, #bf5d2e, 
       #bf5d2e, #bf5d2e,#bf5d2e, #bf5d2e);
-    background-size: 400%;
+    // background-size: 400%;
+    background-size: 123%;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     z-index: -1;
-    animation: steam 20s linear infinite;
+    // animation: steam 20s linear infinite;
     border-radius: 0.875rem;
   }
   @keyframes steam {
@@ -240,5 +243,5 @@ img.luminosity{
   }
   
   .box-animation:after {
-    filter: blur(50px);
+    filter: blur(15px);
   }
