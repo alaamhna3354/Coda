@@ -1,6 +1,6 @@
 <template>
     <div class="contact-us">
-        <img class="clock-cover" src="@/assets/img/home-page/clock.8178f665.jpg" alt="">
+        <img class="clock-cover" src="@/assets/img/home-page/clock.jpg" alt="">
         <div class="section-card-title">
             <span >//</span>
             <span> {{ $t('Contact Us') }}</span>
@@ -92,7 +92,7 @@ export default {
         Form,
         Field,
         ErrorMessage,
-        BtnMouseEvEnt: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/BtnMouseEvEnt.vue')),
+        BtnMouseEvEnt: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/BtnMouseEvEnt2.vue')),
     },
     methods: {
         async handelForm(values) {

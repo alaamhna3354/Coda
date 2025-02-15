@@ -1,6 +1,6 @@
 <template>
-	<div class="auth-signUP-body">
-		<div class="auth-signUP-body-item">
+	<div class="auth-signIN-body">
+		<div class="auth-signIN-body-item">
         <div class="shine"></div>
         <div class="background">
             <div class="tiles">
@@ -58,7 +58,7 @@
 	
 </template>
 <script>
-import BtnMouseEvEnt from "@/components/Global/BtnMouseEvEnt.vue"
+import BtnMouseEvEnt from "@/components/Global/BtnMouseEvEnt2.vue"
 export default {
 	data() {
 		return {
@@ -72,7 +72,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
+@import '../../assets/styles/varible';
 .auth-card {
 	margin: 0;
 	padding: 0;
@@ -87,14 +87,14 @@ export default {
 .main {
 	position: relative;
 	width: 600px;
-	border: 1px solid #f57046;
+	border: 1px solid $primary;
 	background-color: #0000004f;
 	box-shadow: 0 0 .2rem #fff,
             0 0 .2rem #fff,
-            0 0 2rem #f57046,
-            0 0 0.8rem #f57046,
-            0 0 2.8rem #f57046,
-            inset 0 0 1.3rem #f57046; 
+            0 0 2rem $primary,
+            0 0 0.8rem $primary,
+            0 0 2.8rem $primary,
+            inset 0 0 1.3rem $primary; 
 	height: 500px;
 	overflow: hidden;
 	border-radius: 10px;
@@ -167,7 +167,7 @@ input::-webkit-inner-spin-button {
 }
 input:focus, textarea:focus {
   outline: none;
-  box-shadow: 0 0 7px #f57046, 0 0 10px #f57046;
+  box-shadow: 0 0 7px $primary, 0 0 10px $primary;
 }
 }
 </style>

@@ -33,8 +33,8 @@ html {
 // Arabic font
 @import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
 body{
-    background-color: rgb(20 25 36/1);
-    // #151b1e
+    // background-color: rgb(20 25 36/1);
+    background-color: #070b16;
     color: $white;
     overflow-x: hidden;
     // cursor: url('../img/global/bolt-solid.svg'), auto;
@@ -214,34 +214,45 @@ img.luminosity{
 
 .box-animation {
     position: relative;
-  }
-  .box-animation:hover::before,.box-animation:hover::after{
-    content: '';
-    position: absolute;
-    left: -2px;
-    top: -2px;
-    background: linear-gradient(45deg, #6ba3f9, #6ba3f9, #6ba3f9,#6ba3f9, #6ba3f9, #bf5d2e, 
-      #bf5d2e, #bf5d2e,#bf5d2e, #bf5d2e);
-    // background-size: 400%;
-    background-size: 123%;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    z-index: -1;
-    // animation: steam 20s linear infinite;
     border-radius: 0.875rem;
+    transition: .5s;
   }
-  @keyframes steam {
-    0% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 400% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
+  .box-animation:hover {
+    border: 1px solid #328af1;
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #328af1, 0 0 0.8rem #328af1, 0 0 2.8rem #328af1, inset 0 0 1.3rem #328af1;
   }
+//   .box-animation::before,.box-animation::after{
+//     content: '';
+//     position: absolute;
+//     left: -4px;
+//     top: -4px;
+//     // 328bf100
+//     background: linear-gradient(150deg, #1881f8,#509df5, #7fb8f891, #acd1fc15, #328bf100, #328bf100, #328bf100, 
+//       #328bf100,#328bf100,#328bf100,#328bf100, #328bf100,#acd1fc15,#7fb8f891, #509df5, #1881f8);
+//     background-size: 100%;
+//     width: calc(100% + 8px);
+//     height: calc(100% + 8px);
+//     z-index: -1;
+//     // animation: steam 20s linear infinite;
+//     border-radius: 0.875rem;
+//     opacity: 0;
+//     transition: .5s;
+//   }
+//   .box-animation:hover::before,.box-animation:hover::after{
+//     opacity: 1;
+//   }
+//   @keyframes steam {
+//     0% {
+//       background-position: 0 0;
+//     }
+//     50% {
+//       background-position: 400% 0;
+//     }
+//     100% {
+//       background-position: 0 0;
+//     }
+//   }
   
-  .box-animation:after {
-    filter: blur(15px);
-  }
+//   .box-animation:after {
+//     filter: blur(25px);
+//   }
