@@ -33,7 +33,7 @@
                             </li>
                         </ul>
                     </span>
-                    <router-link to="/auth" >
+                    <router-link to="/sign-in" >
                         <Btn class="d-none d-md-flex"
                         :Text=" $t('Sign In')" 
                         :Textcolor="`#b4d2f5`"

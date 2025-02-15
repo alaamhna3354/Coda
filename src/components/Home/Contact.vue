@@ -1,6 +1,6 @@
 <template>
     <div class="contact-us">
-        <img class="clock-cover" src="@/assets/img/home-page/clock.8178f665.jpg" alt="">
+        <img class="clock-cover" src="@/assets/img/home-page/clock.jpg" alt="">
         <div class="section-card-title">
             <span >//</span>
             <span> {{ $t('Contact Us') }}</span>
@@ -48,8 +48,8 @@
                                     :placeholder="$t('messege')" />
                                 <ErrorMessage name="messege" class="error-message" />
                             </div>
-                            <div class="d-flex justify-content-start mt-5">
-                                <BtnElctric :Text="$t('Send messege')" />
+                            <div class="w-100 mt-5">
+                                <BtnMouseEvEnt :Text="$t('Send messege')" :Animeation_Number="750" />
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ export default {
         Form,
         Field,
         ErrorMessage,
-        BtnElctric: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/BtnElctric.vue')),
+        BtnMouseEvEnt: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/BtnMouseEvEnt2.vue')),
     },
     methods: {
         async handelForm(values) {

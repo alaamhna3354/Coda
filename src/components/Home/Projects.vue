@@ -12,7 +12,7 @@
                 nextEl: '.myNext',
                 prevEl: '.myPrev',
             }">
-                <swiper-slide class="item" v-for="item in 3" :key="item.id">
+                <swiper-slide class="item box-animation" v-for="item in 3" :key="item.id">
                     <router-link to="/projects/details/1">
                         <img class="w-100" src="https://sanawebsolution.com/assets/images/gallery/1.jpg" alt="">
                         <div class="overlay-box">

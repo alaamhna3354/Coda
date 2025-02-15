@@ -1,5 +1,5 @@
 <template>
-    <section class="services"  style="overflow: hidden;">
+    <section class="services box-animation"  style="overflow: hidden;">
       <div class="row">
         <div class="col-md-4 ">
         </div>

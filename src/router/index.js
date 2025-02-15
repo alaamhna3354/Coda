@@ -75,11 +75,20 @@ const routes = [
   },
     // ___________________ Auth  ___________________
     {
-      path: '/auth',
-      name: cookie.get('lang') == 'ar' ? 'تسجيل الدخول او حساب' : 'Login Or SignUp',
-      component: () => import(/* webpackChunkName: "App" */'../views/auth/auth.vue'),
+      path: '/sign-up',
+      name: cookie.get('lang') == 'ar' ? 'تسجيل حساب' : ' SignUp',
+      component: () => import(/* webpackChunkName: "App" */'../views/auth/SignUp.vue'),
       meta: {
-        title: cookie.get('lang') == 'ar' ? 'اتمام للخدمات - تسجيل الدخول او حساب' : 'Lazurde - Login Or SignUp' ,
+        title: cookie.get('lang') == 'ar' ? 'لازورد - تسجيل حساب' : 'Lazurde - Login Or SignUp' ,
+        requiresHome:true
+      }
+    },
+    {
+      path: '/sign-in',
+      name: cookie.get('lang') == 'ar' ? 'تسجيل الدخول' : 'Login ',
+      component: () => import(/* webpackChunkName: "App" */'../views/auth/SignIn.vue'),
+      meta: {
+        title: cookie.get('lang') == 'ar' ? 'لازورد - تسجيل الدخول' : 'Lazurde - Login ' ,
         requiresHome:true
       }
     },

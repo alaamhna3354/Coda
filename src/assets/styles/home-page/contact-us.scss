@@ -1,6 +1,7 @@
 .contact-us{
     position: relative;
     overflow: hidden;
+    margin-bottom: 60px;
     .clock-cover{
         position: absolute;
         width: 1600px;
@@ -52,11 +53,13 @@
     padding: 10px 20px !important;
 }
 input,textarea{
-    background-color: $cardBackground;
+    // background-color: $cardBackground;
+    background-color: transparent;
     width: 100%;
     border: none;
     padding: 15px 45px;
     color: $white;
+    border: 1px solid #fff;
     border-radius: .825rem;
     &:focus{
         outline: none;
