@@ -1,0 +1,217 @@
+{
+    "hero_section": {
+      "en": {
+        "title": "Empowering Your Business with Cutting-Edge Technology",
+        "description": "We provide web and app development solutions to help businesses thrive in the digital era.",
+        "button_title": "Get Started",
+        "button_url": "/contact",
+        "link_type": "_self",
+        "images": [
+          "img/home-page/hero-tile-1.webp",
+          "img/home-page/hero-tile-2.jpg",
+          "img/home-page/hero-tile-3.jpg",
+          "img/home-page/hero-tile-4.webp",
+          "img/home-page/hero-tile-5.webp"
+        ]
+      },
+      "ar": {
+        "title": "نمكن عملك بأحدث التقنيات",
+        "description": "نقدم حلول تطوير المواقع والتطبيقات لمساعدة الشركات على الازدهار في العصر الرقمي.",
+        "button_title": "ابدأ الآن",
+        "button_url": "/contact",
+        "link_type": "_self",
+        "images": [
+            "img/home-page/hero-tile-1.webp",
+            "img/home-page/hero-tile-2.jpg",
+            "img/home-page/hero-tile-3.jpg",
+            "img/home-page/hero-tile-4.webp",
+            "img/home-page/hero-tile-5.webp"
+          ]
+      },
+      "es": {
+        "title": "Impulsamos tu negocio con tecnología avanzada",
+        "description": "Ofrecemos soluciones de desarrollo web y de aplicaciones para ayudar a las empresas a crecer en la era digital.",
+        "button_title": "Empezar",
+        "button_url": "/contact",
+        "link_type": "_self",
+        "images": [
+            "img/home-page/hero-tile-1.webp",
+            "img/home-page/hero-tile-2.jpg",
+            "img/home-page/hero-tile-3.jpg",
+            "img/home-page/hero-tile-4.webp",
+            "img/home-page/hero-tile-5.webp"
+          ]
+      },
+      "de": {
+        "title": "Ihr Unternehmen mit modernster Technologie stärken",
+        "description": "Wir bieten Web- und App-Entwicklungslösungen, um Unternehmen im digitalen Zeitalter erfolgreich zu machen.",
+        "button_title": "Loslegen",
+        "button_url": "/contact",
+        "link_type": "_self",
+        "images": [
+            "img/home-page/hero-tile-1.webp",
+            "img/home-page/hero-tile-2.jpg",
+            "img/home-page/hero-tile-3.jpg",
+            "img/home-page/hero-tile-4.webp",
+            "img/home-page/hero-tile-5.webp"
+          ]
+      }
+    },
+    "about_section": {
+      "en": {
+        "section_title": "Who We Are",
+        "title": "Innovative Tech Solutions",
+        "description": "We specialize in creating modern web and mobile solutions tailored to business needs.",
+        "list": ["Web Development", "App Development", "Business Solutions"],
+        "button_title": "Learn More"
+      },
+      "ar": {
+        "section_title": "من نحن",
+        "title": "حلول تقنية مبتكرة",
+        "description": "نحن متخصصون في إنشاء حلول ويب وتطبيقات حديثة مخصصة لاحتياجات الأعمال.",
+        "list": ["تطوير الويب", "تطوير التطبيقات", "حلول الأعمال"],
+        "button_title": "اعرف المزيد"
+      },
+      "es": {
+        "section_title": "Quiénes Somos",
+        "title": "Soluciones Tecnológicas Innovadoras",
+        "description": "Nos especializamos en crear soluciones modernas de web y móviles adaptadas a las necesidades empresariales.",
+        "list": ["Desarrollo Web", "Desarrollo de Aplicaciones", "Soluciones Empresariales"],
+        "button_title": "Aprender Más"
+      },
+      "de": {
+        "section_title": "Wer Wir Sind",
+        "title": "Innovative Technologielösungen",
+        "description": "Wir sind auf die Entwicklung moderner Web- und Mobil-Lösungen spezialisiert, die auf geschäftliche Anforderungen zugeschnitten sind.",
+        "list": ["Webentwicklung", "App-Entwicklung", "Geschäftslösungen"],
+        "button_title": "Erfahren Sie Mehr"
+      }
+    },
+    "our_service_section": {
+      "en": {
+        "title": "Our Services",
+        "subtitle": "Comprehensive digital solutions",
+        "button_title": "Explore Services",
+        "services": [
+          {"title": "Web Development", "image": "img/home-page/services-1.webp", "preview_image": "img/home-page/services-1.svg"},
+          {"title": "App Development", "image": "img/home-page/services-2.webp", "preview_image": "img/home-page/services-2.svg"},
+          {"title": "E-commerce Solutions", "image": "img/home-page/services-3.webp", "preview_image": "img/home-page/services-3.svg"},
+          {"title": "Cloud Services", "image": "img/home-page/services-4.webp", "preview_image": "img/home-page/services-4.svg"}
+        ]
+      },
+      "ar": {
+        "title": "خدماتنا",
+        "subtitle": "حلول رقمية شاملة",
+        "button_title": "استكشاف الخدمات",
+        "services": [
+          {"title": "Web Development", "image": "img/home-page/services-1.webp", "preview_image": "img/home-page/services-1.svg"},
+          {"title": "App Development","image": "img/home-page/services-2.webp", "preview_image": "img/home-page/services-2.svg"},
+          {"title": "E-commerce Solutions", "image": "img/home-page/services-3.webp", "preview_image": "img/home-page/services-3.svg"},
+          {"title": "Cloud Services", "image": "/img/service-cloud.webp", "preview_image": "/img/service-cloud-preview.webp"}
+        ]
+      },
+      "es": {
+        "title": "Nuestros Servicios",
+        "subtitle": "Soluciones digitales integrales",
+        "button_title": "Explorar Servicios",
+        "services": [
+          {"title": "Web Development", "image": "img/home-page/services-1.webp", "preview_image": "img/home-page/services-1.svg"},
+          {"title": "App Development", "image": "img/home-page/services-2.webp", "preview_image": "img/home-page/services-2.svg"},
+          {"title": "E-commerce Solutions", "image": "img/home-page/services-3.webp", "preview_image": "img/home-page/services-3.svg"},
+          {"title": "Cloud Services", "image": "img/home-page/services-4.webp", "preview_image": "img/home-page/services-4.svg"}
+        ]
+      },
+      "de": {
+        "title": "Unsere Dienstleistungen",
+        "subtitle": "Umfassende digitale Lösungen",
+        "button_title": "Dienste erkunden",
+        "services": [
+          {"title": "Web Development", "image": "img/home-page/services-1.webp", "preview_image": "img/home-page/services-1.svg"},
+          {"title": "App Development", "image": "img/home-page/services-2.webp", "preview_image": "img/home-page/services-2.svg"},
+          {"title": "E-commerce Solutions", "image": "img/home-page/services-3.webp", "preview_image": "img/home-page/services-3.svg"},
+          {"title": "Cloud Services", "image": "img/home-page/services-4.webp", "preview_image": "img/home-page/services-4.svg"}
+        ]
+      }
+    },
+    "our_projects": {
+      "en": [
+        {"title": "Project Alpha", "description": "A cutting-edge e-commerce platform.", "image": "img/home-page/hero-tile-2.jpg"},
+        {"title": "Project Beta", "description": "A mobile app for business automation.", "image": "img/home-page/hero-tile-2.jpg"},
+        {"title": "Project Gamma", "description": "A cloud-based management system.", "image": "img/home-page/hero-tile-2.jpg"},
+        {"title": "Project Delta", "description": "An AI-powered analytics dashboard.", "image": "img/home-page/hero-tile-2.jpg"}
+      ],
+      "ar": [
+        {"title": "المشروع ألفا", "description": "منصة تجارة إلكترونية متطورة.", "image": "img/home-page/hero-tile-2.jpg"},
+        {"title": "المشروع بيتا", "description": "تطبيق جوال لأتمتة الأعمال.", "image": "img/home-page/hero-tile-2.jpg"},
+        {"title": "المشروع جاما", "description": "نظام إدارة قائم على السحابة.", "image": "img/home-page/hero-tile-2.jpg"},
+        {"title": "المشروع دلتا", "description": "لوحة تحليلات مدعومة بالذكاء الاصطناعي.", "image": "img/home-page/hero-tile-2.jpg"}
+      ],
+      "es": [
+        {"title": "Proyecto Alfa", "description": "Una plataforma de comercio electrónico de vanguardia.", "image": "img/home-page/hero-tile-2.jpg"},
+        {"title": "Proyecto Beta", "description": "Una aplicación móvil para la automatización empresarial.", "image": "img/home-page/hero-tile-2.jpg"},
+        {"title": "Proyecto Gamma", "description": "Un sistema de gestión basado en la nube.", "image": "img/home-page/hero-tile-2.jpg"},
+        {"title": "Proyecto Delta", "description": "Un panel de análisis impulsado por IA.", "image": "img/home-page/hero-tile-2.jpg"}
+      ],
+      "de": [
+        {"title": "Projekt Alpha", "description": "Eine hochmoderne E-Commerce-Plattform.", "image": "img/home-page/hero-tile-2.jpg"},
+        {"title": "Projekt Beta", "description": "Eine mobile App für die Geschäftsautomatisierung.", "image": "img/home-page/hero-tile-2.jpg"},
+        {"title": "Projekt Gamma", "description": "Ein cloudbasiertes Verwaltungssystem.", "image": "img/home-page/hero-tile-2.jpg"},
+        {"title": "Projekt Delta", "description": "Ein KI-gestütztes Analyse-Dashboard.", "image": "img/home-page/hero-tile-2.jpg"}
+      ]
+    },
+    "our_client": [
+      "/img/home-page/about-us.svg", "/img/home-page/about-us.svg", "/img/home-page/about-us.svg", "/img/home-page/about-us.svg", "/img/home-page/about-us.svg", "/img/home-page/about-us.svg"
+    ],
+    "footer": {
+     "en":{
+      "info": {
+        "brand_title": "T-Coda Tech Solutions",
+        "description": "Leading provider of web and app development solutions.",
+        "address": "123 Tech Street, Innovation City, TX",
+        "phone": "+1 234 567 890",
+        "email": "info@t-coda.com",
+        "social": ["fa-brands fa-facebook", "fa-brands fa-x-twitter", "fa-brands fa-whatsapp"]
+      },
+      "col_1": {
+        "coltitle": "Company",
+        "list": [
+          {"title": "About Us", "url": "/about"},
+          {"title": "Services", "url": "/services"},
+          {"title": "Projects", "url": "/projects"},
+          {"title": "Careers", "url": "/careers"},
+          {"title": "Contact", "url": "/contact"},
+          {"title": "Blog", "url": "/blog"}
+        ]
+      },
+      "col_2": {
+        "coltitle": "Support",
+        "list": [
+          {"title": "FAQs", "url": "/faqs"},
+          {"title": "Help Center", "url": "/help"},
+          {"title": "Terms & Conditions", "url": "/terms"},
+          {"title": "Privacy Policy", "url": "/privacy"},
+          {"title": "Security", "url": "/security"},
+          {"title": "Sitemap", "url": "/sitemap"}
+        ]
+      },
+      "col_3": {
+        "coltitle": "Resources",
+        "list": [
+          {"title": "Documentation", "url": "/docs"},
+          {"title": "API Reference", "url": "/api"},
+          {"title": "Case Studies", "url": "/case-studies"},
+          {"title": "Community", "url": "/community"},
+          {"title": "Webinars", "url": "/webinars"},
+          {"title": "Whitepapers", "url": "/whitepapers"}
+        ]
+      },
+      "created_by": "T-Coda Technologies"
+     }
+    },
+    "seo": {
+      "en": "T-Coda - Professional Web & App Development Services | Boost Your Business with Custom Tech Solutions",
+      "ar": "T-Coda - خدمات برمجة المواقع والتطبيقات | عزز أعمالك بحلول تقنية مخصصة",
+      "es": "T-Coda - Servicios Profesionales de Desarrollo Web y de Aplicaciones | Impulsa tu Negocio con Soluciones Tecnológicas",
+      "de": "T-Coda - Professionelle Web- & App-Entwicklungsdienstleistungen | Steigern Sie Ihr Geschäft mit maßgeschneiderten Technologielösungen"
+    }
+  }

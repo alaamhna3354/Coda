@@ -7,8 +7,6 @@
         <div class="col-md-8">
             <div class="content-details">
                 <CardContent />
-                <CardContent />
-                <CardContent />
             </div>
         </div>
       </div>

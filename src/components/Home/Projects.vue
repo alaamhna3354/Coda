@@ -1,9 +1,21 @@
 <template>
     <section class="projects ">
+      <div class="d-flex justify-content-between mb-3">
         <div class="section-card-title">
             <span>//</span>
             <span> {{ $t('Our Projects') }}</span>
         </div>
+        <router-link to="/projects">
+            <Btn style="padding: 10px 20px;"
+            :Text="$t('Show All')"
+            :Icon="``"
+            :Textcolor="`#b4d2f5`"
+            :TextcolorHover="`#fff`"
+            :backgroundColor="`transparent`"
+            :backgroundColorHover="`#53b5ff`"
+            />
+        </router-link>
+      </div>
         <div class="projects-content">
             <swiper class="swiper pb-5" :space-between="20" :loop="true" :speed="1500" :autoplay="{
                 delay: 5000,
@@ -12,13 +24,13 @@
                 nextEl: '.myNext',
                 prevEl: '.myPrev',
             }">
-                <swiper-slide class="item box-animation" v-for="item in 3" :key="item.id">
-                    <router-link to="/projects/details/1">
-                        <img class="w-100" src="https://sanawebsolution.com/assets/images/gallery/1.jpg" alt="">
+                <swiper-slide class="item box-animation" v-for="item in our_projects" :key="item.id">
+                    <router-link :to="`/projects/details/${item.title}`">
+                        <img class="w-100" :src="item.image" :alt="item.title">
                         <div class="overlay-box">
                             <div class="info">
-                                <h3>Social Media Marketing</h3>
-                                <div class="text text-white">Ready to expand and market to your audiences on social media</div>
+                                <h3>{{ item.title }}</h3>
+                                <div class="text text-white">{{ item.description }}</div>
                             </div>
                         </div>
                     </router-link>
@@ -34,6 +46,7 @@
 
 </template>
 <script>
+import { defineAsyncComponent } from 'vue';
 export default {
     data() {
         return {
@@ -41,11 +54,14 @@ export default {
         }
     },
     components: {
+        Btn: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Global/Btn.vue') ),
     },
-    methods: {
-    },
-    computed: {
-    },
+    props:{
+        our_projects:{
+            type:Array,
+            required: true
+        }
+    }
 
 };
 </script>

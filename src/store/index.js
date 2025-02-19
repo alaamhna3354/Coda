@@ -2,11 +2,13 @@ import { createStore } from 'vuex'
 import Cookies from "universal-cookie"
 const cookie = new Cookies();
 // import axios from 'axios';
+import Data from "../../json-data/HomePage.json"
 export default createStore({
   state: {
-   Lang: cookie.get('languages') || 'en',
+   Lang: cookie.get('languages') || 'ar',
    OverLay:false,
-   loader:true
+   loader:true,
+   Data : Data
   },
   mutations: {
     SET_Lang(state, lang) {
