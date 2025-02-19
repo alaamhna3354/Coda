@@ -8,6 +8,9 @@
       <br>
       <br>
       <HoverList :Title="`Our Goals`" />
+      <br>
+      <br>
+      <Clients  />
      </div>
 </template>
 
@@ -23,6 +26,7 @@ export default {
   components: {
     HeadSection: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/HeadSection.vue')),
     HoverList: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Pages/AboutUs/HoverList.vue') ),
+    Clients: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/Clinets.vue')),
   },
  
 }

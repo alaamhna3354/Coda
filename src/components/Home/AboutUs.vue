@@ -3,7 +3,7 @@
       <div class="card-content">
         <div class="section-card-title">
             <span >//</span>
-            <span>{{ $t('About Our Agency') }}</span>
+            <span>{{ about_section.section_title }}</span>
         </div>
         <div class="row">
             <div class="col-md-4"></div>
@@ -18,29 +18,20 @@
             </div>
             <div class="col-md-8 mb-3">
                 <h2 class="title">
-                    Your Trusted 
-                    <span class="neon-text">partners</span>
-                    For Business Success
+                    {{ about_section.title }}
+                    <!-- <span class="neon-text">partners</span> -->
                 </h2>
                 <p>
-                    Our team of experienced professionals combines creativity with technical expertise to deliver cutting-edge solutions that align with your business objectives. 
+                    {{ about_section.description }}
                 </p>
                 <ul>
-                    <li>
+                    <li v-for="(item,index) in about_section.list" :key="index">
                         <i class="fa-solid fa-bolt-lightning neon-text"></i>
-                        <span>Personalized Customer Engagement</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-bolt-lightning neon-text"></i>
-                        <span>Proactive Support Services</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-bolt-lightning neon-text"></i>
-                        <span>Continuous Improvement</span>
+                        <span>{{item}}</span>
                     </li>
                 </ul>
                 <Btn style="padding: 10px 20px;"
-            :Text="$t('Show More')"
+            :Text="about_section.button_title"
             :Textcolor="`#b4d2f5`"
             :TextcolorHover="`#fff`"
             :backgroundColor="`transparent`"
@@ -62,6 +53,12 @@ export default {
     },
     components: {
         Btn: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Global/Btn.vue') ),
+    },
+    props:{
+        about_section:{
+            type:Object,
+            required: true
+        }
     }
 }
 </script>

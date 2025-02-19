@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="project-sidebar">
         <div class="row">
             <div class="col-md-7">
@@ -37,4 +37,136 @@ export default {
         };
     },
 }
+</script> -->
+<template>
+    <div class="project-sidebar" >
+        <div class="timeline-container">
+            <!-- Timeline navigation -->
+            <div class="timeline-nav">
+                <div v-for="(stage, index) in projectStages" 
+                     :key="index"
+                     class="timeline-item"
+                     :class="{ 'active': currentStage === index }"
+                     @click="selectStage(index)">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>{{ stage.title }}</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage details -->
+            <div class="stage-details">
+                <div class="stage-image">
+                    <img :src="currentStageData.image" :alt="currentStageData.title">
+                </div>
+                <div class="stage-info">
+                    <h3>{{ currentStageData.title }}</h3>
+                    <h6>{{ currentStageData.subtitle }}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            currentStage: 0,
+            projectStages: [
+                {
+                    title: "Level One",
+                    subtitle: "The Prerequisites 1",
+                    image: require("@/assets/img/projects/project-sidebar.webp"),
+                },
+                {
+                    title: "Level Two",
+                    subtitle: "The Prerequisites 2",
+                    image: require("@/assets/img/projects/project-sidebar.webp"),
+                },
+                {
+                    title: "Level three",
+                    subtitle: "The Prerequisites 3",
+                    image: require("@/assets/img/projects/project-sidebar.webp"),
+                },
+            ]
+        };
+    },
+    computed: {
+        currentStageData() {
+            return this.projectStages[this.currentStage];
+        }
+    },
+    methods: {
+        selectStage(index) {
+            this.currentStage = index;
+        }
+    },
+   
+}
 </script>
+
+<style lang="scss" scoped>
+.timeline-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.timeline-nav {
+    flex: 0 0 160px;
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 1rem;
+    cursor: pointer;
+    margin-bottom: .3rem;
+    display: flex;
+    align-items: center;
+    &:not(:last-child){
+        &::after{
+            content: "";
+            position: absolute;
+            height: 105%;
+            width: 3px;
+            background-color: #ccc;
+            bottom: -50%;
+            left: -1px;
+            z-index: 1;
+        }
+    }
+}
+
+.timeline-marker {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    position: absolute;
+    left: -6px;
+    z-index: 2;
+}
+
+.timeline-item.active .timeline-marker {
+    background: #328af1;
+}
+
+.stage-details {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .timeline-container {
+        flex-direction: column;
+    }
+    
+    .timeline-nav {
+        flex: none;
+        display: flex;
+        overflow-x: auto;
+        margin-bottom: 1rem;
+    }
+}
+</style>

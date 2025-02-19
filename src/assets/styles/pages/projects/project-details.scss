@@ -3,6 +3,9 @@
         padding: 1rem 2rem;
         background-color: $cardBackground;
         border-radius: .875rem;
+        position: sticky;
+        top: 100px;
+       
         .img-sidebar{
             width: 264px;
             margin-top: -50px;
@@ -22,9 +25,9 @@
         }
     }
     .content-details{
-        max-height: 500px;
-        overflow-y: scroll;
-        scrollbar-width: none;
+        // max-height: 500px;
+        // overflow-y: scroll;
+        // scrollbar-width: none;
         .card-content{
             background-color: $cardBackground;
             padding: 38px 20px;

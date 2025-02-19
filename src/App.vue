@@ -5,7 +5,8 @@
     <Transition name="fade-page" mode="out-in">
       <router-view />
     </Transition>
-    <Footer />
+    <Footer :Data="Footer_Data[this.$i18n.locale]" />
+    <Whatsapp />
   </main>
 </template>
 
@@ -17,11 +18,16 @@ window.$ = $;
 import { defineAsyncComponent } from 'vue';
 export default {
   name: 'App',
+  data(){
+    return{
+      Footer_Data:this.$store.state.Data.footer,
+    }
+  },
   components: {
     Loader: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/Loader.vue')),
     Header: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Common/Header.vue')),
     Footer: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Common/Footer.vue')),
-
+    Whatsapp: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/Whatsapp.vue')),
   },
   computed: {
     Lang() {

@@ -33,11 +33,11 @@
 					<div class="d-flex justify-content-center mt-3">
             <BtnMouseEvEnt :Text="`Login`" :width="`250px`" :Animeation_Number="700" />
           </div>
-          <div class="d-flex justify-content-center mt-3">
+          <!-- <div class="d-flex justify-content-center mt-3">
             <router-link class="auth-link" to="/sign-up">
               Don't have an account yet ?  
             </router-link>
-          </div>
+          </div> -->
 				</form>
 			</div>
      

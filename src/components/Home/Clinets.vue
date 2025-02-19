@@ -14,8 +14,8 @@
             reverseDirection:true
         }" 
         :breakpoints="swiperOptions.breakpoints">
-            <swiper-slide class="item" v-for="item in 8" :key="item">
-                <img class="w-100" src="@/assets/img/home-page/about-us.svg" alt="">
+            <swiper-slide class="item" v-for="item in our_client" :key="item">
+                <img class="w-100" :src="item" alt="our client">
             </swiper-slide>
         </swiper>
         </div>
@@ -55,8 +55,12 @@ export default {
             }
         }
     },
-    methods: {
-    },
+    props:{
+        our_client:{
+            type:Array,
+            required: true
+        }
+    }
    
 };
 </script>
