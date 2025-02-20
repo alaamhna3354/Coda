@@ -1,6 +1,8 @@
 {
     "Sign In":"Sign In",
     "Sign Up":"Sign Up",
+    "Login Into T-Coda":"Login Into T-Coda",
+    "Log In":"Log In",
     "LogOut":"LogOut",
     "Home":"Home",
     "Discover More":"Discover More",
@@ -11,11 +13,13 @@
     "Contact Us":"Contact Us",
     "FullName":"Full Name",
     "Email":"Email",
+    "Password":"Password",
     "website":"Website Url",
     "messege":"Messege",
     "Send messege":"Send Messege",
     "Our Projects":"Our Projects",
     "Show All":"Show All",
-    "Our Clients":"Our Clients"
+    "Our Clients":"Our Clients",
+    "All rights reserved.":"All rights reserved."
    
 }

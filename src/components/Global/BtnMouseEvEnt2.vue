@@ -19,7 +19,6 @@
       </div>
       <a :style="{width: width}"
           class="transition-colors duration-200 transition-all duration-200 uppercase font-bold flex items-center justify-center h-10 px-16 text-12 text-black -tracking-[0.015em] relative z-10 overflow-hidden rounded-full border border-white/60 bg-[#d1d1d1] gap-x-1 px-8"
-          href=""
           ref="button"
       >
           <div
@@ -76,8 +75,8 @@ export default {
                 top: '50%', // Keep y position fixed
                 transform: `translateX(${x}px)`,
             };
-            console.log(`Mouse X position: ${clientX}`);
-            console.log(`Raw x value: ${x}`);
+            // console.log(`Mouse X position: ${clientX}`);
+            // console.log(`Raw x value: ${x}`);
             // Calculate opacity based on position
          
         },

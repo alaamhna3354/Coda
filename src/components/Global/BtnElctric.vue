@@ -1,6 +1,6 @@
 <template>
         <div class="buttonHolder" >
-            <button class="electric" id="electric" >
+            <button :class="this.$i18n.locale" class="electric" id="electric" >
                 <span class="part hide" id="part1"></span>
                 <span class="part hide" id="part2"></span>
                 <span class="part hide" id="part3"></span>
@@ -82,7 +82,7 @@ export default {
     }
 
     .electric{
-    padding:10px 20px;
+      padding:10px 20px;
       border-radius: 10px;
       cursor: pointer;
       background-color: transparent;
@@ -90,6 +90,9 @@ export default {
       color: #b4d2f5;
       position: relative;
       filter: blur(0px);
+      &.ar{
+        padding:10px 30px;
+      }
     }
     
    

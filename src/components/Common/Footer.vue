@@ -66,7 +66,7 @@
                 </div>
                <div class="container">
                     <div class="bottom-footer pt-4">
-                        <p>© {{ Data.created_by }} 2025. All rights reserved.  </p>
+                        <p>© {{ Data.created_by }} 2025. {{ $t('All rights reserved.') }}  </p>
                     </div>
                </div>
             </div>
