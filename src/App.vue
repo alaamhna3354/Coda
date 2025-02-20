@@ -11,10 +11,10 @@
 </template>
 
 <script>
+// Required for snackbar background and text color
 global.jQuery = require('jquery');
 var $ = global.jQuery;
 window.$ = $;
-
 import { defineAsyncComponent } from 'vue';
 export default {
   name: 'App',
@@ -34,6 +34,7 @@ export default {
       return this.$i18n.locale;
     }
   },
+
   mounted() {
     setTimeout(() => {
       this.$store.dispatch('SETLOADER', false);

@@ -206,7 +206,51 @@
         ]
       },
       "created_by": "T-Coda Technologies"
-     }
+     },
+     "ar": {
+      "info": {
+        "brand_title": "تي-كودا لحلول التكنولوجيا",
+        "description": "مزود رائد لحلول تطوير الويب والتطبيقات.",
+        "address": "123 شارع التكنولوجيا، مدينة الابتكار، تكساس",
+        "phone": "+1 234 567 890",
+        "email": "info@t-coda.com",
+        "social": ["fa-brands fa-facebook", "fa-brands fa-x-twitter", "fa-brands fa-whatsapp"]
+      },
+      "col_1": {
+        "coltitle": "الشركة",
+        "list": [
+          {"title": "من نحن", "url": "/about"},
+          {"title": "الخدمات", "url": "/services"},
+          {"title": "المشاريع", "url": "/projects"},
+          {"title": "الوظائف", "url": "/careers"},
+          {"title": "اتصل بنا", "url": "/contact"},
+          {"title": "المدونة", "url": "/blog"}
+        ]
+      },
+      "col_2": {
+        "coltitle": "الدعم",
+        "list": [
+          {"title": "الأسئلة الشائعة", "url": "/faqs"},
+          {"title": "مركز المساعدة", "url": "/help"},
+          {"title": "الشروط والأحكام", "url": "/terms"},
+          {"title": "سياسة الخصوصية", "url": "/privacy"},
+          {"title": "الأمان", "url": "/security"},
+          {"title": "خريطة الموقع", "url": "/sitemap"}
+        ]
+      },
+      "col_3": {
+        "coltitle": "الموارد",
+        "list": [
+          {"title": "التوثيق", "url": "/docs"},
+          {"title": "مرجع API", "url": "/api"},
+          {"title": "دراسات الحالة", "url": "/case-studies"},
+          {"title": "المجتمع", "url": "/community"},
+          {"title": "الندوات", "url": "/webinars"},
+          {"title": "الأوراق البيضاء", "url": "/whitepapers"}
+        ]
+      },
+      "created_by": "تي-كودا للتكنولوجيا"
+    }
     },
     "seo": {
       "en": "T-Coda - Professional Web & App Development Services | Boost Your Business with Custom Tech Solutions",

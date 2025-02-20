@@ -8,7 +8,8 @@ import './assets/styles/main.scss'
 import './assets/fontawesome/css/fontawesome.css'
 import './assets/fontawesome/css/brands.css'
 import './assets/fontawesome/css/solid.css'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 // *************** import Swiper ***************
 import '../node_modules/intl-tel-input/build/css/intlTelInput.css'
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -40,6 +41,11 @@ const i18n = createI18n({
 // axios.defaults.headers.common['language'] = cookie.get('lang')
 // axios.defaults.headers.common['Authorization'] = "Bearer ";
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+// *************** import notifications ***************
+
+
+
+
 createApp(App).component("Swiper", Swiper).component("SwiperSlide", SwiperSlide)
 .component('font-awesome-icon',FontAwesomeIcon)
 .use(store).use(router).use(i18n).mount('#app')

@@ -28,17 +28,18 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+    // background-color: rgb(20 25 36/1);
+    background-color: #070b16 !important;
+    color: $white !important;
+    overflow-x: hidden !important;
+    // cursor: url('../img/global/bolt-solid.svg'), auto;
+}
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
 // Arabic font
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body{
-    // background-color: rgb(20 25 36/1);
-    background-color: #070b16;
-    color: $white;
-    overflow-x: hidden;
-    // cursor: url('../img/global/bolt-solid.svg'), auto;
-}
+
 #home{
     position: relative;
     z-index: 3;
@@ -66,7 +67,7 @@ ul{
     margin: 0;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 section{
     margin:40px 30px;
@@ -269,3 +270,17 @@ img.luminosity{
 //   .box-animation:after {
 //     filter: blur(25px);
 //   }
+.error-message{
+    font-size: 14px;
+    margin-top: 5px;
+    color: #fff;
+    text-shadow:
+    0 0 7px #f57046,
+    0 0 10px #f57046,
+    0 0 21px #f57046,
+    0 0 42px #f57046,
+    0 0 82px #f57046,
+    0 0 92px #f57046,
+    0 0 102px #f57046,
+    0 0 151px #f57046;
+}
