@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Cookies from "universal-cookie"
 const cookie = new Cookies();
 if(!cookie.get('languages')){
-  cookie.set('languages','en');
+  cookie.set('languages','ar');
 }
 import meta_Description from './Description.json'
 import meta_keywords from './Keywords.json'

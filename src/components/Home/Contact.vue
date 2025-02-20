@@ -5,7 +5,7 @@
             <span >//</span>
             <span> {{ $t('Contact Us') }}</span>
         </div>
-        <div class="row">
+        <div class="row flex-ar-reverse">
             <div class="col-md-6 d-flex">
                 <video class="m-auto mt-0" autoplay loop>
                     <source src="@/assets/video/clock.webm" type="video/webm">

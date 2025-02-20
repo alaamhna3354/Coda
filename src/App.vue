@@ -1,11 +1,11 @@
 <template>
-  <Loader v-if="$store.state.loader" />
   <main id="main" :class="[Lang == 'en' ? 'dir-en' : 'dir-ar']">
+    <Loader v-if="$store.state.loader" />
     <Header />
     <Transition name="fade-page" mode="out-in">
       <router-view />
     </Transition>
-    <Footer :Data="Footer_Data[this.$i18n.locale]" />
+    <Footer :Data="Footer_Data[this.$i18n.locale] ? Footer_Data[this.$i18n.locale] : Footer_Data['en'] " />
     <Whatsapp />
   </main>
 </template>

@@ -2,7 +2,7 @@
     <section class="partner box-animation">
         <h5 class="section-card-title mb-5" style="margin-inline-start: 50px;">
             <span >//</span>
-            <span> {{ $t('Our Clinets') }}</span>
+            <span> {{ $t('Our Clients') }}</span>
         </h5>
         <div class="content">
             <swiper class="swiper pb-5" @swiper="onSwiper"

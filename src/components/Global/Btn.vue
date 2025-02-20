@@ -1,5 +1,5 @@
 <template>
-    <button class="btn-main" :style="styleButton">
+    <button :class="this.$i18n.locale" class="btn-main" :style="styleButton">
         <i :class="Icon"></i>
         <span> {{ Text }}</span>
         <div class="liquid"></div>
@@ -84,6 +84,11 @@ export default {
         background-color:  var(--backgroundColor-hover);
         z-index: 1;
     }
-    
+    &.ar{
+        &::after{
+        left: auto;
+        right: 0;
+    }
+    }
 }
 </style>

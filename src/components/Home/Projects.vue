@@ -17,13 +17,14 @@
         </router-link>
       </div>
         <div class="projects-content">
-            <swiper class="swiper pb-5" :space-between="20" :loop="true" :speed="1500" :autoplay="{
+            <swiper class="swiper pb-5" :loop="true" :speed="1500" :autoplay="{
                 delay: 5000,
             }" :navigation="{
                 enabled: true,
                 nextEl: '.myNext',
                 prevEl: '.myPrev',
-            }">
+            }"
+            :breakpoints="swiperOptions.breakpoints">
                 <swiper-slide class="item box-animation" v-for="item in our_projects" :key="item.id">
                     <router-link :to="`/projects/details/${item.title}`">
                         <img class="w-100" :src="item.image" :alt="item.title">
@@ -50,7 +51,32 @@ import { defineAsyncComponent } from 'vue';
 export default {
     data() {
         return {
+            swiperOptions: {
+                breakpoints: {
 
+                    300: {  // when window width from 300px to 576px
+                        slidesPerView: 1,
+                        spaceBetween: 10
+                    },
+                    576: {  // when window width from 576px to 767px
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                    767: { // when window width from 767px to 991px
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+
+                    991: { // when window width from 991px to 1200px
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                    1200: { // when window width from 1200px to higher
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                }
+            }
         }
     },
     components: {

@@ -1,5 +1,5 @@
 <template>
-    <a id="whatsapp" href="https://wa.me/YOUR_PHONE_NUMBER" class="whatsapp-btn" target="_blank">
+    <a id="whatsapp" href="https://wa.me/+963933080648" class="whatsapp-btn" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 </template>

@@ -42,7 +42,7 @@ export default {
     <div class="project-sidebar" >
         <div class="timeline-container">
             <!-- Timeline navigation -->
-            <div class="timeline-nav">
+            <div class="timeline-nav" :class="this.$i18n.locale">
                 <div v-for="(stage, index) in projectStages" 
                      :key="index"
                      class="timeline-item"
@@ -148,7 +148,18 @@ export default {
     left: -6px;
     z-index: 2;
 }
-
+.timeline-nav.ar{
+    .timeline-item {
+        &::after{
+            right: -1px;
+            left: auto;
+        }
+    }
+    .timeline-marker {
+        left: auto;
+        right: -6px;
+}
+}
 .timeline-item.active .timeline-marker {
     background: #328af1;
 }

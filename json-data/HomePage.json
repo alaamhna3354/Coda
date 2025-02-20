@@ -107,7 +107,7 @@
           {"title": "Web Development", "image": "img/home-page/services-1.webp", "preview_image": "img/home-page/services-1.svg"},
           {"title": "App Development","image": "img/home-page/services-2.webp", "preview_image": "img/home-page/services-2.svg"},
           {"title": "E-commerce Solutions", "image": "img/home-page/services-3.webp", "preview_image": "img/home-page/services-3.svg"},
-          {"title": "Cloud Services", "image": "/img/service-cloud.webp", "preview_image": "/img/service-cloud-preview.webp"}
+          {"title": "Cloud Services", "image": "img/home-page/services-4.webp", "preview_image": "img/home-page/services-4.svg"}
         ]
       },
       "es": {

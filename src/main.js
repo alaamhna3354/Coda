@@ -31,7 +31,7 @@ const i18n = createI18n({
         en: en,
     },
     locale: cookie.get('languages'),
-    fallbackLocale: 'en' // set fallback locale
+    fallbackLocale: 'ar' // set fallback locale
 })
 
 // *************** import axios ***************
