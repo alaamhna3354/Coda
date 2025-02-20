@@ -1,14 +1,14 @@
 import { createStore } from 'vuex'
 import Cookies from "universal-cookie"
 const cookie = new Cookies();
-// import axios from 'axios';
-import Data from "../../json-data/HomePage.json"
+import axios from 'axios';
+
 export default createStore({
   state: {
    Lang: cookie.get('languages') || 'ar',
    OverLay:false,
    loader:true,
-   Data : Data
+   Data : {}
   },
   mutations: {
     SET_Lang(state, lang) {
@@ -22,9 +22,9 @@ export default createStore({
     },
     
     // *********************** SET StaticContent ***********************
-    // SET_StaticContent(state, data) {
-    //   state.StaticContent = data;
-    // },
+    SET_StaticContent(state, data) {
+      state.Data = data;
+    },
     
 
   },
@@ -44,28 +44,19 @@ export default createStore({
       commit('SET_Loader', boolean);
     },
    
-   
     // *********************** Get Static Content Data ***********************
-    // async GetStaticContent({ commit }) {
-    //   commit('SET_Loader', true);
-    //   return await axios
-    //     .get(`user/static-content`)
-    //     .then((res) => {
-    //       if (res.status == 200) {
-    //         let Content = res.data.data;
-    //         commit('SET_StaticContent', Content);
-    //       }
-    //     })
-    //     .catch(function (error) {
-    //       console.log('Error: ', error);
-    //     }).finally(function () {
-    //       commit('SET_Loader', false);
-    //     });
-    // },
-    
+   
+    async GetData({commit}) {
+      try {
+        const response = await axios.get('/data/HomePage.json'); // Note the leading slash
+        commit('SET_StaticContent', response.data); 
+      } catch (error) {
+        console.error('Error fetching JSON:', error);
+      }
+    },
   },
   getters:{
-
+    getStaticContent: (state) => state.Data,
   }
  
 })
