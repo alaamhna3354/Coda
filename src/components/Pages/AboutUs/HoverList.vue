@@ -14,17 +14,17 @@
             <li>
                 <span class="dot"></span> 
                 <span>We Are Marketing The Avengers Skilled enough to know better</span>
-                <img src="@/assets/img/about-us/our-vision.webp" alt="">
+                <img :class="this.$i18n.locale" src="@/assets/img/about-us/our-vision.webp" alt="">
             </li>
             <li>
                 <span class="dot"></span>
                 <span>We Are Marketing The Avengers Skilled enough to know better</span>
-                <img src="@/assets/img/about-us/our-vision-2.webp" alt="">
+                <img :class="this.$i18n.locale" src="@/assets/img/about-us/our-vision-2.webp" alt="">
             </li>
             <li>
                 <span class="dot"></span>
                 <span>We Are Marketing The Avengers Skilled enough to know better</span>
-                <img src="@/assets/img/about-us/our-vision-3.webp" alt="">
+                <img :class="this.$i18n.locale" src="@/assets/img/about-us/our-vision-3.webp" alt="">
             </li>
         </ul>
      </div>
