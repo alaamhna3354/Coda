@@ -5,7 +5,7 @@
     <Transition name="fade-page" mode="out-in">
       <router-view />
     </Transition>
-    <Footer :Data="Footer_Data[this.$i18n.locale] ? Footer_Data[this.$i18n.locale] : Footer_Data['en'] " />
+    <Footer  />
     <Whatsapp />
   </main>
 </template>
@@ -18,9 +18,8 @@ window.$ = $;
 import { defineAsyncComponent } from 'vue';
 export default {
   name: 'App',
-  data(){
-    return{
-      Footer_Data:this.$store.state.Data.footer,
+  data() {
+    return {
     }
   },
   components: {
@@ -32,9 +31,9 @@ export default {
   computed: {
     Lang() {
       return this.$i18n.locale;
-    }
+    },
+   
   },
-
   mounted() {
     setTimeout(() => {
       this.$store.dispatch('SETLOADER', false);
