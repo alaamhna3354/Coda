@@ -4,10 +4,8 @@
     border-radius: .875rem;
     position: relative;
     .content{
-        display: flex;
-        transition: transform 10s linear; /* Smooth transition */
         .swiper-wrapper{
-            transition-timing-function: linear !important;
+            transition-timing-function: ease-out !important;
         }
         .item{
             border-radius: 3px; 

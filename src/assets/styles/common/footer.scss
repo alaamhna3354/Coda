@@ -9,6 +9,10 @@ footer{
         *{
             text-align: center;
             justify-content: center;
+            .info-address *{
+                text-align: start;
+                justify-content: flex-start;
+            }
         }
     }
     img.cover{
@@ -43,6 +47,9 @@ footer{
         }
         h5{
             margin-bottom:1rem;
+            @media (max-width:768px) {
+                margin-bottom:.5rem;
+            }
             font-weight: 800;
             letter-spacing: .02rem;
         }

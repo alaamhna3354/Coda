@@ -12,7 +12,7 @@ const routes = [
     name: cookie.get('languages') == 'ar' ? 'الصفحة الرئيسية' : 'Home Page' ,
     component: () => import(/* webpackChunkName: "App" */'../views/pages/Home.vue'),
     meta: {
-      title: cookie.get('languages') == 'ar' ? 'كودا - الرئيسية' : 'T-Coda - Home Page' ,
+      title: cookie.get('languages') == 'ar' ? 'كودا - الرئيسية' : 'Coda - Home Page' ,
       metaTags: [
         {
           name: 'description',
@@ -30,7 +30,7 @@ const routes = [
     name: cookie.get('languages') == 'ar' ? 'من نحن' : 'About Us' ,
     component: () => import(/* webpackChunkName: "App" */'../views/pages/About.vue'),
     meta: {
-      title: cookie.get('languages') == 'ar' ? 'كودا - من نحن' : 'T-Coda - About Us' ,
+      title: cookie.get('languages') == 'ar' ? 'كودا - من نحن' : 'Coda - About Us' ,
         },
   },
   {
@@ -38,7 +38,7 @@ const routes = [
     name: cookie.get('languages') == 'ar' ? 'الخدمات' : 'Services' ,
     component: () => import(/* webpackChunkName: "App" */'../views/pages/Services/index.vue'),
     meta: {
-      title: cookie.get('languages') == 'ar' ? 'كودا - الخدمات' : 'T-Coda - Services' ,
+      title: cookie.get('languages') == 'ar' ? 'كودا - الخدمات' : 'Coda - Services' ,
         },
   },
   {
@@ -46,7 +46,7 @@ const routes = [
     name: cookie.get('languages') == 'ar' ? 'تفاصيل الخدمة' : 'Services Details' ,
     component: () => import(/* webpackChunkName: "App" */'../views/pages/Services/Details.vue'),
     meta: {
-      title: cookie.get('languages') == 'ar' ? 'كودا - تفاصيل الخدمة' : 'T-Coda - Services Details' ,
+      title: cookie.get('languages') == 'ar' ? 'كودا - تفاصيل الخدمة' : 'Coda - Services Details' ,
         },
   },
   {
@@ -54,7 +54,7 @@ const routes = [
     name: cookie.get('languages') == 'ar' ? 'المشاريع' : 'Projects' ,
     component: () => import(/* webpackChunkName: "App" */'../views/pages/Projects/index.vue'),
     meta: {
-      title: cookie.get('languages') == 'ar' ? 'كودا - المشاريع' : 'T-Coda - Projects' ,
+      title: cookie.get('languages') == 'ar' ? 'كودا - المشاريع' : 'Coda - Projects' ,
         },
   },
   {
@@ -62,7 +62,7 @@ const routes = [
     name: cookie.get('languages') == 'ar' ? 'تفاصيل المشروع' : 'Project Details' ,
     component: () => import(/* webpackChunkName: "App" */'../views/pages/Projects/Details.vue'),
     meta: {
-      title: cookie.get('languages') == 'ar' ? 'كودا - تفاصيل المشروع' : 'T-Coda - Project Details' ,
+      title: cookie.get('languages') == 'ar' ? 'كودا - تفاصيل المشروع' : 'Coda - Project Details' ,
         },
   },
   {
@@ -70,7 +70,7 @@ const routes = [
     name: cookie.get('languages') == 'ar' ? 'تواصل معنا' : 'Contact Us' ,
     component: () => import(/* webpackChunkName: "App" */'../views/pages/Contact.vue'),
     meta: {
-      title: cookie.get('languages') == 'ar' ? 'كودا - تواصل معنا' : 'T-Coda - Contact Us' ,
+      title: cookie.get('languages') == 'ar' ? 'كودا - تواصل معنا' : 'Coda - Contact Us' ,
         },
   },
     // ___________________ Auth  ___________________
@@ -79,7 +79,7 @@ const routes = [
       name: cookie.get('lang') == 'ar' ? 'تسجيل حساب' : ' SignUp',
       component: () => import(/* webpackChunkName: "App" */'../views/auth/SignUp.vue'),
       meta: {
-        title: cookie.get('lang') == 'ar' ? 'كودا - تسجيل حساب' : 'T-Coda - Login Or SignUp' ,
+        title: cookie.get('lang') == 'ar' ? 'كودا - تسجيل حساب' : 'Coda - Login Or SignUp' ,
         requiresHome:true
       }
     },
@@ -88,7 +88,7 @@ const routes = [
       name: cookie.get('lang') == 'ar' ? 'تسجيل الدخول' : 'Login ',
       component: () => import(/* webpackChunkName: "App" */'../views/auth/SignIn.vue'),
       meta: {
-        title: cookie.get('lang') == 'ar' ? 'كودا - تسجيل الدخول' : 'T-Coda - Login ' ,
+        title: cookie.get('lang') == 'ar' ? 'كودا - تسجيل الدخول' : 'Coda - Login ' ,
         requiresHome:true
       }
     },
@@ -105,7 +105,7 @@ const router = createRouter({
 })
 //  for meta title
 router.beforeResolve((to) => {
-  document.title = to.meta.title || "T-Coda"
+  document.title = to.meta.title || "Coda"
   if (Object.prototype.hasOwnProperty.call(to.meta, 'metaTags')) {
     for (let x = 0; x < to.meta.metaTags.length; x++) {
         let oldMeta = document.getElementsByTagName('meta');

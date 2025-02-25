@@ -189,6 +189,9 @@ header{
         z-index: 100;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        @media (max-width:768px) {
+            right: -200%;
+        }
         &.opne{
             right: 0;
 
@@ -220,16 +223,21 @@ header{
     &.sticky{
         position: fixed;
         top: 10px;
-        width: 90%;
+        width: calc(95% + 5px);
         left: 50%;
         transform: translateX(-50%);
-        background-color: #090e19;
+        // background-color: #090e19;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
         border-radius: 0.875rem;
         transition: 1s;
+        border: 1px solid #328af1;
+        box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #328af1, 0 0 0.8rem #328af1, 0 0 2.8rem #328af1, inset 0 0 1.3rem #328af1;
         @media (max-width:768px) {
-            width: 100%;
-            top: 0px;
-           
+            width: 90%;
+            &.open{
+                width: 100%;
+            }
         }
         &::before{
             display: none;

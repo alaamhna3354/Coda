@@ -165,11 +165,11 @@
     "footer": {
      "en":{
       "info": {
-        "brand_title": "T-Coda Tech Solutions",
+        "brand_title": "Coda Tech Solutions",
         "description": "Leading provider of web and app development solutions.",
         "address": "123 Tech Street, Innovation City, TX",
         "phone": "+1 234 567 890",
-        "email": "info@t-coda.com",
+        "email": "info@Coda.com",
         "social": ["fa-brands fa-facebook", "fa-brands fa-x-twitter", "fa-brands fa-whatsapp"]
       },
       "col_1": {
@@ -205,7 +205,7 @@
           {"title": "Whitepapers", "url": "/whitepapers"}
         ]
       },
-      "created_by": "T-Coda Technologies"
+      "created_by": "Coda Technologies"
      },
      "ar": {
       "info": {
@@ -213,7 +213,7 @@
         "description": "مزود رائد لحلول تطوير الويب والتطبيقات.",
         "address": "123 شارع التكنولوجيا، مدينة الابتكار، تكساس",
         "phone": "+1 234 567 890",
-        "email": "info@t-coda.com",
+        "email": "info@Coda.com",
         "social": ["fa-brands fa-facebook", "fa-brands fa-x-twitter", "fa-brands fa-whatsapp"]
       },
       "col_1": {
@@ -253,9 +253,9 @@
     }
     },
     "seo": {
-      "en": "T-Coda - Professional Web & App Development Services | Boost Your Business with Custom Tech Solutions",
-      "ar": "T-Coda - خدمات برمجة المواقع والتطبيقات | عزز أعمالك بحلول تقنية مخصصة",
-      "es": "T-Coda - Servicios Profesionales de Desarrollo Web y de Aplicaciones | Impulsa tu Negocio con Soluciones Tecnológicas",
-      "de": "T-Coda - Professionelle Web- & App-Entwicklungsdienstleistungen | Steigern Sie Ihr Geschäft mit maßgeschneiderten Technologielösungen"
+      "en": "Coda - Professional Web & App Development Services | Boost Your Business with Custom Tech Solutions",
+      "ar": "Coda - خدمات برمجة المواقع والتطبيقات | عزز أعمالك بحلول تقنية مخصصة",
+      "es": "Coda - Servicios Profesionales de Desarrollo Web y de Aplicaciones | Impulsa tu Negocio con Soluciones Tecnológicas",
+      "de": "Coda - Professionelle Web- & App-Entwicklungsdienstleistungen | Steigern Sie Ihr Geschäft mit maßgeschneiderten Technologielösungen"
     }
   }

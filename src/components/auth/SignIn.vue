@@ -28,7 +28,7 @@
 				<div class="signin">
 					<Form class="auth-form" @submit="HandelLogin" :validation-schema="schema">
 						<div class="position-relative">
-							<label for="chk" aria-hidden="true">{{ $t('Login Into T-Coda') }}</label>
+							<label for="chk" aria-hidden="true">{{ $t('Login Into Coda') }}</label>
 							<Field name="email" type="email" :placeholder="$t('Email')" />
 							<ErrorMessage name="email" class="error-message" />
 						</div>

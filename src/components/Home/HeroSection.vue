@@ -33,7 +33,7 @@
         <section class="hero-section">
             <div class="row ">
                 <div class="col-md-6 info">
-                    <h1 class="title neon-text"> {{hero_section.title || "T-Coda" }}</h1>
+                    <h1 class="title neon-text"> {{hero_section.title || "Coda" }}</h1>
                     <h3 class="description">
                         {{hero_section.description || "We provide web and app development solutions to help businesses thrive in the digital era." }}
                     </h3>

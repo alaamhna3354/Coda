@@ -42,10 +42,10 @@ export default {
   watch: {
     $route() {
       $("html, body").animate({ scrollTop: 0 }, 500);
-      this.$store.dispatch('SETLOADER', true);
-      setTimeout(() => {
-        this.$store.dispatch('SETLOADER', false);
-      }, 2000);
+      // this.$store.dispatch('SETLOADER', true);
+      // setTimeout(() => {
+      //   this.$store.dispatch('SETLOADER', false);
+      // }, 2000);
     }
   },
 }
@@ -55,12 +55,12 @@ export default {
 <style>
 .fade-page-enter-active,
 .fade-page-leave-active {
-  transition: 0.6s ease;
+  transition: 2s ease;
 }
 
 .fade-page-enter-from,
 .fade-page-leave-to {
-  transform: translateY(-100px);
+  opacity: 0;
 
 }
 </style>
