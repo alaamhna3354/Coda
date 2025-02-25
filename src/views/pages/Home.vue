@@ -1,10 +1,10 @@
 <template>
-  <div id="home">
-      <HeroSection :hero_section="getStaticContent.hero_section[this.$i18n.locale]" />
-      <About :about_section="getStaticContent.about_section[this.$i18n.locale]" />
-      <Services :service_section="getStaticContent.our_service_section[this.$i18n.locale]" />
-      <Projects :our_projects="getStaticContent.our_projects[this.$i18n.locale]" />
-      <Clients :our_client="getStaticContent.our_client" />
+  <div id="home" v-if="Data">
+      <HeroSection :hero_section="Data.hero_section[this.$i18n.locale]" />
+      <About :about_section="Data.about_section[this.$i18n.locale]" />
+      <Services :service_section="Data.our_service_section[this.$i18n.locale]" />
+      <Projects :our_projects="Data.our_projects[this.$i18n.locale]" />
+      <Clients :our_client="Data.our_client" />
       <Contact />
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
   name: 'Home Page',
   data() {
     return {
-      
+      Data:null
     }
   },
   components: {
@@ -31,5 +31,10 @@ export default {
   computed: {
     ...mapGetters(['getStaticContent']),
   },
+  mounted() {
+            this.$store.dispatch('GetData').then(() => {
+            this.Data = this.getStaticContent;
+      });
+    },
 }
 </script>

@@ -27,6 +27,9 @@
 
 html {
     scroll-behavior: smooth;
+    @media (max-width:768px) {
+       overflow-x: hidden;
+      }
 }
 body{
     // background-color: rgb(20 25 36/1);

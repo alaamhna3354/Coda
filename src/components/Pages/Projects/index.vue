@@ -10,7 +10,7 @@
             <div class="item" :class="[Filter == 'Xr 2' ? 'active' : '']" @click="Filtering('Xr 2')">Xr</div>
         </div>
         <div class="row">
-            <div class="col-md-4 mb-3" v-for="item in 8" :key="item">
+            <div class="col-12 col-sm-6 col-md-4 mb-3" v-for="item in 8" :key="item">
                 <Card />
             </div>
         </div>

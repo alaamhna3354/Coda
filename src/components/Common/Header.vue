@@ -1,6 +1,6 @@
 <template>
     <OverLay @hide="Hide" />
-    <header id="sticky" >
+    <header id="sticky" :class="[ShowMenu ? 'opne' : '']">
         <div class="row">
             <div class="col-md-1 col-3">
                 <div class="logo">

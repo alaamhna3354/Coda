@@ -12,12 +12,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 // *************** import Swiper ***************
 import '../node_modules/intl-tel-input/build/css/intlTelInput.css'
-import { Swiper, SwiperSlide } from "swiper/vue";
 import './assets/swiper/navigation.scss'
 import './assets/swiper/pagination.scss'
 import "swiper/swiper.scss";
-import SwiperCore, { Navigation, Pagination,Autoplay,Mousewheel } from "swiper";
-SwiperCore.use([Navigation, Pagination,Autoplay,Mousewheel]);
+import SwiperCore, { Navigation, Pagination,Autoplay } from "swiper";
+SwiperCore.use([Navigation, Pagination,Autoplay]);
 
 // *************** import i18n ***************
 // import Cookies 
@@ -40,12 +39,8 @@ const i18n = createI18n({
 // axios.defaults.baseURL = '';
 // axios.defaults.headers.common['language'] = cookie.get('lang')
 // axios.defaults.headers.common['Authorization'] = "Bearer ";
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 // *************** import notifications ***************
+import { Swiper, SwiperSlide } from 'swiper/vue';
 
-
-
-
-createApp(App).component("Swiper", Swiper).component("SwiperSlide", SwiperSlide)
-.component('font-awesome-icon',FontAwesomeIcon)
-.use(store).use(router).use(i18n).mount('#app')
+createApp(App).use(store).use(router).use(i18n).component("Swiper", Swiper)
+.component("SwiperSlide", SwiperSlide).mount('#app')
