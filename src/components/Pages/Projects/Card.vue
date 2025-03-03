@@ -5,16 +5,20 @@
         <span class="dot dot-3"></span>
         <span class="dot dot-4"></span>
             <div class="image">
-                <img src="@/assets/img/projects/projects-card.webp" alt="">
+                <img v-if="ProjectItem.details.seo.image" :src="ProjectItem.details.seo.image" :alt="ProjectItem.details.seo.alt">
+                <img v-else src="https://placehold.co/600x400" alt="placehold project card">
             </div>
             <div class="content-card">
-                <div class="slug">
-                    Ai
+              <div class="d-flex">
+                <div class="slug" v-for="item in ProjectItem.tags" :key="item">
+                    {{ item }}
                 </div>
-                <h3 class="title mb-5">
-                    The AI Revolution
+              </div>
+                <h3 class="title mb-3">
+                   {{ ProjectItem.title }}
                 </h3>
-                <router-link class="d-flex" to="/projects/details/1">
+                <div class="d-flex justify-content-between align-items-center">
+                    <router-link class="d-flex" :to="`/projects/details/${ProjectItem.slug}`">
                     <Btn 
                     :Text="$t('Discover More')"
                     :Icon="`fa-solid fa-eye`"
@@ -24,6 +28,10 @@
                     :backgroundColorHover="`#53b5ff`"
                 />
                 </router-link>
+                <a :href="ProjectItem.details.seo.url" target="_blank">
+                    <BtnElctric :Text="$t('Show Live')" />
+                </a>
+                </div>
             </div>
     </div>
 </template>
@@ -36,9 +44,10 @@ export default {
     },
     components: {
         Btn: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/Btn.vue')),
+        BtnElctric: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/BtnElctric.vue')),
     },
-    mounted() {
-   
-    }
+    props:{
+        ProjectItem:Object
+    },
 }
 </script>

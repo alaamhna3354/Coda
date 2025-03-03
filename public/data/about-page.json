@@ -1,0 +1,88 @@
+{
+  "about_page": {
+    "en": {
+      "title": "About Us",
+      "description": "Learn more about our mission, vision, and goals as we strive to deliver the best tech solutions.",
+      "sections": [
+       {
+          "title": "Our Vision",
+          "description": "To revolutionize businesses through innovative and scalable technology solutions.",
+          "list": [
+            {
+              "text":"Empower businesses with digital transformation.",
+              "img":"/img/about-us/our-vision.webp"
+            },{
+               "text":"Drive innovation through cutting-edge technology.",
+              "img":"/img/about-us/our-vision-2.webp"
+            },
+            {
+              "text":"Foster a culture of continuous improvement.",
+             "img":"/img/about-us/our-vision-3.webp"
+           }
+          ]
+       },
+       {
+          "title": "Our Goals",
+          "description": "We are committed to achieving excellence through these key objectives.",
+          "list": [
+            {
+              "text":"Enhance user experience with seamless digital solutions.",
+              "img":"/img/about-us/our-vision.webp"
+            },{
+               "text":"Expand our global reach and impact.",
+              "img":"/img/about-us/our-vision-2.webp"
+            },
+            {
+              "text":"Deliver high-quality and scalable products.",
+             "img":"/img/about-us/our-vision-3.webp"
+           }
+          ]
+       }
+        ]
+    },
+    "ar": {
+      "title": "من نحن",
+      "description": "تعرف على مهمتنا ورؤيتنا وأهدافنا بينما نسعى لتقديم أفضل الحلول التقنية.",
+      "sections": [
+       {
+          "title": "رؤيتنا",
+          "description": "إحداث ثورة في عالم الأعمال من خلال حلول تقنية مبتكرة وقابلة للتطوير.",
+          "list": [
+            {
+              "text":"تمكين الشركات من التحول الرقمي.",
+              "img":"/img/about-us/our-vision.webp"
+            },{
+               "text":"تحفيز الابتكار من خلال أحدث التقنيات.",
+              "img":"/img/about-us/our-vision-2.webp"
+            },
+            {
+              "text":"تعزيز ثقافة التحسين المستمر.",
+             "img":"/img/about-us/our-vision-3.webp"
+           }
+          ]
+       },{
+          "title": "أهدافنا",
+          "description": "نلتزم بتحقيق التميز من خلال هذه الأهداف الرئيسية.",
+          "list": [
+            {
+              "text":"تحسين تجربة المستخدم من خلال حلول رقمية سلسة.",
+              "img":"/img/about-us/our-vision.webp"
+            },{
+               "text":"توسيع نطاق تأثيرنا العالمي.",
+              "img":"/img/about-us/our-vision-2.webp"
+            },
+            {
+              "text":"تقديم منتجات عالية الجودة وقابلة للتطوير.",
+             "img":"/img/about-us/our-vision-3.webp"
+           }
+          ]
+       }
+       
+      ]
+    },
+    "seo": {
+      "en": "About Us - Learn More About Our Vision and Goals | Innovative Tech Solutions",
+      "ar":  "من نحن - تعرف على رؤيتنا وأهدافنا | حلول تقنية مبتكرة"
+    }
+  }
+}

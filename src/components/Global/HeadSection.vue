@@ -3,7 +3,7 @@
         <div class="content">
             <img src="@/assets/img/global/laravel-icon.svg" alt="">
             <h1 class="title">{{ Title }}</h1>
-            <p>There's a difference between knowing the path, and walking the path.</p>
+            <p>{{ Description }}</p>
         </div>
     </div>
 </template>
@@ -11,6 +11,7 @@
 export default {
     props: {
         Title:String,
+        Description:String,
     }
     
    

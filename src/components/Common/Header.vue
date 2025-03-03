@@ -153,7 +153,6 @@ export default {
             this.$store.dispatch('SETLang', val);
             this.$i18n.locale = val;
             window.location.reload();
-
         },
 
     },

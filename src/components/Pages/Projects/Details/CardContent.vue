@@ -1,139 +1,93 @@
 <template>
-    <div class="card-content">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-8 position-relative">
-                <img src="@/assets/img/home-page/about-us-cover.webp" alt="" class="cover">
-            </div>
-        </div>
+    <div class="card-content mt-5">
         <div class="content">
             <div class="row">
-            <div class="col-md-8 mb-3">
-                <h2 class="title">
-                    Your Trusted 
-                    <span class="neon-text">partners</span>
-                    For Business Success
-                </h2>
-                <p>
-                    Our team of experienced professionals combines creativity with technical expertise to deliver cutting-edge solutions that align with your business objectives. 
-                </p>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-bolt-lightning neon-text"></i>
-                        <span>Personalized Customer Engagement</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-bolt-lightning neon-text"></i>
-                        <span>Proactive Support Services</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-bolt-lightning neon-text"></i>
-                        <span>Continuous Improvement</span>
-                    </li>
-                </ul>
-                <Btn style="padding: 10px 20px;"
-            :Text="$t('Show More')"
-            :Textcolor="`#b4d2f5`"
-            :TextcolorHover="`#fff`"
-            :backgroundColor="`transparent`"
-            :backgroundColorHover="`#53b5ff`"
-            />
+                <div class="col-md-7 mb-3 info">
+                    <h1 v-if="Project?.details?.seo?.h1" class="title">
+                        <span class="neon-text">{{ Project.details.seo.h1 }}</span>
+                    </h1>
+                    <h2 class="title" v-else>
+                        <span class="neon-text">{{ Project?.details?.title || "......" }}</span>
+                    </h2>
+                    <p>
+                        {{ Project?.details?.description || "......" }}
+                    </p>
+                    <a target="_blank" :href="Project?.details?.seo.url">
+                        <Btn 
+                            style="padding: 10px 20px;"
+                            :Text="$t('Show Live')"
+                            :Textcolor="`#b4d2f5`"
+                            :TextcolorHover="`#fff`"
+                            :backgroundColor="`transparent`"
+                            :backgroundColorHover="`#53b5ff`"
+                        />
+                    </a>
+                    <br>
+                    <ul>
+                        <li v-for="item in Project?.details?.list" :key="item">
+                            <i class="fa-solid fa-bolt-lightning neon-text"></i>
+                            <span>{{ item }}</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 mb-3 img-content">
+                    <img 
+                        :src="Project?.details?.seo.image" 
+                        :alt="Project?.details?.seo?.alt || 'Default image description'" 
+                    />
+                </div>
             </div>
-        </div>
-        </div>
-    </div>
-    <div class="card-content">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-8 position-relative">
-                <img src="@/assets/img/home-page/about-us-cover.webp" alt="" class="cover">
-            </div>
-        </div>
-        <div class="content">
-            <div class="row">
-            <div class="col-md-8 mb-3">
-                <h2 class="title">
-                    Your Trusted 
-                    <span class="neon-text">partners</span>
-                    For Business Success
-                </h2>
-                <p>
-                    Our team of experienced professionals combines creativity with technical expertise to deliver cutting-edge solutions that align with your business objectives. 
-                </p>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-bolt-lightning neon-text"></i>
-                        <span>Personalized Customer Engagement</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-bolt-lightning neon-text"></i>
-                        <span>Proactive Support Services</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-bolt-lightning neon-text"></i>
-                        <span>Continuous Improvement</span>
-                    </li>
-                </ul>
-                <Btn style="padding: 10px 20px;"
-            :Text="$t('Show More')"
-            :Textcolor="`#b4d2f5`"
-            :TextcolorHover="`#fff`"
-            :backgroundColor="`transparent`"
-            :backgroundColorHover="`#53b5ff`"
-            />
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="card-content">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-8 position-relative">
-                <img src="@/assets/img/home-page/about-us-cover.webp" alt="" class="cover">
-            </div>
-        </div>
-        <div class="content">
-            <div class="row">
-            <div class="col-md-8 mb-3">
-                <h2 class="title">
-                    Your Trusted 
-                    <span class="neon-text">partners</span>
-                    For Business Success
-                </h2>
-                <p>
-                    Our team of experienced professionals combines creativity with technical expertise to deliver cutting-edge solutions that align with your business objectives. 
-                </p>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-bolt-lightning neon-text"></i>
-                        <span>Personalized Customer Engagement</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-bolt-lightning neon-text"></i>
-                        <span>Proactive Support Services</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-bolt-lightning neon-text"></i>
-                        <span>Continuous Improvement</span>
-                    </li>
-                </ul>
-                <Btn style="padding: 10px 20px;"
-            :Text="$t('Show More')"
-            :Textcolor="`#b4d2f5`"
-            :TextcolorHover="`#fff`"
-            :backgroundColor="`transparent`"
-            :backgroundColorHover="`#53b5ff`"
-            />
-            </div>
-        </div>
         </div>
     </div>
 </template>
+
 <script>
+import { defineAsyncComponent } from 'vue';
+
 export default {
-    data() {
-        return {
-        };
+    components: {
+        Btn: defineAsyncComponent(() => import('@/components/Global/Btn.vue')),
     },
+    props: {
+        Project:{
+            type:Object,
+            required: true
+        }
+    },
+    
+    watch: {
+        Project: {
+            handler(newVal) {
+                if (newVal?.details?.seo) {
+                    this.setSEO(newVal.details.seo);
+                }
+            },
+            immediate: true
+        }
+    },
+    methods: {
+        setSEO(seo) {
+            if (seo) {
+                document.title = seo.title || 'Default Title';
+                this.updateMeta('description', seo.description || 'Default description');
+                this.updateMeta('keywords', seo.keywords || 'default, keywords');
+                this.updateMeta('og:title', seo.ogTitle || seo.title || 'Default OG Title');
+                this.updateMeta('og:description', seo.ogDescription || seo.description || 'Default OG Description');
+                this.updateMeta('og:image', seo.ogImage || seo.image || '/default-image.png');
+                this.updateMeta('og:url', seo.ogUrl || seo.url || window.location.href);
+                this.updateMeta('og:type', seo.ogType || 'website');
+                this.updateMeta('og:locale', seo.ogLocale || 'en_US');
+            }
+        },
+        updateMeta(name, content) {
+            let metaTag = document.querySelector(`meta[name="${name}"]`);
+            if (!metaTag) {
+                metaTag = document.createElement('meta');
+                metaTag.setAttribute('name', name);
+                document.head.appendChild(metaTag);
+            }
+            metaTag.setAttribute('content', content);
+        }
+    }
 }
 </script>

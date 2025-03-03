@@ -1,5 +1,5 @@
 <template>
-    <a id="whatsapp" href="https://wa.me/+963933080648" class="whatsapp-btn" target="_blank">
+    <a id="whatsapp" :href="`https://wa.me/${PhoneNumber}`" class="whatsapp-btn" target="_blank">
         <!-- <i class="fa-brands fa-whatsapp"></i> -->
          <img src="@/assets/img/global/whatsapp-removebg-preview.png" alt="">
         <div class="glow"></div>
@@ -49,6 +49,16 @@
         </div>
 </a>
 </template>
+<script>
+export default {
+    props:{
+        PhoneNumber:{
+            type:String,
+            required: true
+        }
+    }
+}
+</script>
 <style lang="scss" scoped>
 .whatsapp-btn {
     position: fixed;

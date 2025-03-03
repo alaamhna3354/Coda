@@ -3,32 +3,25 @@
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-8 position-relative">
-                <img src="@/assets/img/home-page/about-us-cover.webp" alt="" class="cover">
+                <img src="@/assets/img/home-page/about-us-cover.webp" alt="" class="cover" :class="this.$i18n.locale">
             </div>
         </div>
         <div class="content">
             <div class="row">
             <div class="col-md-8 mb-3">
-                <h2 class="title">
-                    Your Trusted 
-                    <span class="neon-text">partners</span>
-                    For Business Success
+                <h1 v-if="ServicesDetails?.seo?.h1" class="title">
+                       {{ ServicesDetails?.seo?.h1 }}
+                    </h1>
+                <h2 class="title"  v-else>
+                  {{ ServicesDetails.title }}
                 </h2>
                 <p>
-                    Our team of experienced professionals combines creativity with technical expertise to deliver cutting-edge solutions that align with your business objectives. 
+                    {{ ServicesDetails.description }}
                 </p>
-                <ul>
-                    <li>
+                <ul v-if="ServicesDetails.features">
+                    <li v-for="item in ServicesDetails.features" :key="item">
                         <i class="fa-solid fa-bolt-lightning neon-text"></i>
-                        <span>Personalized Customer Engagement</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-bolt-lightning neon-text"></i>
-                        <span>Proactive Support Services</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-bolt-lightning neon-text"></i>
-                        <span>Continuous Improvement</span>
+                        <span>{{ item }}</span>
                     </li>
                 </ul>
                 <Btn style="padding: 10px 20px;"
@@ -49,5 +42,41 @@ export default {
         return {
         };
     },
+    props:{
+        ServicesDetails:{
+            type:Object,
+            required: true
+        }
+    },
+    watch: {
+        ServicesDetails: {
+            handler(newVal) {
+                if (newVal?.seo) {
+                    this.setSEO(newVal.seo);
+                }
+            },
+            immediate: true
+        }
+    },
+    methods: {
+        setSEO(seo) {
+            if (seo) {
+                document.title = seo.title || 'Default Title';
+                this.updateMeta('description', seo.description || 'Default description');
+                this.updateMeta('keywords', seo.keywords || 'default, keywords');
+                this.updateMeta('og:title', seo.ogTitle || seo.title || 'Default OG Title');
+                this.updateMeta('og:description', seo.ogDescription || seo.description || 'Default OG Description');
+            }
+        },
+        updateMeta(name, content) {
+            let metaTag = document.querySelector(`meta[name="${name}"]`);
+            if (!metaTag) {
+                metaTag = document.createElement('meta');
+                metaTag.setAttribute('name', name);
+                document.head.appendChild(metaTag);
+            }
+            metaTag.setAttribute('content', content);
+        }
+    }
 }
 </script>

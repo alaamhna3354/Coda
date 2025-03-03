@@ -81,8 +81,10 @@
             </div>
         </footer>
     </section>
+    <Whatsapp v-if="Data" :PhoneNumber="Data.info.phone" />
 </template>
 <script>
+import { defineAsyncComponent } from 'vue';
 import { mapGetters } from 'vuex';
 export default {
     data() {
@@ -90,9 +92,11 @@ export default {
         Data:null
     }
   },
+  components: {
+    Whatsapp: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/Whatsapp.vue')),
+  },
   computed: {
     ...mapGetters(['getStaticContent']),
-    
   },
     mounted() {
             this.$store.dispatch('GetData').then(() => {

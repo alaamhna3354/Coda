@@ -22,8 +22,8 @@ SwiperCore.use([Navigation, Pagination,Autoplay]);
 // import Cookies 
 import Cookies from "universal-cookie"
 const cookie = new Cookies();
-import ar from './assets/i18n/ar.json'
-import en from './assets/i18n/en.json'
+import ar from '../public/data/i18n/ar.json'
+import en from '../public/data/i18n/en.json'
 import { createI18n } from 'vue-i18n'
 const i18n = createI18n({
     messages: {
@@ -41,6 +41,7 @@ const i18n = createI18n({
 // axios.defaults.headers.common['Authorization'] = "Bearer ";
 // *************** import notifications ***************
 import { Swiper, SwiperSlide } from 'swiper/vue';
+
 
 createApp(App).use(store).use(router).use(i18n).component("Swiper", Swiper)
 .component("SwiperSlide", SwiperSlide).mount('#app')

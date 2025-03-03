@@ -2,14 +2,26 @@
   <div class="row justify-content-center pt-5 py-5">
     <div class='glowing-btn'>
     <span class='glowing-txt'><span class="span-404">404</span> <br>
-      <span class='faulty-letter'>This Page Not Found</span>
+      <span class='faulty-letter'>{{ $t('This Page Not Found') }}</span>
     </span>
     </div>
   </div>
 </template>
+<script>
+export default {
+    data() {
+    return {
+    }
+  },
+}
+</script>
 <style lang="scss" scoped>
 
-
+.dir-ar{
+  .glowing-btn{
+    letter-spacing: 2px !important;
+  }
+}
 .glowing-btn {
    margin-bottom: 150px;
    position: relative;

@@ -1,14 +1,14 @@
 <template>
     <section class="about-us box-animation">
       <div class="card-content">
-        <div class="section-card-title">
+        <div class="section-card-title" :class="this.$i18n.locale">
             <span >//</span>
             <span>{{ about_section.section_title }}</span>
         </div>
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-8 position-relative">
-                <img src="@/assets/img/home-page/about-us-cover.webp" alt="" class="cover">
+                <img  src="@/assets/img/home-page/about-us-cover.webp" alt="" class="cover" :class="this.$i18n.locale">
             </div>
         </div>
         <div class="content">
@@ -30,6 +30,7 @@
                         <span>{{item}}</span>
                     </li>
                 </ul>
+                <br>
                 <Btn style="padding: 10px 20px;"
             :Text="about_section.button_title"
             :Textcolor="`#b4d2f5`"

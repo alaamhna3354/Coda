@@ -1,0 +1,87 @@
+{
+  "home_page": {
+    "en":{
+      "title":"Coda - Home Page",
+      "description":"Coda - Professional Web & App Development Services | Boost Your Business with Custom Tech Solutions",
+      "keywords":""
+    },
+    "ar":{
+      "title":"كودا - الرئيسية",
+      "description":"Coda - خدمات برمجة المواقع والتطبيقات | عزز أعمالك بحلول تقنية مخصصة",
+      "keywords":""
+    }
+  },
+  "about_page": {
+    "en":{
+      "title":"Coda - About Us",
+      "description":"About Us - Learn More About Our Vision and Goals | Innovative Tech Solutions",
+      "keywords":""
+    },
+    "ar":{
+      "title":"كودا - من نحن",
+      "description":"من نحن - تعرف على رؤيتنا وأهدافنا | حلول تقنية مبتكرة",
+      "keywords":""
+    }
+ 
+  },
+  "services_page":{
+    "en":{
+      "title":"Coda - Services",
+      "description":"Our Services - Explore Our Web, App, and Cloud Solutions | Tech Solutions",
+      "keywords":""
+    },
+    "ar":{
+      "title":"كودا - الخدمات",
+      "description":"خدماتنا - استكشف حلول الويب والتطبيقات والسحابة | حلول تقنية",
+      "keywords":""
+    }
+  },
+  "projects_page":{
+    "en":{
+      "title":"Coda - Projects",
+      "description":"",
+      "keywords":""
+    },
+    "ar":{
+      "title":"كودا - المشاريع",
+      "description":"",
+      "keywords":""
+    }
+  },
+  "contact_page":{
+    "en":{
+      "title":"Coda - Contact Us",
+      "description":"",
+      "keywords":""
+    },
+    "ar":{
+      "title":"كودا - تواصل معنا",
+      "description":"",
+      "keywords":""
+    }
+  },
+  "signup_page":{
+    "en":{
+      "title":"Coda - SignUp",
+      "description":"",
+      "keywords":""
+    },
+    "ar":{
+      "title":"كودا - تسجيل حساب",
+      "description":"",
+      "keywords":""
+    }
+  },
+  "signin_page":{
+    "en":{
+      "title":"Coda - Login",
+      "description":"",
+      "keywords":""
+    },
+    "ar":{
+      "title":"كودا - تسجيل الدخول",
+      "description":"",
+      "keywords":""
+    }
+  }
+}

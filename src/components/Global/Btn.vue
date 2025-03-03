@@ -36,7 +36,7 @@ export default {
 @import '../../assets/styles/_varible.scss';
 .btn-main{
     border-radius: 14px;
-    height: 40px;
+    min-height: 40px;
     padding: 10px;
     transition: .5s;
     background-color:  var(--backgroundColor);

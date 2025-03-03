@@ -6,6 +6,7 @@
       border: 1px solid #212138;
       cursor: pointer;
       transition: $transition;
+      height: 100%;
       .dot{
         position: absolute;
         transition: $transition;
@@ -44,10 +45,17 @@
       &:hover + .hide{
         opacity: 1 ;
       }
+      .image{
+        max-height: 225px;
+        overflow: hidden;
+      }
       .content-card{
         margin-top: 20px;
         display: grid;
         align-content: space-between;
+        h3{
+          font-size: 20px;
+        }
         .slug{
           background-color: #071c42;
           color: #1fa5fd;
@@ -55,6 +63,9 @@
           width: fit-content;
           padding: 2px 5px;
           margin-bottom: 12px;
+          margin-inline-end: 5px;
+          font-size: 14px;
+          border-radius: 0.25rem;
         }
       }
       

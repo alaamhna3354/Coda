@@ -1,6 +1,6 @@
 <template>
     <section class="partner box-animation">
-        <h5 class="section-card-title mb-5" style="margin-inline-start: 50px;">
+        <h5 class="section-card-title mb-5" :class="this.$i18n.locale" style="margin-inline-start: 50px;">
             <span>//</span>
             <span> {{ $t('Our Clients') }}</span>
         </h5>

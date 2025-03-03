@@ -63,7 +63,7 @@
         cursor: pointer;
         position: relative;
         transition: box-shadow .25s;
-      
+        height: 100%;
         &::before {
           content: '';
           position: absolute;
@@ -119,6 +119,14 @@
           font-size: 14px;
           line-height: 1.7;
           color: var(--text-color);
+        }
+        &.ar{
+          h4 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 16px;
+          }
         }
       
         .shine {

@@ -1,0 +1,155 @@
+{
+  "services_page": {
+    "en": {
+      "title": "Our Services",
+      "description": "Explore our wide range of technology solutions tailored to meet your business needs.",
+      "cards": [
+        {
+          "title": "Web Development",
+          "slug": "web-development",
+          "description": "We build high-quality, scalable websites tailored to your business requirements.",
+          "features": [
+            "Personalized Customer Engagement",
+            "Proactive Support Services",
+            "Continuous Improvement"
+          ],
+          "seo": {
+            "h1":"Web Development",
+            "title": "",
+            "description": "",
+            "keywords": "",
+            "ogTitle": "",
+            "ogDescription": ""
+          }
+        },
+        {
+          "title": "App Development",
+          "slug": "app-development",
+          "description": "Custom mobile applications designed to enhance user experience and engagement.",
+          "features": [],
+          "seo": {
+            "h1":"App Development",
+            "title": "",
+            "description": "",
+            "keywords": "",
+            "ogTitle": "",
+            "ogDescription": ""
+          }
+        },
+        {
+          "title": "E-commerce Solutions",
+          "slug": "e-commerce-solutions",
+          "description": "Powerful and secure online store solutions to grow your business.",
+          "features": [],
+          "seo": {
+            "h1":"E-commerce Solutions",
+            "title": "",
+            "description": "",
+            "keywords": "",
+            "ogTitle": "",
+            "ogDescription": ""
+          }
+        },
+        {
+          "title": "Cloud Services",
+          "slug": "cloud-services",
+          "description": "Reliable cloud solutions to ensure scalability and efficiency.",
+          "features": [],
+          "seo": {
+            "h1":"Cloud Services",
+            "title": "",
+            "description": "",
+            "keywords": "",
+            "ogTitle": "",
+            "ogDescription": ""
+          }
+        }
+      ],
+      "openingHours": {
+        "description1": "Competitive Prices",
+        "description2": "24 hours a day",
+        "hours": {
+          "Monday - Friday": "9:00 - 20:00",
+          "Saturday": "10:00 - 16:00",
+          "Sunday": "9:30 - 18:00"
+        }
+      }
+    },
+    "ar": {
+      "title": "خدماتنا",
+      "description": "استكشف مجموعة واسعة من الحلول التقنية المصممة لتلبية احتياجات عملك.",
+      "cards": [
+        {
+          "title": "تطوير الويب",
+          "slug": "web-development",
+          "description": "نقوم ببناء مواقع ويب عالية الجودة وقابلة للتطوير وفقًا لاحتياجات عملك.",
+          "features": [
+            "مشاركة العملاء الشخصية",
+            "خدمات الدعم الاستباقية",
+            "تحسين مستمر"
+          ],
+          "seo": {
+            "h1": "تطوير الويب",
+            "title": "",
+            "description": "",
+            "keywords": "",
+            "ogTitle": "",
+            "ogDescription": ""
+          }
+          
+        },
+        {
+          "title": "تطوير التطبيقات",
+          "slug": "app-development",
+          "description": "تطبيقات مخصصة لتحسين تجربة المستخدم وزيادة التفاعل.",
+          "features": [],
+          "seo": {
+            "h1":"تطوير التطبيقات",
+            "title": "",
+            "description": "",
+            "keywords": "",
+            "ogTitle": "",
+            "ogDescription": ""
+          }
+        },
+        {
+          "title": "حلول التجارة الإلكترونية",
+          "slug": "e-commerce-solutions",
+          "description": "حلول متكاملة وآمنة للمتاجر الإلكترونية لمساعدتك على تنمية أعمالك.",
+          "features": [],
+          "seo": {
+            "h1":"حلول التجارة الإلكترونية",
+            "title": "",
+            "description": "",
+            "keywords": "",
+            "ogTitle": "",
+            "ogDescription": ""
+          }
+        },
+        {
+          "title": "خدمات السحابة",
+          "slug": "cloud-services",
+          "description": "حلول سحابية موثوقة لضمان القابلية للتوسع والكفاءة.",
+          "features": [],
+          "seo": {
+            "h1":"خدمات السحابة",
+            "title": "",
+            "description": "",
+            "keywords": "",
+            "ogTitle": "",
+            "ogDescription": ""
+          }
+        }
+      ],
+      "openingHours": {
+        "description1": "أسعار تنافسية",
+        "description2": "متاح 24 ساعة يومياً",
+        "hours": {
+          "الإثنين - الجمعة": "9:00 - 20:00",
+          "السبت": "10:00 - 16:00",
+          "الأحد": "9:30 - 18:00"
+        }
+      }
+    }
+  }
+}

@@ -2,27 +2,31 @@
     <div class="hero-body">
         <div class="hero-body-item">
             <div class="shine"></div>
-            <div class="background">
+            <div class="background" :class="this.$i18n.locale">
                 <div class="tiles">
-                    <div class="tile tile-1"></div>
-                    <div class="tile tile-2"></div>
+                    <div class="tile tile-1">   </div>
+                    <div class="tile tile-2"> </div>
                     <div class="tile tile-3"></div>
-                    <div class="tile tile-4"></div>
-                    <div class="tile tile-5"></div>
+                    <div class="tile tile-4">
+                        <img v-if="this.$i18n.locale == 'ar'" :src="images[1]" alt="hero-2">
+                    </div>
+                    <div class="tile tile-5">
+                        <img v-if="this.$i18n.locale == 'ar'" :src="images[1]" alt="hero-2">
+                    </div>
                     <div class="tile tile-6">
                         <img :src="images[0]" alt="hero-2">
                     </div>
                     <div class="tile tile-7">
-                        <img :src="images[1]" alt="hero-2">
+                        <img v-if="this.$i18n.locale == 'en'" :src="images[1]" alt="hero-2">
                     </div>
                     <div class="tile tile-8">
-                        <img :src="images[2]" alt="hero-3">
+                        <img v-if="this.$i18n.locale == 'en'" :src="images[2]" alt="hero-3">
                     </div>
                     <div class="tile tile-9">
                         <img :src="images[3]" alt="hero-4">
                     </div>
                     <div class="tile tile-10">
-                        <img :src="images[4]" alt="hero-5">
+                        <img v-if="this.$i18n.locale == 'en'" :src="images[4]" alt="hero-5">
                     </div>
                 </div>
                 <div class="line line-1"></div>

@@ -29,7 +29,7 @@
         </div>
        </div>
        <div class="row mt-5">
-        <div class="section-card-title">
+        <div class="section-card-title" :class="this.$i18n.locale">
             <span >//</span>
             <span>{{ $t('Offering Services') }}</span>
         </div>

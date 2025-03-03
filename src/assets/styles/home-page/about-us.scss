@@ -16,6 +16,11 @@
         span{
             font-size: 1.33333rem;
         }
+        &.ar{
+            span{
+                font-size: 1.5rem;
+            }   
+        }
     }
     .card-content{
         background-color: $cardBackground;

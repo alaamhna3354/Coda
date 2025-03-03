@@ -6,7 +6,6 @@
       <router-view />
     </Transition>
     <Footer  />
-    <Whatsapp />
   </main>
 </template>
 
@@ -26,7 +25,6 @@ export default {
     Loader: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/Loader.vue')),
     Header: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Common/Header.vue')),
     Footer: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Common/Footer.vue')),
-    Whatsapp: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/Whatsapp.vue')),
   },
   computed: {
     Lang() {
@@ -55,7 +53,7 @@ export default {
 <style>
 .fade-page-enter-active,
 .fade-page-leave-active {
-  transition: 2s ease;
+  transition: 1.5s ease;
 }
 
 .fade-page-enter-from,

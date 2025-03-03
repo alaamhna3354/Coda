@@ -1,0 +1,298 @@
+{
+    "hero_section": {
+      "en": {
+        "title": "Empowering Your Business with Cutting-Edge Technology",
+        "description": "We provide web and app development solutions to help businesses thrive in the digital era.",
+        "button_title": "Get Started",
+        "button_url": "/contact",
+        "link_type": "_self",
+        "images": [
+          "/img/home-page/hero-tile-1.webp",
+          "/img/home-page/hero-tile-2.jpg",
+          "/img/home-page/hero-tile-3.jpg",
+          "/img/home-page/hero-tile-4.webp",
+          "/img/home-page/hero-tile-5.webp"
+        ]
+      },
+      "ar": {
+        "title": "نمكن عملك بأحدث التقنيات",
+        "description": "نقدم حلول تطوير المواقع والتطبيقات لمساعدة الشركات على الازدهار في العصر الرقمي.",
+        "button_title": "ابدأ الآن",
+        "button_url": "/contact",
+        "link_type": "_self",
+        "images": [
+            "/img/home-page/hero-tile-1.webp",
+            "/img/home-page/hero-tile-2.jpg",
+            "/img/home-page/hero-tile-3.jpg",
+            "/img/home-page/hero-tile-4.webp",
+            "/img/home-page/hero-tile-5.webp"
+          ]
+      }
+    },
+    "about_section": {
+      "en": {
+        "section_title": "Who We Are",
+        "title": "Innovative Tech Solutions",
+        "description": "We specialize in creating modern web and mobile solutions tailored to business needs.",
+        "list": ["Web Development", "App Development", "Business Solutions"],
+        "button_title": "Learn More"
+      },
+      "ar": {
+        "section_title": "من نحن",
+        "title": "حلول تقنية مبتكرة",
+        "description": "نحن متخصصون في إنشاء حلول ويب وتطبيقات حديثة مخصصة لاحتياجات الأعمال.",
+        "list": ["تطوير الويب", "تطوير التطبيقات", "حلول الأعمال"],
+        "button_title": "اعرف المزيد"
+      }
+    },
+    "our_service_section": {
+      "en": {
+        "title": "Our Services",
+        "subtitle": "Comprehensive digital solutions",
+        "button_title": "Explore Services",
+        "services": [
+          {"title": "Web Development", "image": "/img/home-page/services-1.webp", "preview_image": "/img/home-page/services-1.svg"},
+          {"title": "App Development", "image": "/img/home-page/services-2.webp", "preview_image": "/img/home-page/services-2.svg"},
+          {"title": "E-commerce Solutions", "image": "/img/home-page/services-3.webp", "preview_image": "/img/home-page/services-3.svg"},
+          {"title": "Cloud Services", "image": "/img/home-page/services-4.webp", "preview_image": "/img/home-page/services-4.svg"}
+        ]
+      },
+      "ar": {
+        "title": "خدماتنا",
+        "subtitle": "حلول رقمية شاملة",
+        "button_title": "استكشاف الخدمات",
+        "services": [
+          {"title": "Web Development", "image": "/img/home-page/services-1.webp", "preview_image": "/img/home-page/services-1.svg"},
+          {"title": "App Development","image": "/img/home-page/services-2.webp", "preview_image": "/img/home-page/services-2.svg"},
+          {"title": "E-commerce Solutions", "image": "/img/home-page/services-3.webp", "preview_image": "/img/home-page/services-3.svg"},
+          {"title": "Cloud Services", "image": "/img/home-page/services-4.webp", "preview_image": "/img/home-page/services-4.svg"}
+        ]
+      }
+    },
+    "our_projects": {
+      "en": [
+        {
+          "title": "Msader",
+          "description": "A comprehensive platform providing digital solutions for various industries.",
+          "slug": "msader",
+          "image": "",
+          "alt": "Screenshot of Msader website - Digital solutions for businesses"
+        },
+        {
+          "title": "Academian",
+          "description": "An educational platform offering a variety of academic resources and courses.",
+          "slug": "academian",
+          "image": "/img/projects/details/Academian.png",
+          "alt": "Screenshot of Academian website - Online learning platform"
+         
+        },
+        {
+          "title": "ClickLuck",
+          "description": "A platform specializing in digital marketing and online business growth.",
+          "slug": "clickluck",
+         "image": "/img/projects/details/clickluck.png",
+              "alt": "Screenshot of ClickLuck website - Digital marketing platform"
+        },
+        {
+          "title": "Tilde Madrid",
+          "description": "A Spanish language academy offering courses to international students.",
+          "slug": "tildemadrid",
+          "image": "/img/projects/details/tilde-madrid.png",
+          "alt": "Screenshot of Tilde Madrid website - Spanish language academy"
+        },
+        {
+          "title": "Academia Árabe",
+          "description": "A platform dedicated to teaching the Arabic language to non-native speakers.",
+          "slug": "academiaarabe",
+          "image": "/img/projects/details/academiaarabe.png",
+              "alt": "Screenshot of Academia Árabe website - Arabic language academy"
+        },
+        {
+          "title": "Formación Anapat",
+          "description": "A professional training institute offering specialized courses.",
+          "slug": "formacionanapat",
+          "image": "/img/projects/details/formacionanapat.png",
+          "alt": "Screenshot of Formación Anapat website - PEMP training courses"
+        },
+        {
+          "title": "Damaskus Restaurant Ravensburg",
+          "description": "An authentic Syrian restaurant offering delicious cuisine in Ravensburg.",
+          "slug": "damaskus-restaurant",
+          "image": "/img/projects/details/damaskusrestaurant.png",
+              "alt": "Screenshot of Damaskus Restaurant website - Authentic Syrian cuisine"
+        },
+        {
+          "title": "Sema Store",
+          "description": "An online store offering a variety of products.",
+          "slug": "semastore",
+          "image": "/img/projects/details/sema-store.png",
+          "alt": "SemaStore - Game Cards and Digital Services"
+        },
+        {
+          "title": "P3ly",
+          "description": "An online platform providing innovative digital solutions.",
+          "slug": "p3ly",
+          "image": "/img/projects/details/p3ly-com-kuwait.png",
+          "alt": "Screenshot of P3ly website - Kuwait's online marketplace"
+        }
+      ],
+      "ar": [
+        {
+          "title": "مصادر",
+          "description": "منصة شاملة توفر حلولًا رقمية لمختلف الصناعات.",
+          "slug": "msader",
+          "image": "",
+          "alt": "لقطة من موقع Msader - حلول رقمية للأعمال"
+        },
+        {
+          "title": "أكاديميان",
+          "description": "منصة تعليمية تقدم مجموعة متنوعة من الموارد الأكاديمية والدورات.",
+          "slug": "academian",
+        "image": "/img/projects/details/Academian.png",
+              "alt": "لقطة من موقع Academian - منصة التعليم عبر الإنترنت"
+        },
+        {
+          "title": "كليك لك",
+          "description": "منصة متخصصة في التسويق الرقمي ونمو الأعمال عبر الإنترنت.",
+          "slug": "clickluck",
+          "image": "/img/projects/details/clickluck.png",
+              "alt": "لقطة من موقع ClickLuck - منصة التسويق الرقمي"
+        },
+        {
+          "title": "تيلدي مدريد",
+          "description": "أكاديمية لغة إسبانية تقدم دورات للطلاب الدوليين.",
+          "slug": "tildemadrid",
+          "image":  "/img/projects/details/tilde-madrid.png",
+              "alt": "تيلدي مدريد - أكاديمية تعليم اللغة الإسبانية"
+        },
+        {
+          "title": "أكاديمية عربية",
+          "description": "منصة مخصصة لتعليم اللغة العربية للناطقين بغيرها.",
+          "slug": "academiaarabe",
+         "image": "/img/projects/details/academiaarabe.png",
+              "alt": "أكاديمية عربية - تعليم اللغة العربية"
+        },
+        {
+          "title": "فورماسيون أنابات",
+          "description": "معهد تدريب مهني يقدم دورات متخصصة.",
+          "slug": "formacionanapat",
+          "image": "/img/projects/details/formacionanapat.png",
+              "alt": "فورماسيون أنابات - تدريب على منصات العمل المرتفعة"
+        },
+        {
+          "title": "مطعم دمشق رافنسبورغ",
+          "description": "مطعم سوري أصيل يقدم أشهى المأكولات في رافنسبورغ.",
+          "slug": "damaskus-restaurant",
+          "image": "/img/projects/details/damaskusrestaurant.png",
+          "alt": "مطعم دمشق رافنسبورغ - تجربة الطعام السوري"
+        },
+        {
+          "title": "متجر سيما",
+          "description": "متجر إلكتروني يوفر مجموعة متنوعة من المنتجات.",
+          "slug": "semastore",
+          "image": "/img/projects/details/sema-store.png",
+          "alt": "متجر سيما - خدمات رقمية وبطاقات الألعاب"
+        },
+        {
+          "title": "P3ly",
+          "description": "منصة إلكترونية تقدم حلولًا رقمية مبتكرة.",
+          "slug": "p3ly",
+          "image": "/img/projects/details/p3ly-com-kuwait.png",
+              "alt": "لقطة شاشة لموقع بيعلي - سوق الكويت عبر الإنترنت"
+        }
+      ]
+    },
+    "our_client": [
+      "/img/home-page/about-us.svg", "/img/home-page/about-us.svg", "/img/home-page/about-us.svg", "/img/home-page/about-us.svg", "/img/home-page/about-us.svg", "/img/home-page/about-us.svg"
+    ],
+    "footer": {
+     "en":{
+      "info": {
+        "brand_title": "Coda Tech Solutions",
+        "description": "Leading provider of web and app development solutions.",
+        "address": "123 Tech Street, Innovation City, TX",
+        "phone": "+963933080648",
+        "email": "info@Coda.com",
+        "social": ["fa-brands fa-facebook", "fa-brands fa-x-twitter", "fa-brands fa-whatsapp"]
+      },
+      "col_1": {
+        "coltitle": "Company",
+        "list": [
+          {"title": "About Us", "url": "/about"},
+          {"title": "Services", "url": "/services"},
+          {"title": "Projects", "url": "/projects"},
+          {"title": "Careers", "url": "/careers"},
+          {"title": "Contact", "url": "/contact"},
+          {"title": "Blog", "url": "/blog"}
+        ]
+      },
+      "col_2": {
+        "coltitle": "Support",
+        "list": [
+          {"title": "FAQs", "url": "/faqs"},
+          {"title": "Help Center", "url": "/help"},
+          {"title": "Terms & Conditions", "url": "/terms"},
+          {"title": "Privacy Policy", "url": "/privacy"},
+          {"title": "Security", "url": "/security"},
+          {"title": "Sitemap", "url": "/sitemap"}
+        ]
+      },
+      "col_3": {
+        "coltitle": "Resources",
+        "list": [
+          {"title": "Documentation", "url": "/docs"},
+          {"title": "API Reference", "url": "/api"},
+          {"title": "Case Studies", "url": "/case-studies"},
+          {"title": "Community", "url": "/community"},
+          {"title": "Webinars", "url": "/webinars"},
+          {"title": "Whitepapers", "url": "/whitepapers"}
+        ]
+      },
+      "created_by": "Coda Technologies"
+     },
+     "ar": {
+      "info": {
+        "brand_title": "تي-كودا لحلول التكنولوجيا",
+        "description": "مزود رائد لحلول تطوير الويب والتطبيقات.",
+        "address": "123 شارع التكنولوجيا، مدينة الابتكار، تكساس",
+        "phone": "+963933080648",
+        "email": "info@Coda.com",
+        "social": ["fa-brands fa-facebook", "fa-brands fa-x-twitter", "fa-brands fa-whatsapp"]
+      },
+      "col_1": {
+        "coltitle": "الشركة",
+        "list": [
+          {"title": "من نحن", "url": "/about"},
+          {"title": "الخدمات", "url": "/services"},
+          {"title": "المشاريع", "url": "/projects"},
+          {"title": "الوظائف", "url": "/careers"},
+          {"title": "اتصل بنا", "url": "/contact"},
+          {"title": "المدونة", "url": "/blog"}
+        ]
+      },
+      "col_2": {
+        "coltitle": "الدعم",
+        "list": [
+          {"title": "الأسئلة الشائعة", "url": "/faqs"},
+          {"title": "مركز المساعدة", "url": "/help"},
+          {"title": "الشروط والأحكام", "url": "/terms"},
+          {"title": "سياسة الخصوصية", "url": "/privacy"},
+          {"title": "الأمان", "url": "/security"},
+          {"title": "خريطة الموقع", "url": "/sitemap"}
+        ]
+      },
+      "col_3": {
+        "coltitle": "الموارد",
+        "list": [
+          {"title": "التوثيق", "url": "/docs"},
+          {"title": "مرجع API", "url": "/api"},
+          {"title": "دراسات الحالة", "url": "/case-studies"},
+          {"title": "المجتمع", "url": "/community"},
+          {"title": "الندوات", "url": "/webinars"},
+          {"title": "الأوراق البيضاء", "url": "/whitepapers"}
+        ]
+      },
+      "created_by": "تي-كودا للتكنولوجيا"
+    }
+    }
+  }

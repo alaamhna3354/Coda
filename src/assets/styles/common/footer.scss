@@ -27,7 +27,7 @@ footer{
         z-index: 2;
         .title{
             text-transform: uppercase;
-            letter-spacing: 5px;
+            letter-spacing: 2px;
             font-weight: 800;
             &::first-letter{
                 color: #fff;
@@ -107,4 +107,21 @@ footer{
         }
     }
    
+}
+.dir-ar{
+    footer{
+        ul {
+            li{
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+        .bottom-footer {
+            p{
+                font-size: 14px;
+            }
+        }
+    }   
+    
 }

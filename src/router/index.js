@@ -4,23 +4,22 @@ const cookie = new Cookies();
 if(!cookie.get('languages')){
   cookie.set('languages','ar');
 }
-import meta_Description from './Description.json'
-import meta_keywords from './Keywords.json'
+import meta_seo from '../../public/data/seo-static-pages.json'
 const routes = [
   {
     path: '/',
     name: cookie.get('languages') == 'ar' ? 'الصفحة الرئيسية' : 'Home Page' ,
     component: () => import(/* webpackChunkName: "App" */'../views/pages/Home.vue'),
     meta: {
-      title: cookie.get('languages') == 'ar' ? 'كودا - الرئيسية' : 'Coda - Home Page' ,
+      title: meta_seo.home_page[cookie.get('languages')].title,
       metaTags: [
         {
           name: 'description',
-          content: meta_Description.Home_Description
+          content: meta_seo.home_page[cookie.get('languages')].description
         },
         {
          name: 'keywords',
-         content: meta_keywords.Home_Keywords
+         content: meta_seo.home_page[cookie.get('languages')].keywords
         }
       ]
         },
@@ -30,7 +29,17 @@ const routes = [
     name: cookie.get('languages') == 'ar' ? 'من نحن' : 'About Us' ,
     component: () => import(/* webpackChunkName: "App" */'../views/pages/About.vue'),
     meta: {
-      title: cookie.get('languages') == 'ar' ? 'كودا - من نحن' : 'Coda - About Us' ,
+      title: meta_seo.about_page[cookie.get('languages')].title,
+      metaTags: [
+        {
+          name: 'description',
+          content: meta_seo.about_page[cookie.get('languages')].description
+        },
+        {
+         name: 'keywords',
+         content: meta_seo.about_page[cookie.get('languages')].keywords
+        }
+      ]
         },
   },
   {
@@ -38,39 +47,63 @@ const routes = [
     name: cookie.get('languages') == 'ar' ? 'الخدمات' : 'Services' ,
     component: () => import(/* webpackChunkName: "App" */'../views/pages/Services/index.vue'),
     meta: {
-      title: cookie.get('languages') == 'ar' ? 'كودا - الخدمات' : 'Coda - Services' ,
+      title: meta_seo.services_page[cookie.get('languages')].title,
+      metaTags: [
+        {
+          name: 'description',
+          content: meta_seo.services_page[cookie.get('languages')].description
+        },
+        {
+         name: 'keywords',
+         content: meta_seo.services_page[cookie.get('languages')].keywords
+        }
+      ]
         },
   },
   {
-    path: '/services/details/:id',
+    path: '/services/details/:slug',
     name: cookie.get('languages') == 'ar' ? 'تفاصيل الخدمة' : 'Services Details' ,
     component: () => import(/* webpackChunkName: "App" */'../views/pages/Services/Details.vue'),
-    meta: {
-      title: cookie.get('languages') == 'ar' ? 'كودا - تفاصيل الخدمة' : 'Coda - Services Details' ,
-        },
   },
   {
     path: '/projects',
     name: cookie.get('languages') == 'ar' ? 'المشاريع' : 'Projects' ,
     component: () => import(/* webpackChunkName: "App" */'../views/pages/Projects/index.vue'),
     meta: {
-      title: cookie.get('languages') == 'ar' ? 'كودا - المشاريع' : 'Coda - Projects' ,
+      title: meta_seo.projects_page[cookie.get('languages')].title,
+      metaTags: [
+        {
+          name: 'description',
+          content: meta_seo.projects_page[cookie.get('languages')].description
+        },
+        {
+         name: 'keywords',
+         content: meta_seo.projects_page[cookie.get('languages')].keywords
+        }
+      ]
         },
   },
   {
-    path: '/projects/details/:id',
+    path: '/projects/details/:slug',
     name: cookie.get('languages') == 'ar' ? 'تفاصيل المشروع' : 'Project Details' ,
     component: () => import(/* webpackChunkName: "App" */'../views/pages/Projects/Details.vue'),
-    meta: {
-      title: cookie.get('languages') == 'ar' ? 'كودا - تفاصيل المشروع' : 'Coda - Project Details' ,
-        },
   },
   {
     path: '/contact',
     name: cookie.get('languages') == 'ar' ? 'تواصل معنا' : 'Contact Us' ,
     component: () => import(/* webpackChunkName: "App" */'../views/pages/Contact.vue'),
     meta: {
-      title: cookie.get('languages') == 'ar' ? 'كودا - تواصل معنا' : 'Coda - Contact Us' ,
+      title: meta_seo.contact_page[cookie.get('languages')].title,
+      metaTags: [
+        {
+          name: 'description',
+          content: meta_seo.contact_page[cookie.get('languages')].description
+        },
+        {
+         name: 'keywords',
+         content: meta_seo.contact_page[cookie.get('languages')].keywords
+        }
+      ]
         },
   },
     // ___________________ Auth  ___________________
@@ -79,18 +112,36 @@ const routes = [
       name: cookie.get('lang') == 'ar' ? 'تسجيل حساب' : ' SignUp',
       component: () => import(/* webpackChunkName: "App" */'../views/auth/SignUp.vue'),
       meta: {
-        title: cookie.get('lang') == 'ar' ? 'كودا - تسجيل حساب' : 'Coda - Login Or SignUp' ,
-        requiresHome:true
-      }
+        title: meta_seo.signup_page[cookie.get('languages')].title,
+        metaTags: [
+          {
+            name: 'description',
+            content: meta_seo.signup_page[cookie.get('languages')].description
+          },
+          {
+           name: 'keywords',
+           content: meta_seo.signup_page[cookie.get('languages')].keywords
+          }
+        ]
+          },
     },
     {
       path: '/sign-in',
       name: cookie.get('lang') == 'ar' ? 'تسجيل الدخول' : 'Login ',
       component: () => import(/* webpackChunkName: "App" */'../views/auth/SignIn.vue'),
       meta: {
-        title: cookie.get('lang') == 'ar' ? 'كودا - تسجيل الدخول' : 'Coda - Login ' ,
-        requiresHome:true
-      }
+        title: meta_seo.signin_page[cookie.get('languages')].title,
+        metaTags: [
+          {
+            name: 'description',
+            content: meta_seo.signin_page[cookie.get('languages')].description
+          },
+          {
+           name: 'keywords',
+           content: meta_seo.signin_page[cookie.get('languages')].keywords
+          }
+        ]
+          },
     },
   { 
     path: '/:pathMatch(.*)*',

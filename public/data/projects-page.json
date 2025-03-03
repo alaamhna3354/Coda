@@ -1,0 +1,602 @@
+{
+  "projects": {
+    "en": [
+      {
+        "title": "Msader",
+        "description": "A comprehensive platform providing digital solutions for various industries.",
+        "slug": "msader",
+        "tags": [
+          "Business",
+          "Digital Solutions"
+        ],
+        "details": {
+          "title": "Msader",
+          "description": "Msader provides innovative digital solutions for businesses, enhancing efficiency and growth across multiple industries.",
+          "list": [
+            "Consulting: Tailored business solutions to meet industry needs.",
+            "Technology: Advanced software and digital tools to drive business success.",
+            "Support: Comprehensive services to ensure seamless integration and operation."
+          ],
+          "seo": {
+            "h1": "Msader - Leading Digital Solutions for Businesses",
+            "title": "Msader - Digital Solutions for Business Growth",
+            "description": "Msader offers advanced digital solutions to optimize business operations and drive growth.",
+            "keywords": "Msader, digital solutions, business consulting, technology, support services",
+            "image": "",
+            "alt": "Screenshot of Msader website - Digital solutions for businesses",
+            "url": "https://msader.net/",
+            "ogTitle": "Msader - Boost Your Business with Digital Solutions",
+            "ogDescription": "Innovative digital solutions tailored to your business needs.",
+            "ogImage": "",
+            "ogUrl": "https://msader.net/",
+            "ogType": "website",
+            "ogLocale": "en_US"
+          }
+        }
+      },
+      {
+        "title": "Academian",
+        "description": "An educational platform offering a variety of academic resources and courses.",
+        "slug": "academian",
+        "tags": [
+          "Education",
+          "Learning"
+        ],
+        "details": {
+          "title": "Academian",
+          "description": "Academian offers a wide range of academic resources, online courses, and educational tools to support learners at all levels.",
+          "list": [
+            "Online Courses: Wide range of subjects and skill development.",
+            "Academic Resources: Study materials, guides, and tools.",
+            "Community Support: Forums, Q&A sessions, and more."
+          ],
+          "seo": {
+            "h1": "Academian - Your Gateway to Knowledge",
+            "title": "Academian - Online Learning Platform",
+            "description": "Academian offers academic resources, online courses, and educational tools to enhance learning and skill development.",
+            "keywords": "Academian, online learning, academic resources, education platform, courses",
+            "image": "/img/projects/details/Academian.png",
+            "alt": "Screenshot of Academian website - Online learning platform",
+            "url": "https://academian.co.uk/",
+            "ogTitle": "Academian - Enhance Your Learning Experience",
+            "ogDescription": "Discover a variety of online courses and academic resources with Academian.",
+            "ogImage": "/img/projects/details/Academian.png",
+            "ogUrl": "https://academian.co.uk/",
+            "ogType": "website",
+            "ogLocale": "en_GB"
+          }
+        }
+      },
+      {
+        "title": "ClickLuck",
+        "description": "A platform specializing in digital marketing and online business growth.",
+        "slug": "clickluck",
+        "tags": [
+          "Marketing",
+          "Business"
+        ],
+        "details": {
+          "title": "ClickLuck",
+          "description": "ClickLuck offers innovative digital marketing solutions to help businesses grow and thrive online.",
+          "list": [
+            "SEO Services: Improve website visibility and search rankings.",
+            "Social Media Marketing: Engage audiences and boost brand awareness.",
+            "Content Strategy: Develop effective content to drive engagement."
+          ],
+          "seo": {
+            "h1": "ClickLuck - Elevate Your Digital Marketing",
+            "title": "ClickLuck - Digital Marketing and Business Growth",
+            "description": "ClickLuck specializes in digital marketing solutions, including SEO, social media, and content strategy for business success.",
+            "keywords": "ClickLuck, digital marketing, SEO, social media, business growth",
+            "image": "/img/projects/details/clickluck.png",
+            "alt": "Screenshot of ClickLuck website - Digital marketing platform",
+            "url": "https://clickluck.co.uk/",
+            "ogTitle": "ClickLuck - Boost Your Online Presence",
+            "ogDescription": "Drive your business growth with ClickLuck's digital marketing expertise.",
+            "ogImage": "/img/projects/details/clickluck.png",
+            "ogUrl": "https://clickluck.co.uk/",
+            "ogType": "website",
+            "ogLocale": "en_GB"
+          }
+        }
+      },
+      {
+        "title": "Tilde Madrid",
+        "description": "A Spanish language academy offering courses to international students.",
+        "slug": "tildemadrid",
+        "tags": [
+          "Education",
+          "Learning"
+        ],
+        "details": {
+          "title": "Tilde Madrid",
+          "description": "Tilde Madrid offers immersive Spanish language courses for international students, focusing on effective communication and cultural integration.",
+          "list": [
+            "Intensive Courses: Fast-paced language learning.",
+            "Cultural Immersion: Activities to experience Spanish culture.",
+            "Small Groups: Personalized attention and tailored lessons."
+          ],
+          "seo": {
+            "h1": "Tilde Madrid - Learn Spanish in Spain",
+            "title": "Tilde Madrid - Spanish Language Courses",
+            "description": "Tilde Madrid provides immersive Spanish courses for international students, combining language learning with cultural experiences.",
+            "keywords": "Tilde Madrid, Spanish courses, learn Spanish, language academy, Madrid",
+            "image": "/img/projects/details/tilde-madrid.png",
+            "alt": "Screenshot of Tilde Madrid website - Spanish language academy",
+            "url": "https://www.tildemadrid.com/",
+            "ogTitle": "Tilde Madrid - Master Spanish with Us",
+            "ogDescription": "Join Tilde Madrid for comprehensive Spanish courses and cultural immersion.",
+            "ogImage":  "/img/projects/details/tilde-madrid.png",
+            "ogUrl": "https://www.tildemadrid.com/",
+            "ogType": "website",
+            "ogLocale": "es_ES"
+          }
+        }
+      },
+      {
+        "title": "Academia Árabe",
+        "description": "A platform dedicated to teaching the Arabic language to non-native speakers.",
+        "slug": "academiaarabe",
+        "tags": [
+          "Education",
+          "Learning"
+        ],
+        "details": {
+          "title": "Academia Arabe",
+          "description": "Academia Árabe offers Arabic language courses in Madrid, as well as online and hybrid formats. They provide flexible learning options, including:",
+          "list": [
+            "Presenciales: On-site classes with highly qualified teachers, emphasizing direct interaction and innovative methodologies.",
+            "Online: Live classes with expert instructors using innovative methods for effective learning.",
+            "Híbridos: Combines on-site and live online classes, or access to recordings for self-paced study."
+          ],
+          "seo": {
+            "h1": "Academia Árabe - Learn Arabic in Madrid",
+            "title": "Academia Árabe - Arabic Language Courses",
+            "description": "Academia Árabe offers flexible Arabic language courses in Madrid, combining on-site, online, and hybrid learning options.",
+            "keywords": "Academia Árabe, Arabic courses, learn Arabic, language school, Madrid",
+            "image": "/img/projects/details/academiaarabe.png",
+            "alt": "Screenshot of Academia Árabe website - Arabic language academy",
+            "url": "https://academiaarabe.es/",
+            "ogTitle": "Academia Árabe - Master Arabic with Us",
+            "ogDescription": "Join Academia Árabe for effective Arabic courses in Madrid with flexible learning formats.",
+            "ogImage": "/img/projects/details/academiaarabe.png",
+            "ogUrl": "https://academiaarabe.es/",
+            "ogType": "website",
+            "ogLocale": "es_ES"
+          }
+        }
+      },
+      {
+        "title": "Formación Anapat",
+        "description": "A professional training institute offering specialized courses.",
+        "slug": "formacionanapat",
+        "tags": [
+          "Education",
+          "Training"
+        ],
+        "details": {
+          "title": "Formacion Anapat",
+          "description": "ANAPAT provides certified training for operators of mobile elevating work platforms (PEMP), adhering to UNE 58923 and ISO 18878 standards. Their training includes:",
+          "list": [
+            "Teórica: Four-hour theoretical sessions covering the contents of UNE 58923.",
+            "Práctica: Practical training on various platform models, performing maneuvers as per UNE 58923.",
+            "They categorize PEMP into four types: 1a (Static vertical), 1b (Static boom), 3a (Mobile vertical), and 3b (Mobile boom)."
+          ],
+          "seo": {
+            "h1": "Formación Anapat - PEMP Training",
+            "title": "Formación Anapat - Certified PEMP Courses",
+            "description": "Formación Anapat offers certified training for mobile elevating work platform operators, following UNE 58923 and ISO 18878 standards.",
+            "keywords": "Formación Anapat, PEMP training, mobile elevating work platforms, certified courses, UNE 58923, ISO 18878",
+            "image": "/img/projects/details/formacionanapat.png",
+            "alt": "Screenshot of Formación Anapat website - PEMP training courses",
+            "url": "https://www.formacionanapat.es/",
+            "ogTitle": "Formación Anapat - Become a Certified PEMP Operator",
+            "ogDescription": "Enroll in Formación Anapat for top-quality PEMP training in compliance with international standards.",
+            "ogImage": "/img/projects/details/formacionanapat.png",
+            "ogUrl": "https://www.formacionanapat.es/",
+            "ogType": "website",
+            "ogLocale": "es_ES"
+          }
+        }
+      },
+      {
+        "title": "Damaskus Restaurant Ravensburg",
+        "description": "An authentic Syrian restaurant offering delicious cuisine in Ravensburg.",
+        "slug": "damaskus-restaurant",
+        "tags": [
+          "Restaurant"
+        ],
+        "details": {
+          "title": "Damaskus Restaurant Ravensburg",
+          "description": "Experience authentic Syrian flavors at Damaskus Restaurant in Ravensburg, offering a wide variety of traditional dishes and a warm, welcoming atmosphere.",
+          "list": [
+            "Delicious Syrian dishes made with fresh ingredients.",
+            "Cozy ambiance with authentic decor.",
+            "Friendly staff providing excellent service."
+          ],
+          "seo": {
+            "h1": "Damaskus Restaurant Ravensburg - Authentic Syrian Cuisine",
+            "title": "Damaskus Restaurant Ravensburg - Experience Traditional Syrian Flavors",
+            "description": "Enjoy a delightful culinary journey with traditional Syrian dishes at Damaskus Restaurant in Ravensburg.",
+            "keywords": "Damaskus Restaurant, Syrian cuisine, Ravensburg, traditional dishes, authentic flavors",
+            "image": "/img/projects/details/damaskusrestaurant.png",
+            "alt": "Screenshot of Damaskus Restaurant website - Authentic Syrian cuisine",
+            "url": "https://damaskus-restaurant-ravensburg.com/",
+            "ogTitle": "Damaskus Restaurant Ravensburg - A Taste of Syria",
+            "ogDescription": "Visit Damaskus Restaurant in Ravensburg for a truly authentic Syrian dining experience.",
+            "ogImage": "/img/projects/details/damaskusrestaurant.png",
+            "ogUrl": "https://damaskus-restaurant-ravensburg.com/",
+            "ogType": "restaurant",
+            "ogLocale": "de_DE"
+          }
+        }
+      },
+      {
+        "title": "Sema Store",
+        "description": "An online store offering a variety of products.",
+        "slug": "semastore",
+        "tags": [
+          "E-commerce",
+          "Retail"
+        ],
+        "details": {
+          "title": "SemaStore",
+          "description": "SemaStore is an online platform specializing in the sale of game cards and digital products. They offer a wide range of products, including:",
+          "list": [
+            "Game Cards: BIGO LIVE, Google Play, PUBG, Free Fire, and more.",
+            "Digital Services: Support for platforms like Instagram, TikTok, and Facebook.",
+            "The store positions itself as the leading site for online game card charging."
+          ],
+          "seo": {
+            "h1": "SemaStore - Game Cards and Digital Services",
+            "title": "SemaStore - Buy Game Cards and Digital Products Online",
+            "description": "SemaStore offers game cards and digital services, making it the go-to platform for online game card charging.",
+            "keywords": "SemaStore, game cards, digital products, online shopping, e-commerce",
+            "image": "/img/projects/details/sema-store.png",
+            "alt": "SemaStore - Game Cards and Digital Services",
+            "url": "https://semastore.net/",
+            "ogTitle": "SemaStore - Buy Game Cards and Digital Services Online",
+            "ogDescription": "Buy game cards and digital services easily at SemaStore, the leading platform for online purchases.",
+            "ogImage": "/img/projects/details/sema-store.png",
+            "ogUrl": "https://semastore.net/",
+            "ogType": "website",
+            "ogLocale": "en_US"
+          }
+        }
+      },
+      {
+        "title": "P3ly",
+        "description": "An online platform providing innovative digital solutions.",
+        "slug": "p3ly",
+        "tags": [
+          "Technology",
+          "Digital Solutions"
+        ],
+        "details": {
+          "title": "P3ly",
+          "description": "P3ly is an online marketplace based in Kuwait, offering a diverse range of products across various categories, such as:",
+          "list": [
+            "Fashion: Women's, men's, and children's clothing and accessories.",
+            "Beauty and Personal Care: Personal care items, hair care products, perfumes, and skincare.",
+            "Electronics & Electrical: Appliances, computers, video games, and cameras.",
+            "Home & Kitchen: Appliances, furniture, decor, and kitchen utensils."
+          ],
+          "seo": {
+            "h1": "P3ly - The Best Online Marketplace in Kuwait",
+            "title": "P3ly - Online Shopping in Kuwait",
+            "description": "P3ly is an online marketplace offering a wide range of products across different categories such as fashion, beauty, electronics, and more.",
+            "keywords": "P3ly, Kuwait marketplace, fashion, beauty, electronics, online shopping",
+            "image": "/img/projects/details/p3ly-com-kuwait.png",
+            "alt": "Screenshot of P3ly website - Kuwait's online marketplace",
+            "url": "https://p3ly.com/en/",
+            "ogTitle": "P3ly - Shop Now in Kuwait",
+            "ogDescription": "The best online shopping platform in Kuwait with amazing deals on all products.",
+            "ogImage": "/img/projects/details/p3ly-com-kuwait.png",
+            "ogUrl": "https://p3ly.com/en/",
+            "ogType": "website",
+            "ogLocale": "en_US"
+          }
+        }
+      }
+    ],
+    "ar": [
+      {
+        "title": "مصادر",
+        "description": "منصة شاملة توفر حلولًا رقمية لمختلف الصناعات.",
+        "slug": "msader",
+        "tags": [
+          "الأعمال",
+          "الحلول الرقمية"
+        ],
+        "details": {
+          "title": "Msader",
+          "description": "تقدم Msader حلول رقمية مبتكرة للأعمال، مما يعزز الكفاءة والنمو عبر الصناعات المختلفة.",
+          "list": [
+            "الاستشارات: حلول أعمال مخصصة لتلبية احتياجات الصناعة.",
+            "التكنولوجيا: أدوات وبرمجيات متقدمة لدفع نجاح الأعمال.",
+            "الدعم: خدمات شاملة لضمان التكامل والتشغيل السلس."
+          ],
+          "seo": {
+            "h1": "Msader - الحلول الرقمية الرائدة للأعمال",
+            "title": "Msader - حلول رقمية لنمو الأعمال",
+            "description": "تقدم Msader حلول رقمية متقدمة لتحسين عمليات الأعمال ودفع النمو.",
+            "keywords": "Msader, حلول رقمية, استشارات الأعمال, التكنولوجيا, خدمات الدعم",
+            "image": "",
+            "alt": "لقطة من موقع Msader - حلول رقمية للأعمال",
+            "url": "https://msader.net/",
+            "ogTitle": "Msader - عزز عملك مع الحلول الرقمية",
+            "ogDescription": "حلول رقمية مبتكرة مخصصة لاحتياجات عملك.",
+            "ogImage": "",
+            "ogUrl": "https://msader.net/",
+            "ogType": "website",
+            "ogLocale": "ar_SA"
+          }
+        }
+      },
+      {
+        "title": "أكاديميان",
+        "description": "منصة تعليمية تقدم مجموعة متنوعة من الموارد الأكاديمية والدورات.",
+        "slug": "academian",
+        "tags": [
+          "التعليم",
+          "التعلم الإلكتروني"
+        ],
+        "details": {
+          "title": "Academian",
+          "description": "Academian تقدم مجموعة واسعة من الموارد الأكاديمية والدورات عبر الإنترنت وأدوات تعليمية لدعم المتعلمين على جميع المستويات.",
+          "list": [
+            "الدورات عبر الإنترنت: مجموعة واسعة من المواضيع وتطوير المهارات.",
+            "الموارد الأكاديمية: مواد دراسية، أدلة وأدوات.",
+            "دعم المجتمع: منتديات، جلسات أسئلة وأجوبة، وأكثر."
+          ],
+          "seo": {
+            "h1": "Academian - بوابتك للمعرفة",
+            "title": "Academian - منصة التعلم عبر الإنترنت",
+            "description": "Academian تقدم موارد أكاديمية ودورات عبر الإنترنت وأدوات تعليمية لتعزيز التعلم وتطوير المهارات.",
+            "keywords": "Academian, التعليم عبر الإنترنت, الموارد الأكاديمية, منصة التعليم, الدورات",
+            "image": "/img/projects/details/Academian.png",
+            "alt": "لقطة من موقع Academian - منصة التعليم عبر الإنترنت",
+            "url": "https://academian.co.uk/",
+            "ogTitle": "Academian - عزز تجربتك التعليمية",
+            "ogDescription": "اكتشف مجموعة متنوعة من الدورات عبر الإنترنت والموارد الأكاديمية مع Academian.",
+            "ogImage": "/img/projects/details/Academian.png",
+            "ogUrl": "https://academian.co.uk/",
+            "ogType": "website",
+            "ogLocale": "ar_SA"
+          }
+        }
+      },
+      {
+        "title": "كليك لك",
+        "description": "منصة متخصصة في التسويق الرقمي ونمو الأعمال عبر الإنترنت.",
+        "slug": "clickluck",
+        "tags": [
+          "التسويق",
+          "الأعمال"
+        ],
+        "details": {
+          "title": "ClickLuck",
+          "description": "ClickLuck تقدم حلول تسويق رقمي مبتكرة لمساعدة الشركات على النمو والازدهار عبر الإنترنت.",
+          "list": [
+            "خدمات SEO: تحسين ظهور المواقع على محركات البحث.",
+            "التسويق عبر وسائل التواصل الاجتماعي: التفاعل مع الجمهور وتعزيز الوعي بالعلامة التجارية.",
+            "استراتيجية المحتوى: تطوير محتوى فعال لدفع التفاعل."
+          ],
+          "seo": {
+            "h1": "ClickLuck - رفع مستوى تسويقك الرقمي",
+            "title": "ClickLuck - التسويق الرقمي ونمو الأعمال",
+            "description": "ClickLuck متخصص في حلول التسويق الرقمي، بما في ذلك SEO، التسويق عبر وسائل التواصل الاجتماعي، واستراتيجية المحتوى لتحقيق نجاح الأعمال.",
+            "keywords": "ClickLuck, التسويق الرقمي, SEO, وسائل التواصل الاجتماعي, نمو الأعمال",
+            "image": "/img/projects/details/clickluck.png",
+            "alt": "لقطة من موقع ClickLuck - منصة التسويق الرقمي",
+            "url": "https://clickluck.co.uk/",
+            "ogTitle": "ClickLuck - تعزيز وجودك الرقمي",
+            "ogDescription": "دفع نمو أعمالك مع خبرة ClickLuck في التسويق الرقمي.",
+            "ogImage":"/img/projects/details/clickluck.png",
+            "ogUrl": "https://clickluck.co.uk/",
+            "ogType": "website",
+            "ogLocale": "ar_SA"
+          }
+        }
+      },
+      {
+        "title": "تيلدي مدريد",
+        "description": "أكاديمية لغة إسبانية تقدم دورات للطلاب الدوليين.",
+        "slug": "tildemadrid",
+        "tags": [
+          "التعليم",
+          "تعلم اللغات"
+        ],
+        "details": {
+          "title": "تيلدي مدريد",
+          "description": "تيلدي مدريد تقدم دورات لغة إسبانية للطلاب الدوليين عبر مجموعة من التنسيقات المتنوعة.",
+          "list": [
+            "دورات لغة إسبانية للمبتدئين والمتقدمين.",
+            "دورات عبر الإنترنت ودورات هجينة.",
+            "دورات متخصصة في تعلم الإسبانية للأعمال."
+          ],
+          "seo": {
+            "h1": "تيلدي مدريد - أكاديمية لغة إسبانية متخصصة",
+            "title": "تيلدي مدريد - تعلم الإسبانية في مدريد",
+            "description": "تيلدي مدريد تقدم دورات لتعلم اللغة الإسبانية عبر الإنترنت أو في الموقع للطلاب الدوليين.",
+            "keywords": "تيلدي مدريد, تعلم اللغة الإسبانية, دورات الإسبانية",
+            "image":  "/img/projects/details/tilde-madrid.png",
+            "alt": "تيلدي مدريد - أكاديمية تعليم اللغة الإسبانية",
+            "url": "https://www.tildemadrid.com/",
+            "ogTitle": "تيلدي مدريد - تعلم الإسبانية بطريقة مرنة",
+            "ogDescription": "دورات تعليمية متخصصة لتعلم اللغة الإسبانية في مدريد.",
+            "ogImage": "/img/projects/tildemadrid.png",
+            "ogUrl":  "/img/projects/details/tilde-madrid.png",
+            "ogType": "website",
+            "ogLocale": "ar_SA"
+          }
+        }
+      },
+      {
+        "title": "أكاديمية عربية",
+        "description": "منصة مخصصة لتعليم اللغة العربية للناطقين بغيرها.",
+        "slug": "academiaarabe",
+        "tags": [
+          "التعليم",
+          "تعلم اللغات"
+        ],
+        "details": {
+          "title": "أكاديمية عربية",
+          "description": "تقدم أكاديمية عربية دورات تعليمية في اللغة العربية في مدريد وكذلك عبر الإنترنت. تشمل الدورات وجهًا لوجه، عبر الإنترنت، وهجينة.",
+          "list": [
+            "وجهًا لوجه: فصول في الموقع مع معلمين مؤهلين.",
+            "على الإنترنت: فصول حية عبر الإنترنت مع مدربين متخصصين.",
+            "هجينة: دمج الدورات الحية عبر الإنترنت مع الوصول إلى التسجيلات الدراسية."
+          ],
+          "seo": {
+            "h1": "أكاديمية عربية - تعلم اللغة العربية في مدريد",
+            "title": "أكاديمية عربية - منصة لتعليم اللغة العربية",
+            "description": "أكاديمية عربية توفر دورات لتعلم اللغة العربية للناطقين بغيرها عبر الإنترنت أو في الموقع.",
+            "keywords": "أكاديمية عربية, تعلم اللغة العربية, دورات عبر الإنترنت",
+            "image": "/img/projects/details/academiaarabe.png",
+            "alt": "أكاديمية عربية - تعليم اللغة العربية",
+            "url": "https://academiaarabe.es/",
+            "ogTitle": "أكاديمية عربية - تعلم اللغة العربية مع أكاديمية متخصصة",
+            "ogDescription": "دورات لتعليم اللغة العربية عبر الإنترنت أو في الموقع مع أكاديمية عربية.",
+            "ogImage": "/img/projects/details/academiaarabe.png",
+            "ogUrl": "https://academiaarabe.es/",
+            "ogType": "website",
+            "ogLocale": "ar_SA"
+          }
+        }
+      },
+      {
+        "title": "فورماسيون أنابات",
+        "description": "معهد تدريب مهني يقدم دورات متخصصة.",
+        "slug": "formacionanapat",
+        "tags": [
+          "التعليم",
+          "التدريب"
+        ],
+        "details": {
+          "title": "فورماسيون أنابات",
+          "description": "فورماسيون أنابات يقدم تدريبًا معتمدًا في منصات العمل المرتفعة للهاتف المحمول (PEMP)، مع الالتزام بالمعايير العالمية.",
+          "list": [
+            "نظرية: جلسات نظرية تركز على المعايير UNE 58923.",
+            "تدريب عملي: العمل مع منصات مختلفة، والتدريب على المناورات.",
+            "تصنيف منصات PEMP إلى أنواع مختلفة مثل 1A و 3B."
+          ],
+          "seo": {
+            "h1": "فورماسيون أنابات - تدريب معتمد في منصات العمل المرتفعة",
+            "title": "فورماسيون أنابات - تدريب مهني معتمد في PEMP",
+            "description": "فورماسيون أنابات يقدم دورات تدريبية معتمدة لتشغيل منصات العمل المرتفعة مع الالتزام بالمعايير الأوروبية.",
+            "keywords": "فورماسيون أنابات, تدريب مهني, منصات العمل المرتفعة, PEMP",
+            "image": "/img/projects/details/formacionanapat.png",
+            "alt": "فورماسيون أنابات - تدريب على منصات العمل المرتفعة",
+            "url": "https://www.formacionanapat.es/",
+            "ogTitle": "فورماسيون أنابات - تدريب معتمد في العمل المرتفع",
+            "ogDescription": "دورات تدريبية معتمدة لتشغيل منصات العمل المرتفعة وفقًا للمعايير الأوروبية.",
+            "ogImage": "/img/projects/details/formacionanapat.png",
+            "ogUrl": "https://www.formacionanapat.es/",
+            "ogType": "website",
+            "ogLocale": "ar_SA"
+          }
+        }
+      },
+      {
+        "title": "مطعم دمشق رافنسبورغ",
+        "description": "مطعم سوري أصيل يقدم أشهى المأكولات في رافنسبورغ.",
+        "slug": "damaskus-restaurant",
+        "tags": [
+          "المطاعم"
+        ],
+        "details": {
+          "title": "مطعم دمشق رافنسبورغ",
+          "description": "مطعم دمشق يقدم المأكولات السورية التقليدية في قلب رافنسبورغ.",
+          "list": [
+            "المأكولات التقليدية السورية.",
+            "خدمة ممتازة وأجواء دافئة.",
+            "مكان مثالي لتجربة الأطعمة الشرق أوسطية."
+          ],
+          "seo": {
+            "h1": "مطعم دمشق رافنسبورغ - أفضل المأكولات السورية",
+            "title": "مطعم دمشق رافنسبورغ - المأكولات السورية التقليدية",
+            "description": "مطعم دمشق يقدم تجربة الطعام السوري الأصيل في رافنسبورغ.",
+            "keywords": "مطعم دمشق, المأكولات السورية, مطاعم في رافنسبورغ",
+            "image": "/img/projects/details/damaskusrestaurant.png",
+            "alt": "مطعم دمشق رافنسبورغ - تجربة الطعام السوري",
+            "url": "https://damaskus-restaurant-ravensburg.com/",
+            "ogTitle": "مطعم دمشق رافنسبورغ - طعام سوري أصيل",
+            "ogDescription": "تجربة المأكولات السورية الأصلية في مطعم دمشق في رافنسبورغ.",
+            "ogImage": "/img/projects/details/damaskusrestaurant.png",
+            "ogUrl": "https://damaskus-restaurant-ravensburg.com/",
+            "ogType": "website",
+            "ogLocale": "ar_SA"
+          }
+        }
+      },
+      {
+        "title": "متجر سيما",
+        "description": "متجر إلكتروني يوفر مجموعة متنوعة من المنتجات.",
+        "slug": "semastore",
+        "tags": [
+          "التجارة الإلكترونية",
+          "البيع بالتجزئة"
+        ],
+        "details": {
+          "title": "متجر سيما",
+          "description": "متجر سيما هو متجر إلكتروني متخصص في بيع بطاقات الألعاب والمنتجات الرقمية.",
+          "list": [
+            "بطاقات الألعاب: Bigo Live و Google Play و PubG و Free Fire.",
+            "الخدمات الرقمية: دعم منصات مثل انستغرام و تيكتوك و فيس بوك.",
+            "خدمة شحن بطاقات الألعاب عبر الإنترنت."
+          ],
+          "seo": {
+            "h1": "متجر سيما - بطاقات الألعاب والمنتجات الرقمية",
+            "title": "متجر سيما - شحن بطاقات الألعاب عبر الإنترنت",
+            "description": "متجر سيما يقدم بطاقات الألعاب والخدمات الرقمية من خلال منصة إلكترونية مريحة.",
+            "keywords": "متجر سيما, بطاقات الألعاب, خدمات رقمية, التجارة الإلكترونية",
+            "image": "/img/projects/details/sema-store.png",
+            "alt": "متجر سيما - خدمات رقمية وبطاقات الألعاب",
+            "url": "https://semastore.net/",
+            "ogTitle": "متجر سيما - بطاقات الألعاب والخدمات الرقمية",
+            "ogDescription": "اشحن بطاقات الألعاب بسهولة مع متجر سيما.",
+            "ogImage": "/img/projects/details/sema-store.png",
+            "ogUrl": "https://semastore.net/",
+            "ogType": "website",
+            "ogLocale": "ar_SA"
+          }
+        }
+      },
+      {
+        "title": "P3ly",
+        "description": "منصة إلكترونية تقدم حلولًا رقمية مبتكرة.",
+        "slug": "p3ly",
+        "tags": [
+          "التكنولوجيا",
+          "الحلول الرقمية"
+        ],
+        "details": {
+          "title": "بيعلي",
+          "description": "بيعلي هو سوق عبر الإنترنت مقره في الكويت ، ويقدم مجموعة متنوعة من المنتجات عبر فئات مختلفة ، مثل:",
+          "list": [
+            "الموضة: ملابس النساء والرجال والأطفال وملحقات الأطفال.",
+            "الجمال والعناية الشخصية: عناصر العناية الشخصية ومنتجات العناية بالشعر والعطور والعناية بالبشرة.",
+            "الإلكترونيات والكهربائية: الأجهزة وأجهزة الكمبيوتر وألعاب الفيديو والكاميرات.",
+            "المنزل والمطبخ: أجهزة وأثاث والديكور وأدوات المطبخ."
+          ],
+          "seo": {
+            "h1": "بيعلي - أفضل سوق عبر الإنترنت في الكويت",
+            "title": "بيعلي - سوق عبر الإنترنت في الكويت",
+            "description": "بيعلي هو سوق عبر الإنترنت يقدم مجموعة واسعة من المنتجات في فئات مختلفة مثل الموضة والجمال والإلكترونيات والمزيد.",
+            "keywords": "بيعلي, سوق الكويت, الموضة, الجمال, الإلكترونيات, التسوق عبر الإنترنت",
+            "image": "/img/projects/details/p3ly-com-kuwait.png",
+            "alt": "لقطة شاشة لموقع بيعلي - سوق الكويت عبر الإنترنت",
+            "url": "https://p3ly.com/en/",
+            "ogTitle": "بيعلي - تسوق الآن في الكويت",
+            "ogDescription": "أفضل منصة للتسوق عبر الإنترنت في الكويت مع عروض مذهلة على جميع المنتجات.",
+            "ogImage": "/img/projects/details/p3ly-com-kuwait.png",
+            "ogUrl": "https://p3ly.com/en/",
+            "ogType": "website",
+            "ogLocale": "ar_AR"
+          }
+        }
+      }
+    ]
+  }
+}

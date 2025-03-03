@@ -1,7 +1,7 @@
 <template>
     <div class="contact-us">
         <img class="clock-cover" src="@/assets/img/home-page/clock.jpg" alt="">
-        <div class="section-card-title">
+        <div class="section-card-title" :class="this.$i18n.locale">
             <span >//</span>
             <span> {{ $t('Contact Us') }}</span>
         </div>
@@ -17,8 +17,15 @@
                         <div class="col-md-6 mb-3">
                             <div class="field">
                                 <i class="fa-solid fa-user"></i>
-                                <Field class="contact-field" name="name" type="text" :placeholder="$t('FullName')" />
-                                <ErrorMessage name="name" class="error-message" />
+                                <Field class="contact-field" name="FirstName" type="text" :placeholder="$t('FirstName')" />
+                                <ErrorMessage name="FirstName" class="error-message" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="field">
+                                <i class="fa-solid fa-user"></i>
+                                <Field class="contact-field" name="LastName" type="text" :placeholder="$t('LastName')" />
+                                <ErrorMessage name="LastName" class="error-message" />
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
@@ -34,13 +41,13 @@
                                 <p id="output" class="error-message mt-1 mb-1"></p>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-3">
+                        <!-- <div class="col-md-6 mb-3">
                             <div class="field">
                                 <i class="fa-solid fa-link"></i>
                                 <Field class="contact-field" name="website" type="text" :placeholder="$t('website')" />
                                 <ErrorMessage name="website" class="error-message" />
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-12 mb-3">
                             <div class="field">
                                 <i class="fa-solid fa-message" style="top: 28px;"></i>
@@ -79,9 +86,10 @@ export default {
             validateOnInput: true,
         });
         const schema = yup.object({
-            name: yup.string().required(cookie.get('languages') == 'ar' ? 'حقل الاسم مطلوب' : 'name required').min(6),
+            FirstName: yup.string().required(cookie.get('languages') == 'ar' ? 'حقل الاسم الاول مطلوب' : 'First Name required').min(6),
+            LastName: yup.string().required(cookie.get('languages') == 'ar' ? 'حقل الاسم الاخير مطلوب' : 'Last Name required').min(6),
             email: yup.string().required(cookie.get('languages') == 'ar' ? 'حقل البريد الالكتروني مطلوب' : 'email required').email(),
-            website: yup.object().required(cookie.get('languages') == 'ar' ? 'رابط موقعك مطلوب' : 'website url required'),
+            // website: yup.object().required(cookie.get('languages') == 'ar' ? 'رابط موقعك مطلوب' : 'website url required'),
             messege: yup.string().required(cookie.get('languages') == 'ar' ? 'يجب كتابة الرسالة' : 'messege required').min(10),
         });
         return {
