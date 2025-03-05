@@ -1,6 +1,6 @@
 <template>
     <div id="projects">
-      <img class="body-cover absolute" src="@/assets/img/global/grid.svg" alt="">
+      <img class="body-cover absolute" src="@/assets/img/global/grid.svg" alt="grid">
         <HeadSection :Title="$t('Our Projects')" />
         <Index v-if="ProjectsList" :ProjectsList="ProjectsList.projects[this.$i18n.locale]" />
      </div>

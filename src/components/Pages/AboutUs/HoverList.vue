@@ -12,7 +12,7 @@
             <li v-for="item in Content.list" :key="item">
                 <span class="dot"></span> 
                 <span>{{ item.text }}</span>
-                <img :class="this.$i18n.locale" :src="item.img" alt="">
+                <img :class="this.$i18n.locale" :src="item.img" alt="about list">
             </li>
         </ul>
      </div>

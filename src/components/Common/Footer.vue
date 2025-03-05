@@ -1,7 +1,7 @@
 <template>
     <section class="box-animation">
         <footer v-if="Data">
-            <img class="cover" src="@/assets/img/home-page/lary-footer.webp" alt="">
+            <img class="cover" src="@/assets/img/home-page/lary-footer.webp" alt="footer logo">
             <div class="row content">
                 <div class="col-md-5 mb-3">
                     <h3 class="title">

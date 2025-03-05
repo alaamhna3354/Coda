@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="col-md-5">
-                <img class="img-sidebar" src="@/assets/img/projects/services-sidebar.webp" alt="">
+                <img class="img-sidebar" src="@/assets/img/projects/services-sidebar.webp" alt="services sidebar">
             </div>
             <ul class="service-list mt-3">
                 <li v-show="item.slug != $route.params.slug" v-for="item in Services.cards" :key="item"><router-link :to="`/services/details/${item.slug}`">
@@ -33,7 +33,7 @@
                 <h6>{{ Services.openingHours.description2 }}</h6>
             </div>
             <div class="col-md-5">
-                <img class="img-sidebar" src="@/assets/img/projects/services-sidebar-2.webp" alt="">
+                <img class="img-sidebar" src="@/assets/img/projects/services-sidebar-2.webp" alt="services sidebar">
             </div>
             <ul class="time-list mt-3">
                 <li v-for="(time, day) in Services.openingHours.hours" :key="day">

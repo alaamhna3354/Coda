@@ -1,7 +1,7 @@
 <template>
   <div id="about" class="position-relative">
-    <!-- <img class="body-cover" src="@/assets/img/about-us/background-spline.webp" alt=""> -->
-    <img class="body-cover absolute" src="@/assets/img/global/grid.svg" alt="">
+    <!-- <img class="body-cover" src="@/assets/img/about-us/background-spline.webp" alt="spline"> -->
+    <img class="body-cover absolute" src="@/assets/img/global/grid.svg" alt="grid">
     <HeadSection v-if="AboutData" 
     :Title="AboutData.about_page[this.$i18n.locale].title"
     :Description="AboutData.about_page[this.$i18n.locale].description" />

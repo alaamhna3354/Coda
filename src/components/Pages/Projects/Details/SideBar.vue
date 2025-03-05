@@ -2,7 +2,7 @@
     <div class="project-sidebar">
         <div class="row">
             <div class="col-md-7">
-                <img class="img-sidebar" src="@/assets/img/projects/project-sidebar.webp" alt="">
+                <img class="img-sidebar" src="@/assets/img/projects/project-sidebar.webp" alt="project sidebar">
             </div>
             <div class="col-md-5">
                 <h3>Level One</h3>

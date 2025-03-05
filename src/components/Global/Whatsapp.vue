@@ -1,7 +1,7 @@
 <template>
     <a id="whatsapp" :href="`https://wa.me/${PhoneNumber}`" class="whatsapp-btn" target="_blank">
         <!-- <i class="fa-brands fa-whatsapp"></i> -->
-         <img src="@/assets/img/global/whatsapp-removebg-preview.png" alt="">
+         <img src="@/assets/img/global/whatsapp-removebg-preview.png" alt="whatsapp">
         <div class="glow"></div>
         <div class="particles">
 

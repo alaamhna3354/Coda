@@ -39,8 +39,8 @@
 
                 </swiper-slide>
                 <div class="navigation">
-                    <img class="myPrev" src="@/assets/img/global/left-arrow.png" alt="">
-                    <img class="myNext" src="@/assets/img/global/right-arrow.png" alt="">
+                    <img class="myPrev" src="@/assets/img/global/left-arrow.png" alt="Prev">
+                    <img class="myNext" src="@/assets/img/global/right-arrow.png" alt="Next">
                 </div>
             </swiper>
         </div>

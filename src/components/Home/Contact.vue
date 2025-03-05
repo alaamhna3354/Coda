@@ -1,6 +1,6 @@
 <template>
     <div class="contact-us">
-        <img class="clock-cover" src="@/assets/img/home-page/clock.jpg" alt="">
+        <img class="clock-cover" src="@/assets/img/home-page/clock.jpg" alt="clock">
         <div class="section-card-title" :class="this.$i18n.locale">
             <span >//</span>
             <span> {{ $t('Contact Us') }}</span>

@@ -1,6 +1,6 @@
 <template>
     <div id="services-details">
-      <img class="body-cover absolute" src="@/assets/img/global/grid.svg" alt="">
+      <img class="body-cover absolute" src="@/assets/img/global/grid.svg" alt="grid">
         <HeadSection :Title="$t('Services Details')" />
         <Details v-if="Services" :Services="Services"  />
      </div>
