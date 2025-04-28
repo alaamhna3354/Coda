@@ -28,8 +28,15 @@ header{
         z-index: -1;
     }
     .logo{
-        width: 40px;
-        height: 37px;
+      position: relative;
+      img{
+        position: absolute;
+        top: -16px;
+        @media (max-width:768px) {
+            width: 80px;
+            left: -10px;
+        }
+      }
         
     }
     .links{
@@ -224,19 +231,24 @@ header{
     }
     &.sticky{
         position: fixed;
-        top: 10px;
-        width: calc(95% + 5px);
+        // width: calc(95% + 5px);
+        // top: 10px;
+        // border-radius: 0.875rem;
+        width: 100%;
+        top: 0;
+        border-radius: 0;
         left: 50%;
         transform: translateX(-50%);
         // background-color: #090e19;
-        background: rgba(255, 255, 255, 0.1);
+        // background: rgba(255, 255, 255, 0.1);
+        background: rgba(39, 39, 39, 0.1);
         backdrop-filter: blur(10px);
-        border-radius: 0.875rem;
         transition: 1s;
         border: 1px solid #328af1;
-        box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #328af1, 0 0 0.8rem #328af1, 0 0 2.8rem #328af1, inset 0 0 1.3rem #328af1;
+        // box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #328af1, 0 0 0.8rem #328af1, 0 0 2.8rem #328af1, inset 0 0 1.3rem #328af1;
+        box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, inset 0 0 1.3rem #328af1;
         @media (max-width:768px) {
-            width: 90%;
+            width: 100%;
             &.open{
                 width: 100%;
             }

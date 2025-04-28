@@ -5,7 +5,7 @@
             <div class="col-md-1 col-3">
                 <div class="logo">
                     <router-link to="/">
-                        <img src="@/assets/img/global/logo.svg" alt="logo">
+                        <img src="@/assets/img/global/coda_logo_1.png" alt="logo">
                     </router-link>
                 </div>
             </div>

@@ -90,6 +90,7 @@ export default {
       color: #b4d2f5;
       position: relative;
       filter: blur(0px);
+      font-size: 16px;
       &.ar{
         padding:10px 30px;
       }

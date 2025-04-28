@@ -6,18 +6,31 @@
         </h5>
         <div class="content">
             <swiper class="swiper pb-5" 
-                :speed="15000"
+                :autoplay="{ delay: 0, disableOnInteraction: false, reverseDirection: true }"
+                :speed="8000"
+                :freeMode="true"
+                :freeModeMomentum="false"
                 :loop="true"
-                :autoplay="{
-                    disableOnInteraction: false,
-                    reverseDirection: true
-                }" 
+                :allowTouchMove="false"
                 :breakpoints="swiperOptions.breakpoints">
                 <swiper-slide class="item" v-for="item in our_client" :key="item">
                     <img class="w-100" :src="item" alt="our client">
                 </swiper-slide>
             </swiper>
         </div>
+        <!-- From Uiverse.io by ashwin_5681 -->
+        <!-- <div class="slider" :style="{
+    '--width': '150px',
+    '--height': '150px',
+    '--quantity': our_client.length
+  }">
+            <div class="list">
+                <div class="item" :style="`--position: ${index}`"  v-for="(item,index) in our_client" :key="index">
+                        <img class="w-100" :src="item" alt="our client">
+                </div>
+            </div>
+        </div> -->
+
     </section>
 </template>
 <script>
@@ -51,12 +64,75 @@ export default {
             }
         }
     },
-    props:{
-        our_client:{
-            type:Array,
+    props: {
+        our_client: {
+            type: Array,
             required: true
         }
     }
-   
+
 };
 </script>
+<style scoped>
+/* From Uiverse.io by ashwin_5681 */
+
+.slider {
+    width: 100%;
+    height: var(--height);
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+}
+
+.slider .list {
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+}
+
+.slider .list .item {
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 15s linear infinite;
+    transition: filter 0.5s;
+    animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1) - 10s) !important;
+}
+
+.slider .list .item img {
+    width: 100%;
+}
+
+@keyframes autoRun {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: calc(var(--width) * -1);
+    }
+}
+
+.slider:hover .item {
+    animation-play-state: paused !important;
+    filter: grayscale(1);
+}
+
+.slider .item:hover {
+    filter: grayscale(0);
+}
+
+.slider[reverse="true"] .item {
+    animation: reversePlay 10s linear infinite;
+}
+@keyframes reversePlay {
+    from {
+        left: calc(var(--width) * -1);
+    }
+
+    to {
+        left: 100%;
+    }
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
     <section class="projects">
         <div class="filters">
-            <div class="item mb-2" :class="[Filter == 'All' ? 'active' : '']" @click="Filtering('All')">All</div>
+            <div class="item mb-2" :class="[Filter == 'All' ? 'active' : '']" @click="Filtering('All')">{{ $t('All') }}</div>
             <div class="item mb-2" v-for="tag in uniqueTags" :key="tag" :class="[Filter == tag ? 'active' : '']"
                 @click="Filtering(tag)">
                 {{ tag }}

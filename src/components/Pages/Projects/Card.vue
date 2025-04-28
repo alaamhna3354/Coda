@@ -29,7 +29,7 @@
                 />
                 </router-link>
                 <a :href="ProjectItem.details.seo.url" target="_blank">
-                    <BtnElctric :Text="$t('Show Live')" />
+                    <BtnElctric :Text="$t('Visit Site')" />
                 </a>
                 </div>
             </div>

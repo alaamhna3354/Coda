@@ -15,7 +15,7 @@
                     <a target="_blank" :href="Project?.details?.seo.url">
                         <Btn 
                             style="padding: 10px 20px;"
-                            :Text="$t('Show Live')"
+                            :Text="$t('Visit Site')"
                             :Textcolor="`#b4d2f5`"
                             :TextcolorHover="`#fff`"
                             :backgroundColor="`transparent`"

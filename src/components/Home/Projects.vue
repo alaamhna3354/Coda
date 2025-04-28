@@ -26,7 +26,7 @@
             }"
             :breakpoints="swiperOptions.breakpoints">
                 <swiper-slide class="item box-animation" v-for="item in our_projects" :key="item.id">
-                    <router-link :to="`/projects/details/${item.title}`">
+                    <router-link :to="`/projects/details/${item.slug}`">
                         <img v-if="item.image" :src="item.image" :alt="item.alt">
                         <img v-else src="https://placehold.co/600x400" alt="placehold projects">
                         <div class="overlay-box">
