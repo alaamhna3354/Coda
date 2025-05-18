@@ -1,5 +1,5 @@
 <template>
-  <main id="main" :class="[Lang == 'en' ? 'dir-en' : 'dir-ar']">
+  <main  id="main"  :class="[Lang == 'en' ? 'dir-en' : 'dir-ar']">
     <Loader v-if="$store.state.loader" />
     <Header />
     <Transition name="fade-page" mode="out-in">
