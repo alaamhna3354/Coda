@@ -3,7 +3,7 @@
         <div class="content">
             <img src="@/assets/img/global/laravel-icon.svg" alt="laravel-icon">
             <h1 class="title">{{ Title }}</h1>
-            <p>{{ Description }}</p>
+            <h2>{{ Description }}</h2>
         </div>
     </div>
 </template>

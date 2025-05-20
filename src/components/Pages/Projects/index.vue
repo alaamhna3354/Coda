@@ -19,6 +19,7 @@
 </template>
 <script>
 import { defineAsyncComponent } from 'vue'
+
 export default {
     data() {
         return {
@@ -26,10 +27,17 @@ export default {
         };
     },
     methods: {
-       
         Filtering(Slug) {
             this.Filter = Slug;
             console.log(this.Filter)
+        },
+        updateFilterFromQuery() {
+            const tagFromQuery = this.$route.query.tag;
+            if (tagFromQuery && this.uniqueTags.includes(tagFromQuery)) {
+                this.Filter = tagFromQuery;
+            } else {
+                this.Filter = 'All';
+            }
         }
     },
     props: {
@@ -38,11 +46,19 @@ export default {
     computed: {
         uniqueTags() {
             const allTags = this.ProjectsList.flatMap(item => item.tags);
-            return [...new Set(allTags)]; // Use Set to remove duplicates
+            return [...new Set(allTags)];
         },
     },
+    mounted() {
+        this.updateFilterFromQuery(); // عند تحميل الصفحة
+    },
+    watch: {
+        '$route.query.tag': function () {
+            this.updateFilterFromQuery(); // عند تغيّر الكويري
+        }
+    },
     components: {
-        Card: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Pages/Projects/Card.vue')),
+        Card: defineAsyncComponent(() => import('@/components/Pages/Projects/Card.vue')),
     }
 }
 </script>

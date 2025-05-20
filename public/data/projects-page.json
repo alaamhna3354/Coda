@@ -168,30 +168,29 @@
       },
       {
         "title": "Formación Anapat",
-        "description": "A professional training institute offering specialized courses.",
+        "description": "A professional Learning institute offering specialized courses.",
         "slug": "formacionanapat",
         "tags": [
-          "Education",
-          "Training"
+          "Education"
         ],
         "details": {
           "title": "Formacion Anapat",
-          "description": "ANAPAT provides certified training for operators of mobile elevating work platforms (PEMP), adhering to UNE 58923 and ISO 18878 standards. Their training includes:",
+          "description": "ANAPAT provides certified Learning for operators of mobile elevating work platforms (PEMP), adhering to UNE 58923 and ISO 18878 standards. Their Learning includes:",
           "list": [
             "Teórica: Four-hour theoretical sessions covering the contents of UNE 58923.",
-            "Práctica: Practical training on various platform models, performing maneuvers as per UNE 58923.",
+            "Práctica: Practical Learning on various platform models, performing maneuvers as per UNE 58923.",
             "They categorize PEMP into four types: 1a (Static vertical), 1b (Static boom), 3a (Mobile vertical), and 3b (Mobile boom)."
           ],
           "seo": {
-            "h1": "Formación Anapat - PEMP Training",
+            "h1": "Formación Anapat - PEMP Learning",
             "title": "Formación Anapat - Certified PEMP Courses",
-            "description": "Formación Anapat offers certified training for mobile elevating work platform operators, following UNE 58923 and ISO 18878 standards.",
-            "keywords": "Formación Anapat, PEMP training, mobile elevating work platforms, certified courses, UNE 58923, ISO 18878",
+            "description": "Formación Anapat offers certified Learning for mobile elevating work platform operators, following UNE 58923 and ISO 18878 standards.",
+            "keywords": "Formación Anapat, PEMP Learning, mobile elevating work platforms, certified courses, UNE 58923, ISO 18878",
             "image": "/img/projects/details/formacionanapat.png",
-            "alt": "Screenshot of Formación Anapat website - PEMP training courses",
+            "alt": "Screenshot of Formación Anapat website - PEMP Learning courses",
             "url": "https://www.formacionanapat.es/",
             "ogTitle": "Formación Anapat - Become a Certified PEMP Operator",
-            "ogDescription": "Enroll in Formación Anapat for top-quality PEMP training in compliance with international standards.",
+            "ogDescription": "Enroll in Formación Anapat for top-quality PEMP Learning in compliance with international standards.",
             "ogImage": "/img/projects/details/formacionanapat.png",
             "ogUrl": "https://www.formacionanapat.es/",
             "ogType": "website",
@@ -236,8 +235,7 @@
         "description": "An online store offering a variety of products.",
         "slug": "semastore",
         "tags": [
-          "E-commerce",
-          "Retail"
+          "E-commerce"
         ],
         "details": {
           "title": "SemaStore",
@@ -269,7 +267,6 @@
         "description": "An online platform providing innovative digital solutions.",
         "slug": "p3ly",
         "tags": [
-          "Technology",
           "Digital Solutions"
         ],
         "details": {
@@ -404,8 +401,7 @@
         "description": "أكاديمية لغة إسبانية تقدم دورات للطلاب الدوليين.",
         "slug": "tildemadrid",
         "tags": [
-          "التعليم",
-          "تعلم اللغات"
+          "التعليم"
         ],
         "details": {
           "title": "تيلدي مدريد",
@@ -437,8 +433,7 @@
         "description": "منصة مخصصة لتعليم اللغة العربية للناطقين بغيرها.",
         "slug": "academiaarabe",
         "tags": [
-          "التعليم",
-          "تعلم اللغات"
+          "التعليم"
         ],
         "details": {
           "title": "أكاديمية عربية",
@@ -470,8 +465,7 @@
         "description": "معهد تدريب مهني يقدم دورات متخصصة.",
         "slug": "formacionanapat",
         "tags": [
-          "التعليم",
-          "التدريب"
+          "التعليم"
         ],
         "details": {
           "title": "فورماسيون أنابات",
@@ -535,8 +529,7 @@
         "description": "متجر إلكتروني يوفر مجموعة متنوعة من المنتجات.",
         "slug": "semastore",
         "tags": [
-          "التجارة الإلكترونية",
-          "البيع بالتجزئة"
+          "التجارة الإلكترونية"
         ],
         "details": {
           "title": "متجر سيما",
@@ -568,7 +561,6 @@
         "description": "منصة إلكترونية تقدم حلولًا رقمية مبتكرة.",
         "slug": "p3ly",
         "tags": [
-          "التكنولوجيا",
           "الحلول الرقمية"
         ],
         "details": {

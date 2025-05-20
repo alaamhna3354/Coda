@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-8 position-relative">
-                <img src="@/assets/img/home-page/about-us-cover.webp" alt="about" class="cover" :class="this.$i18n.locale">
+                <img :src="ServicesDetails?.image" alt="cover" class="cover" :class="this.$i18n.locale">
             </div>
         </div>
         <div class="content">

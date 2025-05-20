@@ -1,9 +1,9 @@
 <template>
     <section class="hover-list">
      <div class="row">
-        <div class="col-md-6">
-            <h1 class="title neon-text">{{ Content.title }}</h1>
-            <h3>{{ Content.description }}</h3>
+        <div class="col-md-7">
+            <div class="title neon-text">{{ Content.title }}</div>
+            <div class="description mb-3">{{ Content.description }}</div>
         </div>
         <div class="col-md-6"></div>
      </div>

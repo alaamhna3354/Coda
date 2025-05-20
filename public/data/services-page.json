@@ -8,6 +8,7 @@
           "title": "Web Development",
           "slug": "web-development",
           "description": "We build high-quality, scalable websites tailored to your business requirements.",
+          "image": "/img/home-page/services-1.png",
           "features": [
             "Personalized Customer Engagement",
             "Proactive Support Services",
@@ -26,6 +27,7 @@
           "title": "App Development",
           "slug": "app-development",
           "description": "Custom mobile applications designed to enhance user experience and engagement.",
+          "image": "/img/home-page/services-2.png",
           "features": [],
           "seo": {
             "h1":"App Development",
@@ -37,12 +39,13 @@
           }
         },
         {
-          "title": "E-commerce Solutions",
-          "slug": "e-commerce-solutions",
-          "description": "Powerful and secure online store solutions to grow your business.",
+          "title": "Tailored Software Solutions",
+          "slug": "tailored-software-solutions",
+          "description": "Customized and secure software solutions to meet your business needs, including e-commerce stores and more.",
+          "image": "/img/home-page/services-3.png",
           "features": [],
           "seo": {
-            "h1":"E-commerce Solutions",
+            "h1":"Tailored Software Solutions",
             "title": "",
             "description": "",
             "keywords": "",
@@ -51,12 +54,13 @@
           }
         },
         {
-          "title": "Cloud Services",
-          "slug": "cloud-services",
-          "description": "Reliable cloud solutions to ensure scalability and efficiency.",
+          "title": "Project Analysis & Feasibility Studies",
+          "slug": "project-analysis",
+          "description": "We provide accurate analyses and comprehensive feasibility studies to help you make successful strategic decisions.",
+          "image": "/img/home-page/services-4.png",
           "features": [],
           "seo": {
-            "h1":"Cloud Services",
+            "h1":"Project Analysis & Feasibility Studies",
             "title": "",
             "description": "",
             "keywords": "",
@@ -83,6 +87,7 @@
           "title": "تطوير الويب",
           "slug": "web-development",
           "description": "نقوم ببناء مواقع ويب عالية الجودة وقابلة للتطوير وفقًا لاحتياجات عملك.",
+          "image": "/img/home-page/services-1.png",
           "features": [
             "مشاركة العملاء الشخصية",
             "خدمات الدعم الاستباقية",
@@ -102,6 +107,7 @@
           "title": "تطوير التطبيقات",
           "slug": "app-development",
           "description": "تطبيقات مخصصة لتحسين تجربة المستخدم وزيادة التفاعل.",
+          "image": "/img/home-page/services-2.png",
           "features": [],
           "seo": {
             "h1":"تطوير التطبيقات",
@@ -113,12 +119,13 @@
           }
         },
         {
-          "title": "حلول التجارة الإلكترونية",
-          "slug": "e-commerce-solutions",
-          "description": "حلول متكاملة وآمنة للمتاجر الإلكترونية لمساعدتك على تنمية أعمالك.",
+          "title": "حلول برمجية مخصصة",
+          "slug": "tailored-software-solutions",
+          "description": "حلول برمجية مخصصة وآمنة تلبي احتياجات أعمالك، بما في ذلك المتاجر الإلكترونية وغيرها.",
+          "image": "/img/home-page/services-3.png",
           "features": [],
           "seo": {
-            "h1":"حلول التجارة الإلكترونية",
+            "h1":"حلول برمجية مخصصة",
             "title": "",
             "description": "",
             "keywords": "",
@@ -127,12 +134,13 @@
           }
         },
         {
-          "title": "خدمات السحابة",
-          "slug": "cloud-services",
-          "description": "حلول سحابية موثوقة لضمان القابلية للتوسع والكفاءة.",
+          "title": "تحليل المشاريع ودراسات الجدوى",
+          "slug": "project-analysis",
+          "description": "نقدم تحليلات دقيقة ودراسات جدوى شاملة لمساعدتك في اتخاذ قرارات استراتيجية ناجحة.",
+          "image": "/img/home-page/services-4.png",
           "features": [],
           "seo": {
-            "h1":"خدمات السحابة",
+            "h1":"تحليل المشاريع ودراسات الجدوى",
             "title": "",
             "description": "",
             "keywords": "",

@@ -96,12 +96,12 @@
                 width: 100%;
                 position: absolute;
                 top: -50px;
-                right: -50%;
+                right: -30%;
                 transition: $transition;
-                opacity: 1;
+                opacity: .9;
                 &.ar{
                     right:auto;
-                    left: -50%;
+                    left: -30%;
                 }
                 @media (max-width:768px) {
                     top: -50px;

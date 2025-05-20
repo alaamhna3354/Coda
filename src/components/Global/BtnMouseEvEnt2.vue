@@ -17,7 +17,7 @@
       >
           <div class="border-button-light relative h-full w-full rounded-full"></div>
       </div>
-      <a :style="{width: width}"
+      <button :style="{width: width}"
           class="transition-colors duration-200 transition-all duration-200 uppercase font-bold flex items-center justify-center h-10 px-16 text-12 text-black -tracking-[0.015em] relative z-10 overflow-hidden rounded-full border border-white/60 bg-[#d1d1d1] gap-x-1 px-8"
           ref="button"
       >
@@ -34,7 +34,7 @@
               ></div>
           </div>
           {{Text}}
-      </a>
+      </button>
   </div>
 </template>
 

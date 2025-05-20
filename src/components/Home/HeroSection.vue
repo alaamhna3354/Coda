@@ -38,9 +38,9 @@
             <div class="row ">
                 <div class="col-md-6 info">
                     <h1 class="title neon-text"> {{hero_section.title || "Coda" }}</h1>
-                    <h3 class="description">
+                    <h2 class="description">
                         {{hero_section.description || "We provide web and app development solutions to help businesses thrive in the digital era." }}
-                    </h3>
+                    </h2>
                     <div class="d-flex mt-5">
                         <router-link :to="hero_section.button_url">
                             <BtnElctric :Text="hero_section.button_title" />

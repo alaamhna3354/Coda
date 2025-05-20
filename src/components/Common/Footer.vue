@@ -32,8 +32,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-1 mb-3 d-none d-md-block">
-                </div>
+              
                 <div class="col-md-2 mb-3">
                     <h5>{{ Data.col_1.coltitle }}</h5>
                     <ul>
@@ -44,7 +43,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-2 mb-3">
+                <div class="col-md-3 mb-3">
                     <h5>{{ Data.col_2.coltitle }}</h5>
                     <ul>
                         <li v-for="item in Data.col_2.list" :key="item">

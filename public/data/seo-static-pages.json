@@ -1,87 +1,86 @@
 {
   "home_page": {
-    "en":{
-      "title":"Coda - Home Page",
-      "description":"Coda - Professional Web & App Development Services | Boost Your Business with Custom Tech Solutions",
-      "keywords":""
+    "en": {
+      "title": "Coda - Home Page",
+      "description": "Coda - Professional Web & App Development Services | Boost Your Business with Custom Tech Solutions",
+      "keywords": "web development, app development, custom software, business tech solutions, Coda"
     },
-    "ar":{
-      "title":"كودا - الرئيسية",
-      "description":"Coda - خدمات برمجة المواقع والتطبيقات | عزز أعمالك بحلول تقنية مخصصة",
-      "keywords":""
+    "ar": {
+      "title": "كودا - الرئيسية",
+      "description": "Coda - خدمات برمجة المواقع والتطبيقات | عزز أعمالك بحلول تقنية مخصصة",
+      "keywords": "تطوير مواقع، تطوير تطبيقات، برمجة مخصصة، حلول تقنية، كودا"
     }
   },
   "about_page": {
-    "en":{
-      "title":"Coda - About Us",
-      "description":"About Us - Learn More About Our Vision and Goals | Innovative Tech Solutions",
-      "keywords":""
+    "en": {
+      "title": "Coda - About Us",
+      "description": "About Us - Learn More About Our Vision and Goals | Innovative Tech Solutions",
+      "keywords": "about Coda, tech company, software development vision, Coda team, innovation"
     },
-    "ar":{
-      "title":"كودا - من نحن",
-      "description":"من نحن - تعرف على رؤيتنا وأهدافنا | حلول تقنية مبتكرة",
-      "keywords":""
-    }
- 
-  },
-  "services_page":{
-    "en":{
-      "title":"Coda - Services",
-      "description":"Our Services - Explore Our Web, App, and Cloud Solutions | Tech Solutions",
-      "keywords":""
-    },
-    "ar":{
-      "title":"كودا - الخدمات",
-      "description":"خدماتنا - استكشف حلول الويب والتطبيقات والسحابة | حلول تقنية",
-      "keywords":""
+    "ar": {
+      "title": "كودا - من نحن",
+      "description": "من نحن - تعرف على رؤيتنا وأهدافنا | حلول تقنية مبتكرة",
+      "keywords": "عن كودا، شركة برمجة، رؤية تقنية، فريق كودا، الابتكار"
     }
   },
-  "projects_page":{
-    "en":{
-      "title":"Coda - Projects",
-      "description":"",
-      "keywords":""
+  "services_page": {
+    "en": {
+      "title": "Coda - Services",
+      "description": "Explore our comprehensive tech services including web development, mobile apps, and cloud solutions tailored for your business.",
+      "keywords": "web services, app development, cloud computing, custom software, tech solutions"
     },
-    "ar":{
-      "title":"كودا - المشاريع",
-      "description":"",
-      "keywords":""
+    "ar": {
+      "title": "كودا - الخدمات",
+      "description": "استعرض خدماتنا التقنية المتكاملة مثل تطوير المواقع، تطبيقات الجوال، وحلول السحابة المخصصة لأعمالك.",
+      "keywords": "خدمات ويب، تطوير تطبيقات، حلول سحابية، برمجيات مخصصة، حلول تقنية"
     }
   },
-  "contact_page":{
-    "en":{
-      "title":"Coda - Contact Us",
-      "description":"",
-      "keywords":""
+  "projects_page": {
+    "en": {
+      "title": "Coda - Projects",
+      "description": "Discover our latest web and app development projects that helped clients grow their businesses.",
+      "keywords": "portfolio, web projects, app projects, case studies, Coda work"
     },
-    "ar":{
-      "title":"كودا - تواصل معنا",
-      "description":"",
-      "keywords":""
+    "ar": {
+      "title": "كودا - المشاريع",
+      "description": "اكتشف أحدث مشاريعنا في تطوير المواقع والتطبيقات التي ساعدت عملاءنا على تنمية أعمالهم.",
+      "keywords": "أعمالنا، مشاريع ويب، مشاريع تطبيقات، دراسات حالة، كودا"
     }
   },
-  "signup_page":{
-    "en":{
-      "title":"Coda - SignUp",
-      "description":"",
-      "keywords":""
+  "contact_page": {
+    "en": {
+      "title": "Coda - Contact Us",
+      "description": "Get in touch with Coda for custom tech solutions, consultations, or support.",
+      "keywords": "contact Coda, get in touch, support, tech consultation"
     },
-    "ar":{
-      "title":"كودا - تسجيل حساب",
-      "description":"",
-      "keywords":""
+    "ar": {
+      "title": "كودا - تواصل معنا",
+      "description": "تواصل مع كودا للحصول على حلول تقنية مخصصة، استشارات، أو دعم.",
+      "keywords": "تواصل مع كودا، استشارات تقنية، دعم فني"
     }
   },
-  "signin_page":{
-    "en":{
-      "title":"Coda - Login",
-      "description":"",
-      "keywords":""
+  "signup_page": {
+    "en": {
+      "title": "Coda - SignUp",
+      "description": "Create your Coda account to access our services and stay updated.",
+      "keywords": "sign up, create account, Coda services, join us"
     },
-    "ar":{
-      "title":"كودا - تسجيل الدخول",
-      "description":"",
-      "keywords":""
+    "ar": {
+      "title": "كودا - تسجيل حساب",
+      "description": "أنشئ حسابك على كودا للاستفادة من خدماتنا والبقاء على اطلاع.",
+      "keywords": "تسجيل حساب، إنشاء حساب، خدمات كودا"
+    }
+  },
+  "signin_page": {
+    "en": {
+      "title": "Coda - Login",
+      "description": "Log in to your Coda account and manage your projects and services.",
+      "keywords": "login, sign in, user account, manage services"
+    },
+    "ar": {
+      "title": "كودا - تسجيل الدخول",
+      "description": "سجل الدخول إلى حسابك في كودا لإدارة مشاريعك وخدماتك.",
+      "keywords": "تسجيل الدخول، حساب المستخدم، إدارة الخدمات"
     }
   }
 }

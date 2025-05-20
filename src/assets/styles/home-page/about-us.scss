@@ -2,12 +2,11 @@
     .cover{
         width: 100%;
         position: absolute;
-        top: -200px;
-        right: -50%;
+        top: 0;
+        right: 0;
         transition: $transition;
-        opacity: 1;
+        opacity: .4;
         @media (max-width:768px) {
-            top: -10px;
             right: 0 !important;
             left: 0 !important;
         }
@@ -59,6 +58,6 @@
 .dir-ar{
     .about-us .cover {
         right: auto;
-        left: -50%;
+        left: 0;
     }
 }

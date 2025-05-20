@@ -13,7 +13,7 @@
       <br>
     </div>
     </div>
-    <Clients v-if="Data" :our_client="Data.our_client" />
+    <!-- <Clients v-if="Data" :our_client="Data.our_client" /> -->
   </div>
 </template>
 
@@ -31,7 +31,7 @@ export default {
   components: {
     HeadSection: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/HeadSection.vue')),
     HoverList: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Pages/AboutUs/HoverList.vue')),
-    Clients: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/Clinets.vue')),
+    // Clients: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/Clinets.vue')),
   },
   computed: {
     ...mapGetters(['getStaticContent', 'getStaticAboutData']),

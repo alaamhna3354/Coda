@@ -51,21 +51,21 @@
         "subtitle": "Comprehensive digital solutions",
         "button_title": "Explore Services",
         "services": [
-          {"title": "Web Development", "image": "/img/home-page/services-1.webp", "preview_image": "/img/home-page/services-1.svg"},
-          {"title": "App Development", "image": "/img/home-page/services-2.webp", "preview_image": "/img/home-page/services-2.svg"},
-          {"title": "E-commerce Solutions", "image": "/img/home-page/services-3.webp", "preview_image": "/img/home-page/services-3.svg"},
-          {"title": "Cloud Services", "image": "/img/home-page/services-4.webp", "preview_image": "/img/home-page/services-4.svg"}
-        ]
+          {"title": "Web Development", "image": "/img/home-page/services-1.png", "preview_image": "/img/home-page/services-1.png","slug": "web-development"},
+          {"title": "Mobile App Development", "image": "/img/home-page/services-2.png", "preview_image": "/img/home-page/services-2.png","slug": "app-development"},
+          {"title": "Tailored Software Solutions", "image": "/img/home-page/services-3.png", "preview_image": "/img/home-page/services-3.png","slug": "tailored-software-solutions"},
+          {"title": "Project Analysis & Feasibility Studies", "image": "/img/home-page/services-4.png", "preview_image": "/img/home-page/services-4.png","slug": "project-analysis"}
+        ] 
       },
       "ar": {
         "title": "خدماتنا",
         "subtitle": "حلول رقمية شاملة",
         "button_title": "استكشاف الخدمات",
         "services": [
-          {"title": "تطوير الويب", "image": "/img/home-page/services-1.webp", "preview_image": "/img/home-page/services-1.svg"},
-          {"title": "تطوير التطبيقات","image": "/img/home-page/services-2.webp", "preview_image": "/img/home-page/services-2.svg"},
-          {"title": "حلول التجارة الإلكترونية", "image": "/img/home-page/services-3.webp", "preview_image": "/img/home-page/services-3.svg"},
-          {"title": "خدمات السحابة", "image": "/img/home-page/services-4.webp", "preview_image": "/img/home-page/services-4.svg"}
+          {"title": "تطوير الويب", "image": "/img/home-page/services-1.png", "preview_image": "/img/home-page/services-1.png","slug": "web-development"},
+          {"title": "تطوير التطبيقات","image": "/img/home-page/services-2.png", "preview_image": "/img/home-page/services-2.png","slug": "app-development"},
+          {"title": "حلول برمجية مخصصة", "image": "/img/home-page/services-3.png", "preview_image": "/img/home-page/services-3.png","slug": "tailored-software-solutions"},
+          {"title": "تحليل المشاريع ودراسات الجدوى", "image": "/img/home-page/services-4.png", "preview_image": "/img/home-page/services-4.png","slug": "project-analysis"}
         ]
       }
     },
@@ -221,31 +221,29 @@
           {"title": "About Us", "url": "/about"},
           {"title": "Services", "url": "/services"},
           {"title": "Projects", "url": "/projects"},
-          {"title": "Careers", "url": "/careers"},
-          {"title": "Contact", "url": "/contact"},
-          {"title": "Blog", "url": "/blog"}
+          {"title": "Contact Us", "url": "/contact"}
+      
         ]
       },
       "col_2": {
-        "coltitle": "Support",
+        "coltitle": "Services",
         "list": [
-          {"title": "FAQs", "url": "/faqs"},
-          {"title": "Help Center", "url": "/help"},
-          {"title": "Terms & Conditions", "url": "/terms"},
-          {"title": "Privacy Policy", "url": "/privacy"},
-          {"title": "Security", "url": "/security"},
-          {"title": "Sitemap", "url": "/sitemap"}
+          {"title": "Web Development", "url": "/services/details/web-development"},
+          {"title": "Mobile App Development", "url": "/services/details/app-development"},
+          {"title": "Tailored Software Solutions", "url": "/services/details/tailored-software-solutions"},
+          {"title": "Project Analysis & Feasibility Studies", "url": "/services/details/project-analysis"}
         ]
       },
       "col_3": {
-        "coltitle": "Resources",
+        "coltitle": "Project Tags",
         "list": [
-          {"title": "Documentation", "url": "/docs"},
-          {"title": "API Reference", "url": "/api"},
-          {"title": "Case Studies", "url": "/case-studies"},
-          {"title": "Community", "url": "/community"},
-          {"title": "Webinars", "url": "/webinars"},
-          {"title": "Whitepapers", "url": "/whitepapers"}
+          {"title": "Business", "url": "/projects?tag=Business"},
+          {"title": "Digital Solutions", "url": "/projects?tag=Digital Solutions"},
+          {"title": "Education", "url": "/projects?tag=Education"},
+          {"title": "Learning", "url": "/projects?tag=Learning"},
+          {"title": "Marketing", "url": "/projects?tag=Marketing"},
+          {"title": "Restaurant", "url": "/projects?tag=Restaurant"},
+          {"title": "E-commerce", "url": "/projects?tag=E-commerce"}
         ]
       },
       "created_by": "Coda Technologies"
@@ -265,31 +263,28 @@
           {"title": "من نحن", "url": "/about"},
           {"title": "الخدمات", "url": "/services"},
           {"title": "المشاريع", "url": "/projects"},
-          {"title": "الوظائف", "url": "/careers"},
-          {"title": "اتصل بنا", "url": "/contact"},
-          {"title": "المدونة", "url": "/blog"}
+          {"title": "اتصل بنا", "url": "/contact"}
         ]
       },
       "col_2": {
-        "coltitle": "الدعم",
+        "coltitle": "الخدمات",
         "list": [
-          {"title": "الأسئلة الشائعة", "url": "/faqs"},
-          {"title": "مركز المساعدة", "url": "/help"},
-          {"title": "الشروط والأحكام", "url": "/terms"},
-          {"title": "سياسة الخصوصية", "url": "/privacy"},
-          {"title": "الأمان", "url": "/security"},
-          {"title": "خريطة الموقع", "url": "/sitemap"}
+          {"title": " تطوير الويب", "url": "/services/details/web-development"},
+          {"title": "تطوير التطبيقات", "url": "/services/details/app-development"},
+          {"title": "حلول برمجية مخصصة", "url": "/services/details/tailored-software-solutions"},
+          {"title": "تحليل المشاريع ودراسات الجدوى", "url": "/services/details/project-analysis"}
         ]
       },
       "col_3": {
-        "coltitle": "الموارد",
+        "coltitle": "فئات المشاريع",
         "list": [
-          {"title": "التوثيق", "url": "/docs"},
-          {"title": "مرجع API", "url": "/api"},
-          {"title": "دراسات الحالة", "url": "/case-studies"},
-          {"title": "المجتمع", "url": "/community"},
-          {"title": "الندوات", "url": "/webinars"},
-          {"title": "الأوراق البيضاء", "url": "/whitepapers"}
+          {"title": "الأعمال", "url": "/projects?tag=الأعمال"},
+          {"title": "الحلول الرقمية", "url": "/projects?tag=الحلول الرقمية"},
+          {"title": "التعليم", "url": "/projects?tag=التعليم"},
+          {"title": "التعلم الإلكتروني", "url": "/projects?tag=التعلم الإلكتروني"},
+          {"title": "التسويق", "url": "/projects?tag=التسويق"},
+          {"title": "المطاعم", "url": "/projects?tag=المطاعم"},
+          {"title": "التجارة الإلكترونية", "url": "/projects?tag=التجارة الإلكترونية"}
         ]
       },
       "created_by": "كودا للتكنولوجيا"

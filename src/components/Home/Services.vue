@@ -34,7 +34,7 @@
             <span>{{ $t('Offering Services') }}</span>
         </div>
         <div class="col-md-3 mb-3" v-for="(item,j) in service_section.services" :key="j" @mouseenter="index = j" >
-            <router-link :to="`/services/details/${item.title}`" class="item" :class="[index == j ? 'active' : '']">
+            <router-link :to="`/services/details/${item.slug}`" class="item" :class="[index == j ? 'active' : '']">
                 <div class="title">{{ item.title }}</div>
                 <img :src="item.image" alt="service image">
             </router-link>

@@ -4,7 +4,7 @@
       <About :about_section="Data.about_section[this.$i18n.locale]" />
       <Services :service_section="Data.our_service_section[this.$i18n.locale]" />
       <Projects :our_projects="Data.our_projects[this.$i18n.locale]" />
-      <Clients :our_client="Data.our_client" />
+      <!-- <Clients :our_client="Data.our_client" /> -->
       <Contact />
   </div>
 </template>
@@ -24,7 +24,7 @@ export default {
     About: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/AboutUs.vue')),
     Services: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/Services.vue')),
     Projects: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/Projects.vue')),
-    Clients: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/Clinets.vue')),
+    // Clients: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/Clinets.vue')),
     Contact: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/Contact.vue')),
 
   },
