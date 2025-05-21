@@ -36,15 +36,16 @@
     </div>
 </template>
 <script>
-import { defineAsyncComponent } from 'vue';
+import Btn from '@/components/Global/Btn.vue';
+import BtnElctric from '@/components/Global/BtnElctric.vue';
 export default {
     data() {
         return {
         };
     },
     components: {
-        Btn: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/Btn.vue')),
-        BtnElctric: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/BtnElctric.vue')),
+        Btn,
+        BtnElctric
     },
     props:{
         ProjectItem:Object

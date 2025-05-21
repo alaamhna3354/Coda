@@ -14,7 +14,7 @@
       }
     },
     components: {
-      SignIn: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/auth/SignIn.vue')),
+      SignIn: defineAsyncComponent(() => import(/* webpackChunkName: "Login" */'@/components/auth/SignIn.vue')),
   
     },
   

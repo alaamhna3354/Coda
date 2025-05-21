@@ -20,12 +20,12 @@ export default {
     }
   },
   components: {
-    HeroSection: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/HeroSection.vue')),
-    About: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/AboutUs.vue')),
-    Services: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/Services.vue')),
-    Projects: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/Projects.vue')),
-    // Clients: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/Clinets.vue')),
-    Contact: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/Contact.vue')),
+    HeroSection: defineAsyncComponent(() => import(/* webpackChunkName: "hero" */'@/components/Home/HeroSection.vue')),
+    About: defineAsyncComponent(() => import(/* webpackChunkName: "About" */'@/components/Home/AboutUs.vue')),
+    Services: defineAsyncComponent(() => import(/* webpackChunkName: "Services" */'@/components/Home/Services.vue')),
+    Projects: defineAsyncComponent(() => import(/* webpackChunkName: "Projects" */'@/components/Home/Projects.vue')),
+    // Clients: defineAsyncComponent(() => import(/* webpackChunkName: "Clients" */'@/components/Home/Clinets.vue')),
+    Contact: defineAsyncComponent(() => import(/* webpackChunkName: "Contact" */'@/components/Home/Contact.vue')),
 
   },
   computed: {

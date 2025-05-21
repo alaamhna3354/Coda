@@ -5,7 +5,10 @@
             <div class="col-md-1 col-3">
                 <div class="logo">
                     <router-link to="/">
-                        <img src="@/assets/img/global/coda_logo_1.png" alt="logo">
+                        <img src="@/assets/img/global/coda_logo_1.webp" alt="logo">
+                    </router-link>
+                    <router-link to="/">
+                        <img src="@/assets/img/global/coda_logo_icon.webp" alt="logo">
                     </router-link>
                 </div>
             </div>
@@ -70,7 +73,8 @@
     </header>
 </template>
 <script>
-import { defineAsyncComponent } from 'vue';
+import Btn from '@/components/Global/Btn.vue';
+import OverLay from '@/components/Global/OverLay.vue';
 export default {
     data() {
         return {
@@ -124,9 +128,8 @@ export default {
         };
     },
     components: {
-        Btn: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/Btn.vue')),
-        OverLay: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/OverLay.vue')),
-         
+        Btn,
+        OverLay
     },
     methods: {
         toggleFullscreen() {

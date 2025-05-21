@@ -10,15 +10,16 @@
     </section>
 </template>
 <script>
-import { defineAsyncComponent } from 'vue'
+import Card from '@/components/Pages/Services/Card.vue';
+import HeadSection from '@/components/Global/HeadSection.vue';
 export default {
     data() {
         return {
         };
     },
     components: {
-        Card: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Pages/Services/Card.vue')),
-        HeadSection: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/HeadSection.vue')),
+        Card,
+        HeadSection
     },
     props:{
         Content:{

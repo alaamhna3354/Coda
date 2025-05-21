@@ -8,13 +8,13 @@
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-8 position-relative">
-                <img  src="@/assets/img/home-page/about-us.png" alt="about" class="cover" :class="this.$i18n.locale">
+                <img src="@/assets/img/home-page/about-us.webp" alt="about" class="cover" :class="this.$i18n.locale">
             </div>
         </div>
         <div class="content">
             <div class="row">
             <div class="col-md-4 mb-3">
-                <img class="luminosity" src="@/assets/img/global/coda_logo_1.png" alt="about-us">
+                <img class="luminosity" src="@/assets/img/global/coda_logo_1.webp" alt="about-us">
             </div>
             <div class="col-md-8 mb-3">
                 <h2 class="title">
@@ -45,7 +45,7 @@
     </section>
 </template>
 <script>
-import { defineAsyncComponent } from 'vue';
+import Btn from '@/components/Global/Btn.vue';
 export default {
     data() {
         return {
@@ -53,7 +53,7 @@ export default {
         };
     },
     components: {
-        Btn: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Global/Btn.vue') ),
+        Btn
     },
     props:{
         about_section:{

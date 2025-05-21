@@ -51,10 +51,10 @@
         "subtitle": "Comprehensive digital solutions",
         "button_title": "Explore Services",
         "services": [
-          {"title": "Web Development", "image": "/img/home-page/services-1.png", "preview_image": "/img/home-page/services-1.png","slug": "web-development"},
-          {"title": "Mobile App Development", "image": "/img/home-page/services-2.png", "preview_image": "/img/home-page/services-2.png","slug": "app-development"},
-          {"title": "Tailored Software Solutions", "image": "/img/home-page/services-3.png", "preview_image": "/img/home-page/services-3.png","slug": "tailored-software-solutions"},
-          {"title": "Project Analysis & Feasibility Studies", "image": "/img/home-page/services-4.png", "preview_image": "/img/home-page/services-4.png","slug": "project-analysis"}
+          {"title": "Web Development", "image": "/img/home-page/services-1.webp", "preview_image": "/img/home-page/services-1.webp","slug": "web-development"},
+          {"title": "Mobile App Development", "image": "/img/home-page/services-2.webp", "preview_image": "/img/home-page/services-2.webp","slug": "app-development"},
+          {"title": "Tailored Software Solutions", "image": "/img/home-page/services-3.webp", "preview_image": "/img/home-page/services-3.webp","slug": "tailored-software-solutions"},
+          {"title": "Project Analysis & Feasibility Studies", "image": "/img/home-page/services-4.webp", "preview_image": "/img/home-page/services-4.webp","slug": "project-analysis"}
         ] 
       },
       "ar": {
@@ -62,10 +62,10 @@
         "subtitle": "حلول رقمية شاملة",
         "button_title": "استكشاف الخدمات",
         "services": [
-          {"title": "تطوير الويب", "image": "/img/home-page/services-1.png", "preview_image": "/img/home-page/services-1.png","slug": "web-development"},
-          {"title": "تطوير التطبيقات","image": "/img/home-page/services-2.png", "preview_image": "/img/home-page/services-2.png","slug": "app-development"},
-          {"title": "حلول برمجية مخصصة", "image": "/img/home-page/services-3.png", "preview_image": "/img/home-page/services-3.png","slug": "tailored-software-solutions"},
-          {"title": "تحليل المشاريع ودراسات الجدوى", "image": "/img/home-page/services-4.png", "preview_image": "/img/home-page/services-4.png","slug": "project-analysis"}
+          {"title": "تطوير الويب", "image": "/img/home-page/services-1.webp", "preview_image": "/img/home-page/services-1.webp","slug": "web-development"},
+          {"title": "تطوير التطبيقات","image": "/img/home-page/services-2.webp", "preview_image": "/img/home-page/services-2.webp","slug": "app-development"},
+          {"title": "حلول برمجية مخصصة", "image": "/img/home-page/services-3.webp", "preview_image": "/img/home-page/services-3.webp","slug": "tailored-software-solutions"},
+          {"title": "تحليل المشاريع ودراسات الجدوى", "image": "/img/home-page/services-4.webp", "preview_image": "/img/home-page/services-4.webp","slug": "project-analysis"}
         ]
       }
     },
@@ -82,7 +82,7 @@
           "title": "Academian",
           "description": "An educational platform offering a variety of academic resources and courses.",
           "slug": "academian",
-          "image": "/img/projects/details/Academian.png",
+          "image": "/img/projects/details/Academian.avif",
           "alt": "Screenshot of Academian website - Online learning platform"
          
         },
@@ -90,49 +90,49 @@
           "title": "ClickLuck",
           "description": "A platform specializing in digital marketing and online business growth.",
           "slug": "clickluck",
-         "image": "/img/projects/details/clickluck.png",
+         "image": "/img/projects/details/clickluck.avif",
               "alt": "Screenshot of ClickLuck website - Digital marketing platform"
         },
         {
           "title": "Tilde Madrid",
           "description": "A Spanish language academy offering courses to international students.",
           "slug": "tildemadrid",
-          "image": "/img/projects/details/tilde-madrid.png",
+          "image": "/img/projects/details/tilde-madrid.avif",
           "alt": "Screenshot of Tilde Madrid website - Spanish language academy"
         },
         {
           "title": "Academia Árabe",
           "description": "A platform dedicated to teaching the Arabic language to non-native speakers.",
           "slug": "academiaarabe",
-          "image": "/img/projects/details/academiaarabe.png",
+          "image": "/img/projects/details/academiaarabe.avif",
               "alt": "Screenshot of Academia Árabe website - Arabic language academy"
         },
         {
           "title": "Formación Anapat",
           "description": "A professional training institute offering specialized courses.",
           "slug": "formacionanapat",
-          "image": "/img/projects/details/formacionanapat.png",
+          "image": "/img/projects/details/formacionanapat.avif",
           "alt": "Screenshot of Formación Anapat website - PEMP training courses"
         },
         {
           "title": "Damaskus Restaurant Ravensburg",
           "description": "An authentic Syrian restaurant offering delicious cuisine in Ravensburg.",
           "slug": "damaskus-restaurant",
-          "image": "/img/projects/details/damaskusrestaurant.png",
+          "image": "/img/projects/details/damaskusrestaurant.avif",
               "alt": "Screenshot of Damaskus Restaurant website - Authentic Syrian cuisine"
         },
         {
           "title": "Sema Store",
           "description": "An online store offering a variety of products.",
           "slug": "semastore",
-          "image": "/img/projects/details/sema-store.png",
+          "image": "/img/projects/details/sema-store.avif",
           "alt": "SemaStore - Game Cards and Digital Services"
         },
         {
           "title": "P3ly",
           "description": "An online platform providing innovative digital solutions.",
           "slug": "p3ly",
-          "image": "/img/projects/details/p3ly-com-kuwait.png",
+          "image": "/img/projects/details/p3ly-com-kuwait.avif",
           "alt": "Screenshot of P3ly website - Kuwait's online marketplace"
         }
       ],
@@ -148,56 +148,56 @@
           "title": "أكاديميان",
           "description": "منصة تعليمية تقدم مجموعة متنوعة من الموارد الأكاديمية والدورات.",
           "slug": "academian",
-        "image": "/img/projects/details/Academian.png",
+        "image": "/img/projects/details/Academian.avif",
               "alt": "لقطة من موقع Academian - منصة التعليم عبر الإنترنت"
         },
         {
           "title": "كليك لك",
           "description": "منصة متخصصة في التسويق الرقمي ونمو الأعمال عبر الإنترنت.",
           "slug": "clickluck",
-          "image": "/img/projects/details/clickluck.png",
+          "image": "/img/projects/details/clickluck.avif",
               "alt": "لقطة من موقع ClickLuck - منصة التسويق الرقمي"
         },
         {
           "title": "تيلدي مدريد",
           "description": "أكاديمية لغة إسبانية تقدم دورات للطلاب الدوليين.",
           "slug": "tildemadrid",
-          "image":  "/img/projects/details/tilde-madrid.png",
+          "image":  "/img/projects/details/tilde-madrid.avif",
               "alt": "تيلدي مدريد - أكاديمية تعليم اللغة الإسبانية"
         },
         {
           "title": "أكاديمية عربية",
           "description": "منصة مخصصة لتعليم اللغة العربية للناطقين بغيرها.",
           "slug": "academiaarabe",
-         "image": "/img/projects/details/academiaarabe.png",
+         "image": "/img/projects/details/academiaarabe.avif",
               "alt": "أكاديمية عربية - تعليم اللغة العربية"
         },
         {
           "title": "فورماسيون أنابات",
           "description": "معهد تدريب مهني يقدم دورات متخصصة.",
           "slug": "formacionanapat",
-          "image": "/img/projects/details/formacionanapat.png",
+          "image": "/img/projects/details/formacionanapat.avif",
               "alt": "فورماسيون أنابات - تدريب على منصات العمل المرتفعة"
         },
         {
           "title": "مطعم دمشق رافنسبورغ",
           "description": "مطعم سوري أصيل يقدم أشهى المأكولات في رافنسبورغ.",
           "slug": "damaskus-restaurant",
-          "image": "/img/projects/details/damaskusrestaurant.png",
+          "image": "/img/projects/details/damaskusrestaurant.avif",
           "alt": "مطعم دمشق رافنسبورغ - تجربة الطعام السوري"
         },
         {
           "title": "متجر سيما",
           "description": "متجر إلكتروني يوفر مجموعة متنوعة من المنتجات.",
           "slug": "semastore",
-          "image": "/img/projects/details/sema-store.png",
+          "image": "/img/projects/details/sema-store.avif",
           "alt": "متجر سيما - خدمات رقمية وبطاقات الألعاب"
         },
         {
           "title": "P3ly",
           "description": "منصة إلكترونية تقدم حلولًا رقمية مبتكرة.",
           "slug": "p3ly",
-          "image": "/img/projects/details/p3ly-com-kuwait.png",
+          "image": "/img/projects/details/p3ly-com-kuwait.avif",
               "alt": "لقطة شاشة لموقع بيعلي - سوق الكويت عبر الإنترنت"
         }
       ]

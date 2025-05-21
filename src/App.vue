@@ -14,7 +14,9 @@
 global.jQuery = require('jquery');
 var $ = global.jQuery;
 window.$ = $;
-import { defineAsyncComponent } from 'vue';
+import Loader from '@/components/Global/Loader.vue';
+import Header from '@/components/Common/Header.vue';
+import Footer from '@/components/Common/Footer.vue';
 export default {
   name: 'App',
   data() {
@@ -22,9 +24,7 @@ export default {
     }
   },
   components: {
-    Loader: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/Loader.vue')),
-    Header: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Common/Header.vue')),
-    Footer: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Common/Footer.vue')),
+    Loader,Header,Footer
   },
   computed: {
     Lang() {

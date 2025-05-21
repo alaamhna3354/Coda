@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import { defineAsyncComponent } from 'vue'
 import { mapGetters } from 'vuex';
+import Index from '@/components/Pages/Services/index.vue';
 export default {
   name: 'Services Page',
   data(){
@@ -15,7 +15,7 @@ export default {
     }
   },
   components: {
-    Index: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Pages/Services/index.vue') )
+    Index
   },
   computed: {
     ...mapGetters(['getStaticServicesData']),

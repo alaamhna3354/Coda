@@ -36,7 +36,7 @@
         </div>
         <section class="hero-section">
             <div class="row ">
-                <div class="col-md-6 info">
+                <div class="col-md-7 info">
                     <h1 class="title neon-text"> {{hero_section.title || "Coda" }}</h1>
                     <h2 class="description">
                         {{hero_section.description || "We provide web and app development solutions to help businesses thrive in the digital era." }}
@@ -53,7 +53,7 @@
 
 </template>
 <script>
-import { defineAsyncComponent } from 'vue';
+import BtnElctric from '@/components/Global/BtnElctric.vue';
 export default {
     data() {
         return {
@@ -62,7 +62,7 @@ export default {
         };
     },
     components: {
-        BtnElctric: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/BtnElctric.vue')),
+        BtnElctric
     },
     methods: {
        

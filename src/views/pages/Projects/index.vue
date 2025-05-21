@@ -7,8 +7,9 @@
 </template>
 
 <script>
-import { defineAsyncComponent } from 'vue'
 import { mapGetters } from 'vuex';
+import Index from '@/components/Pages/Projects/index.vue';
+import HeadSection from '@/components/Global/HeadSection.vue';
 export default {
   name: 'Projects Page',
   data(){
@@ -17,8 +18,8 @@ export default {
     }
   },
   components: {
-    Index: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Pages/Projects/index.vue') ),
-    HeadSection: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/HeadSection.vue')),
+    Index,
+    HeadSection
   },
   computed: {
     ...mapGetters(['getProjectsList']),

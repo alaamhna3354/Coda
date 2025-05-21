@@ -44,7 +44,7 @@
     </section>
 </template>
 <script>
-import { defineAsyncComponent } from 'vue';
+import Btn from '@/components/Global/Btn.vue';
 export default {
     data() {
         return {
@@ -52,7 +52,7 @@ export default {
         };
     },
     components: {
-        Btn: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Global/Btn.vue') ),
+        Btn
     },
     props:{
         service_section:{

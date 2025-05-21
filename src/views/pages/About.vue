@@ -18,8 +18,9 @@
 </template>
 
 <script>
-import { defineAsyncComponent } from 'vue'
 import { mapGetters } from 'vuex';
+import HeadSection from '@/components/Global/HeadSection.vue';
+import HoverList from '@/components/Pages/AboutUs/HoverList.vue';
 export default {
   name: 'About Page',
   data() {
@@ -29,8 +30,8 @@ export default {
     }
   },
   components: {
-    HeadSection: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/HeadSection.vue')),
-    HoverList: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Pages/AboutUs/HoverList.vue')),
+    HeadSection,
+    HoverList,
     // Clients: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Home/Clinets.vue')),
   },
   computed: {

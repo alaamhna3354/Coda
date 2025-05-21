@@ -9,7 +9,7 @@ const routes = [
   {
     path: '/',
     name: cookie.get('languages') == 'ar' ? 'الصفحة الرئيسية' : 'Home Page' ,
-    component: () => import(/* webpackChunkName: "App" */'../views/pages/Home.vue'),
+    component: () => import(/* webpackChunkName: "Home" */'../views/pages/Home.vue'),
     meta: {
       title: meta_seo.home_page[cookie.get('languages')].title,
       metaTags: [
@@ -27,7 +27,7 @@ const routes = [
   {
     path: '/about',
     name: cookie.get('languages') == 'ar' ? 'من نحن' : 'About Us' ,
-    component: () => import(/* webpackChunkName: "App" */'../views/pages/About.vue'),
+    component: () => import(/* webpackChunkName: "About" */'../views/pages/About.vue'),
     meta: {
       title: meta_seo.about_page[cookie.get('languages')].title,
       metaTags: [
@@ -45,7 +45,7 @@ const routes = [
   {
     path: '/services',
     name: cookie.get('languages') == 'ar' ? 'الخدمات' : 'Services' ,
-    component: () => import(/* webpackChunkName: "App" */'../views/pages/Services/index.vue'),
+    component: () => import(/* webpackChunkName: "Services" */'../views/pages/Services/index.vue'),
     meta: {
       title: meta_seo.services_page[cookie.get('languages')].title,
       metaTags: [
@@ -63,12 +63,12 @@ const routes = [
   {
     path: '/services/details/:slug',
     name: cookie.get('languages') == 'ar' ? 'تفاصيل الخدمة' : 'Services Details' ,
-    component: () => import(/* webpackChunkName: "App" */'../views/pages/Services/Details.vue'),
+    component: () => import(/* webpackChunkName: "Services-Details" */'../views/pages/Services/Details.vue'),
   },
   {
     path: '/projects',
     name: cookie.get('languages') == 'ar' ? 'المشاريع' : 'Projects' ,
-    component: () => import(/* webpackChunkName: "App" */'../views/pages/Projects/index.vue'),
+    component: () => import(/* webpackChunkName: "Projects" */'../views/pages/Projects/index.vue'),
     meta: {
       title: meta_seo.projects_page[cookie.get('languages')].title,
       metaTags: [
@@ -86,12 +86,12 @@ const routes = [
   {
     path: '/projects/details/:slug',
     name: cookie.get('languages') == 'ar' ? 'تفاصيل المشروع' : 'Project Details' ,
-    component: () => import(/* webpackChunkName: "App" */'../views/pages/Projects/Details.vue'),
+    component: () => import(/* webpackChunkName: "Project-Details" */'../views/pages/Projects/Details.vue'),
   },
   {
     path: '/contact',
     name: cookie.get('languages') == 'ar' ? 'تواصل معنا' : 'Contact Us' ,
-    component: () => import(/* webpackChunkName: "App" */'../views/pages/Contact.vue'),
+    component: () => import(/* webpackChunkName: "Contact" */'../views/pages/Contact.vue'),
     meta: {
       title: meta_seo.contact_page[cookie.get('languages')].title,
       metaTags: [
@@ -110,7 +110,7 @@ const routes = [
     {
       path: '/sign-up',
       name: cookie.get('lang') == 'ar' ? 'تسجيل حساب' : ' SignUp',
-      component: () => import(/* webpackChunkName: "App" */'../views/auth/SignUp.vue'),
+      component: () => import(/* webpackChunkName: "SignUp" */'../views/auth/SignUp.vue'),
       meta: {
         title: meta_seo.signup_page[cookie.get('languages')].title,
         metaTags: [
@@ -128,7 +128,7 @@ const routes = [
     {
       path: '/sign-in',
       name: cookie.get('lang') == 'ar' ? 'تسجيل الدخول' : 'Login ',
-      component: () => import(/* webpackChunkName: "App" */'../views/auth/SignIn.vue'),
+      component: () => import(/* webpackChunkName: "Login" */'../views/auth/SignIn.vue'),
       meta: {
         title: meta_seo.signin_page[cookie.get('languages')].title,
         metaTags: [
@@ -146,7 +146,7 @@ const routes = [
   { 
     path: '/:pathMatch(.*)*',
     name: 'error',
-    component: () => import(/* webpackChunkName: "App" */'../views/Error.vue')
+    component: () => import(/* webpackChunkName: "Error" */'../views/Error.vue')
  },  
 ]
 

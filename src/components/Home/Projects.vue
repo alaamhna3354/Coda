@@ -27,7 +27,7 @@
             :breakpoints="swiperOptions.breakpoints">
                 <swiper-slide class="item box-animation" v-for="item in our_projects" :key="item.id">
                     <router-link :to="`/projects/details/${item.slug}`">
-                        <img v-if="item.image" :src="item.image" :alt="item.alt">
+                        <img v-if="item.image" :src="item.image" :alt="item.alt" loading="lazy">
                         <img v-else src="https://placehold.co/600x400" alt="placehold projects">
                         <div class="overlay-box">
                             <div class="info">
@@ -48,7 +48,7 @@
 
 </template>
 <script>
-import { defineAsyncComponent } from 'vue';
+import Btn from '@/components/Global/Btn.vue';
 export default {
     data() {
         return {
@@ -81,7 +81,7 @@ export default {
         }
     },
     components: {
-        Btn: defineAsyncComponent( () => import(/* webpackChunkName: "App" */'@/components/Global/Btn.vue') ),
+        Btn
     },
     props:{
         our_projects:{

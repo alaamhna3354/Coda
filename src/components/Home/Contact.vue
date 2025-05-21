@@ -1,6 +1,6 @@
 <template>
     <div class="contact-us">
-        <img class="clock-cover" src="@/assets/img/home-page/clock.jpg" alt="clock">
+        <img class="clock-cover" src="@/assets/img/home-page/clock.webp" alt="clock">
         <div class="section-card-title" :class="this.$i18n.locale">
             <span >//</span>
             <span> {{ $t('Contact Us') }}</span>
@@ -67,7 +67,6 @@
     </div>
 </template>
 <script>
-import { defineAsyncComponent } from 'vue';
 // import axios from 'axios';
 import { Form, Field, ErrorMessage } from 'vee-validate';
 import * as yup from 'yup';
@@ -75,6 +74,7 @@ import { configure } from "vee-validate";
 import Cookies from "universal-cookie"
 const cookie = new Cookies();
 import intlTelInput from "../../intl-tel-input"
+import BtnMouseEvEnt from '@/components/Global/BtnMouseEvEnt2.vue';
 export default {
     data() {
         return {
@@ -100,7 +100,7 @@ export default {
         Form,
         Field,
         ErrorMessage,
-        BtnMouseEvEnt: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/BtnMouseEvEnt2.vue')),
+        BtnMouseEvEnt
     },
     methods: {
         async handelForm(values) {

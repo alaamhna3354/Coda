@@ -1,7 +1,6 @@
 <template>
     <section class="box-animation">
         <footer v-if="Data">
-            <img class="cover" src="@/assets/img/home-page/lary-footer.webp" alt="footer logo">
             <div class="row content">
                 <div class="col-md-5 mb-3">
                     <h3 class="title">
@@ -83,8 +82,8 @@
     <Whatsapp v-if="Data" :PhoneNumber="Data.info.phone" />
 </template>
 <script>
-import { defineAsyncComponent } from 'vue';
 import { mapGetters } from 'vuex';
+import Whatsapp from '@/components/Global/Whatsapp.vue';
 export default {
     data() {
     return {
@@ -92,7 +91,7 @@ export default {
     }
   },
   components: {
-    Whatsapp: defineAsyncComponent(() => import(/* webpackChunkName: "App" */'@/components/Global/Whatsapp.vue')),
+    Whatsapp
   },
   computed: {
     ...mapGetters(['getStaticContent']),
