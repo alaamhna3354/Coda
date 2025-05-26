@@ -42,6 +42,9 @@
 </template>
 
 <script>
+import '@/assets/fontawesome/css/fontawesome.css'
+import '@/assets/fontawesome/css/brands.css'
+import '@/assets/fontawesome/css/solid.css'
 import { defineAsyncComponent } from 'vue';
 
 export default {

@@ -426,7 +426,9 @@
     overflow: hidden;
     top: 0;
     left: 0;
-    
+    @media (max-width:768px) {
+      padding-top: 1rem;
+      }
     .info{
         position: relative;
         .title{

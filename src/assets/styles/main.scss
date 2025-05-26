@@ -38,10 +38,7 @@ body{
     overflow-x: hidden !important;
     // cursor: url('../img/global/bolt-solid.svg'), auto;
 }
-#home{
-    position: relative;
-    z-index: 3;
-}
+
 
 .dir-en{
     font-family: "Hanken Grotesk", sans-serif;
@@ -50,13 +47,12 @@ body{
     font-style: normal;
     line-height: 1.6;
 }
-.dir-ar{
+.dir-ar {
     direction: rtl;
-    font-family: "Noto Sans Arabic", "Arial", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 400; /* أو 700 حسب الحاجة */
     line-height: 1.6;
-}
+  }
 
 img{
     width: 100%;

@@ -5,23 +5,12 @@ import store from './store'
 
 // *************** import style ***************
 import './assets/styles/main.scss'
-import './assets/fontawesome/css/fontawesome.css'
-import './assets/fontawesome/css/brands.css'
-import './assets/fontawesome/css/solid.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-// *************** import Swiper ***************
-import '../node_modules/intl-tel-input/build/css/intlTelInput.css'
-import './assets/swiper/navigation.scss'
-import './assets/swiper/pagination.scss'
-import "swiper/swiper.scss";
-import SwiperCore, { Navigation, Pagination,Autoplay } from "swiper";
-SwiperCore.use([Navigation, Pagination,Autoplay]);
-
-// *************** import i18n ***************
 // import Cookies 
 import Cookies from "universal-cookie"
 const cookie = new Cookies();
+// *************** import i18n ***************
 import ar from '../public/data/i18n/ar.json'
 import en from '../public/data/i18n/en.json'
 import { createI18n } from 'vue-i18n'
@@ -34,14 +23,16 @@ const i18n = createI18n({
     fallbackLocale: 'ar' // set fallback locale
 })
 
-// *************** import axios ***************
-// import axios from 'axios';
-// axios.defaults.baseURL = '';
-// axios.defaults.headers.common['language'] = cookie.get('lang')
-// axios.defaults.headers.common['Authorization'] = "Bearer ";
-// *************** import notifications ***************
-import { Swiper, SwiperSlide } from 'swiper/vue';
+router.beforeEach((to, from, next) => {
+    store.dispatch('SETLOADER', true);
+    next();
+  });
+  
+  router.afterEach(() => {
+    setTimeout(() => {
+      store.dispatch('SETLOADER', false);
+    }, 1000); // حسب سرعة تحميلك
+  });
+  
 
-
-createApp(App).use(store).use(router).use(i18n).component("Swiper", Swiper)
-.component("SwiperSlide", SwiperSlide).mount('#app')
+createApp(App).use(store).use(router).use(i18n).mount('#app')

@@ -1,9 +1,11 @@
 footer{
+    content-visibility: auto;
     background-color: $cardBackground;
     padding: 2rem 20px 1rem 20px;
     border-radius: .875rem;
     overflow: hidden;
     position: relative;
+    min-height: 372px; 
     @media (max-width:758px) {
         text-align: center;
         *{
@@ -20,7 +22,6 @@ footer{
         z-index: 2;
         .title{
             text-transform: uppercase;
-            letter-spacing: 2px;
             font-weight: 800;
             &::first-letter{
                 color: #fff;
@@ -44,7 +45,6 @@ footer{
                 margin-bottom:.5rem;
             }
             font-weight: 800;
-            letter-spacing: .02rem;
         }
         .info-address{
             i{

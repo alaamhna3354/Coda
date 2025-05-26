@@ -70,6 +70,9 @@ export default {
 </template>
 
 <script>
+import '@/assets/fontawesome/css/fontawesome.css'
+import '@/assets/fontawesome/css/brands.css'
+import '@/assets/fontawesome/css/solid.css'
 export default {
     data() {
         return {

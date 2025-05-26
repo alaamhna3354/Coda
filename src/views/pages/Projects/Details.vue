@@ -24,10 +24,20 @@ export default {
   computed: {
     ...mapGetters(['getProjectsList']),
   },
+  watch: {
+    '$i18n.locale'() {
+      this.fetchData();
+    }
+  },
   mounted() {
-    this.$store.dispatch('GetProjectsList').then(() => {
+    this.fetchData();
+  },
+  methods: {
+    fetchData() {
+      this.$store.dispatch('GetProjectsList').then(() => {
       this.ProjectsList = this.getProjectsList;
     });
-  },
+    }
+  }
 }
 </script>

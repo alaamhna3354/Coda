@@ -29,7 +29,7 @@
                 />
                 </router-link>
                 <a :href="ProjectItem.details.seo.url" target="_blank">
-                    <BtnElctric :Text="$t('Visit Site')" />
+                    <BtnElectric :Text="$t('Visit Site')" />
                 </a>
                 </div>
             </div>
@@ -37,7 +37,7 @@
 </template>
 <script>
 import Btn from '@/components/Global/Btn.vue';
-import BtnElctric from '@/components/Global/BtnElctric.vue';
+import BtnElectric from '@/components/Global/BtnElectric.vue';
 export default {
     data() {
         return {
@@ -45,7 +45,7 @@ export default {
     },
     components: {
         Btn,
-        BtnElctric
+        BtnElectric
     },
     props:{
         ProjectItem:Object

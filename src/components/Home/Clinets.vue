@@ -14,7 +14,7 @@
                 :allowTouchMove="false"
                 :breakpoints="swiperOptions.breakpoints">
                 <swiper-slide class="item" v-for="item in our_client" :key="item">
-                    <img class="w-100" :src="item" alt="our client">
+                    <img  class="w-100" :src="item" alt="our client">
                 </swiper-slide>
             </swiper>
         </div>
@@ -34,6 +34,13 @@
     </section>
 </template>
 <script>
+import '@/assets/swiper/navigation.scss'
+import '@/assets/swiper/pagination.scss'
+import "swiper/swiper.scss";
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+import SwiperCore, { Navigation, Pagination,Autoplay } from "swiper";
+SwiperCore.use([Navigation, Pagination,Autoplay]);
 export default {
     data() {
         return {
@@ -63,6 +70,9 @@ export default {
                 }
             }
         }
+    },
+    components: {
+        Swiper,SwiperSlide
     },
     props: {
         our_client: {
