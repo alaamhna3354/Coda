@@ -34,7 +34,6 @@ export default {
   },
   methods: {
     fetchData() {
-      console.log('Fetching data for locale:', this.$i18n.locale);
       this.$store.dispatch('GetProjectsList').then(() => {
       this.ProjectsList = this.getProjectsList;
     });

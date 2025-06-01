@@ -45,7 +45,6 @@ export default {
     $route() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     },
-    
   },
   
 }
