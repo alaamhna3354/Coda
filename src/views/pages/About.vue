@@ -37,13 +37,24 @@ export default {
   computed: {
     ...mapGetters(['getStaticContent', 'getStaticAboutData']),
   },
+  watch: {
+    '$i18n.locale'() {
+      this.fetchData();
+    }
+  },
   mounted() {
-    this.$store.dispatch('GetData').then(() => {
+    this.fetchData();
+  },
+  methods: {
+    fetchData() {
+      this.$store.dispatch('GetData').then(() => {
       this.Data = this.getStaticContent;
     });
     this.$store.dispatch('GetAboutData').then(() => {
       this.AboutData = this.getStaticAboutData;
     });
-  },
+    },
+   
+  }
 }
 </script>

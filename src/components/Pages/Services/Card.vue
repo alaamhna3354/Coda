@@ -1,5 +1,5 @@
 <template>
-    <div class="services-card-item" :class="this.$i18n.locale">
+    <div class="services-card-item" :class="[isArabic ? 'ar' : 'en']">
         <!-- <span class="icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
                 stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
@@ -38,10 +38,15 @@ export default {
         return {
         };
     },
-    props:{
-        CardContent:{
-            type:Object,
+    props: {
+        CardContent: {
+            type: Object,
             required: true
+        }
+    },
+    computed: {
+        isArabic() {
+            return this.$i18n.locale === 'ar';
         }
     }
 }

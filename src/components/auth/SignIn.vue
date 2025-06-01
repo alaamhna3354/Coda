@@ -33,14 +33,14 @@
 							<ErrorMessage name="email" class="error-message" />
 						</div>
 						<div class="position-relative">
-							<svg v-if="type_password == 'text'" @click="showPassword" :class="this.$i18n.locale"
+							<svg v-if="type_password == 'text'" @click="showPassword" :class="[isArabic ? 'ar' : 'en']"
 							class="svg-eye" width="16"
 								height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
 									d="M8 0.0458984C4.36364 0.0458984 1.25818 2.30772 0 5.50044C1.25818 8.69317 4.36364 10.955 8 10.955C11.6364 10.955 14.7418 8.69317 16 5.50044C14.7418 2.30772 11.6364 0.0458984 8 0.0458984ZM8 9.13681C5.99273 9.13681 4.36364 7.50772 4.36364 5.50044C4.36364 3.49317 5.99273 1.86408 8 1.86408C10.0073 1.86408 11.6364 3.49317 11.6364 5.50044C11.6364 7.50772 10.0073 9.13681 8 9.13681ZM8 3.31863C6.79273 3.31863 5.81818 4.29317 5.81818 5.50044C5.81818 6.70772 6.79273 7.68226 8 7.68226C9.20727 7.68226 10.1818 6.70772 10.1818 5.50044C10.1818 4.29317 9.20727 3.31863 8 3.31863Z"
 									fill="#b9d9fc" />
 							</svg>
-							<svg v-else @click="showPassword" :class="this.$i18n.locale"
+							<svg v-else @click="showPassword" :class="[isArabic ? 'ar' : 'en']"
 							class="svg-eye" xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 640 512" width="18" height="13">
 								<path fill="#b9d9fc"
@@ -111,7 +111,12 @@ export default {
 		async HandelLogin(values) {
 			console.log(values)
 		}
-	}
+	},
+	computed: {
+    isArabic() {
+      return this.$i18n.locale === 'ar';
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

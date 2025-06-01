@@ -73,6 +73,9 @@
     </header>
 </template>
 <script>
+import '@/assets/fontawesome/css/fontawesome.css'
+import '@/assets/fontawesome/css/brands.css'
+import '@/assets/fontawesome/css/solid.css'
 import Btn from '@/components/Global/Btn.vue';
 import OverLay from '@/components/Global/OverLay.vue';
 export default {
@@ -155,9 +158,7 @@ export default {
             this.Hide();
             this.$store.dispatch('SETLang', val);
             this.$i18n.locale = val;
-            window.location.reload();
         },
-
     },
     mounted() {
         window.onscroll = function () { StickyHeader() };

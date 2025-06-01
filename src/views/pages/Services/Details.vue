@@ -24,11 +24,21 @@ export default {
   computed: {
     ...mapGetters(['getStaticServicesData']),
   },
+ 
+  watch: {
+    '$i18n.locale'() {
+      this.fetchData();
+    }
+  },
   mounted() {
-    this.$store.dispatch('GetServicestData').then(() => {
+    this.fetchData();
+  },
+  methods: {
+    fetchData() {
+      this.$store.dispatch('GetServicestData').then(() => {
         this.Services = this.getStaticServicesData.services_page[this.$i18n.locale];
     });
-  },
- 
+    }
+  }
 }
 </script>

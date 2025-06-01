@@ -39,15 +39,12 @@ export default {
 }
 </script> -->
 <template>
-    <div class="project-sidebar" >
+    <div class="project-sidebar">
         <div class="timeline-container">
             <!-- Timeline navigation -->
-            <div class="timeline-nav" :class="this.$i18n.locale">
-                <div v-for="(stage, index) in projectStages" 
-                     :key="index"
-                     class="timeline-item"
-                     :class="{ 'active': currentStage === index }"
-                     @click="selectStage(index)">
+            <div class="timeline-nav" :class="[isArabic ? 'ar' : 'en']">
+                <div v-for="(stage, index) in projectStages" :key="index" class="timeline-item"
+                    :class="{ 'active': currentStage === index }" @click="selectStage(index)">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h4>{{ stage.title }}</h4>
@@ -70,6 +67,9 @@ export default {
 </template>
 
 <script>
+import '@/assets/fontawesome/css/fontawesome.css'
+import '@/assets/fontawesome/css/brands.css'
+import '@/assets/fontawesome/css/solid.css'
 export default {
     data() {
         return {
@@ -96,6 +96,9 @@ export default {
     computed: {
         currentStageData() {
             return this.projectStages[this.currentStage];
+        },
+        isArabic() {
+            return this.$i18n.locale === 'ar';
         }
     },
     methods: {
@@ -103,7 +106,7 @@ export default {
             this.currentStage = index;
         }
     },
-   
+
 }
 </script>
 
@@ -125,8 +128,9 @@ export default {
     margin-bottom: .3rem;
     display: flex;
     align-items: center;
-    &:not(:last-child){
-        &::after{
+
+    &:not(:last-child) {
+        &::after {
             content: "";
             position: absolute;
             height: 105%;
@@ -148,18 +152,21 @@ export default {
     left: -6px;
     z-index: 2;
 }
-.timeline-nav.ar{
+
+.timeline-nav.ar {
     .timeline-item {
-        &::after{
+        &::after {
             right: -1px;
             left: auto;
         }
     }
+
     .timeline-marker {
         left: auto;
         right: -6px;
+    }
 }
-}
+
 .timeline-item.active .timeline-marker {
     background: #328af1;
 }
@@ -172,7 +179,7 @@ export default {
     .timeline-container {
         flex-direction: column;
     }
-    
+
     .timeline-nav {
         flex: none;
         display: flex;

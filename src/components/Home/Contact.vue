@@ -1,14 +1,14 @@
 <template>
     <div class="contact-us">
         <img class="clock-cover" src="@/assets/img/home-page/clock.webp" alt="clock">
-        <div class="section-card-title" :class="this.$i18n.locale">
-            <span >//</span>
+        <div class="section-card-title" :class="[isArabic ? 'ar' : 'en']">
+            <span>//</span>
             <span> {{ $t('Contact Us') }}</span>
         </div>
         <div class="row flex-ar-reverse">
             <div class="col-md-6 d-flex">
                 <video class="m-auto mt-0" autoplay loop>
-                    <source src="@/assets/video/clock.webm" type="video/webm">
+                    <source src="@/assets/video/clock.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="col-md-6 mb-3">
@@ -17,14 +17,16 @@
                         <div class="col-md-6 mb-3">
                             <div class="field">
                                 <i class="fa-solid fa-user"></i>
-                                <Field class="contact-field" name="FirstName" type="text" :placeholder="$t('FirstName')" />
+                                <Field class="contact-field" name="FirstName" type="text"
+                                    :placeholder="$t('FirstName')" />
                                 <ErrorMessage name="FirstName" class="error-message" />
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <div class="field">
                                 <i class="fa-solid fa-user"></i>
-                                <Field class="contact-field" name="LastName" type="text" :placeholder="$t('LastName')" />
+                                <Field class="contact-field" name="LastName" type="text"
+                                    :placeholder="$t('LastName')" />
                                 <ErrorMessage name="LastName" class="error-message" />
                             </div>
                         </div>
@@ -62,11 +64,14 @@
                     </div>
                 </Form>
             </div>
-            
+
         </div>
     </div>
 </template>
 <script>
+import '@/assets/fontawesome/css/fontawesome.css'
+import '@/assets/fontawesome/css/brands.css'
+import '@/assets/fontawesome/css/solid.css'
 // import axios from 'axios';
 import { Form, Field, ErrorMessage } from 'vee-validate';
 import * as yup from 'yup';
@@ -75,6 +80,8 @@ import Cookies from "universal-cookie"
 const cookie = new Cookies();
 import intlTelInput from "../../intl-tel-input"
 import BtnMouseEvEnt from '@/components/Global/BtnMouseEvEnt2.vue';
+import '../../../node_modules/intl-tel-input/build/css/intlTelInput.css'
+
 export default {
     data() {
         return {
@@ -101,6 +108,11 @@ export default {
         Field,
         ErrorMessage,
         BtnMouseEvEnt
+    },
+    computed: {
+        isArabic() {
+            return this.$i18n.locale === 'ar';
+        }
     },
     methods: {
         async handelForm(values) {

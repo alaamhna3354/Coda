@@ -11,7 +11,7 @@ import { mapGetters } from 'vuex';
 import Details from '@/components/Pages/Projects/Details/Details.vue';
 import HeadSection from '@/components/Global/HeadSection.vue';
 export default {
-  name: 'Project Details Page',
+  name: 'Projects Details Page',
   data(){
     return{
       ProjectsList:null
@@ -24,10 +24,21 @@ export default {
   computed: {
     ...mapGetters(['getProjectsList']),
   },
+  watch: {
+    '$i18n.locale'() {
+      this.fetchData();
+    }
+  },
   mounted() {
-    this.$store.dispatch('GetProjectsList').then(() => {
+    this.fetchData();
+  },
+  methods: {
+    fetchData() {
+      console.log('Fetching data for locale:', this.$i18n.locale);
+      this.$store.dispatch('GetProjectsList').then(() => {
       this.ProjectsList = this.getProjectsList;
     });
-  },
+    }
+  }
 }
 </script>

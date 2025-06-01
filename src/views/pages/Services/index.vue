@@ -20,12 +20,22 @@ export default {
   computed: {
     ...mapGetters(['getStaticServicesData']),
   },
-  mounted() {
-    this.$store.dispatch('GetServicestData').then(() => {
-      this.ServicesData = this.getStaticServicesData;
-      
-    });
+
+  watch: {
+    '$i18n.locale'() {
+      this.fetchData();
+    }
   },
+  mounted() {
+    this.fetchData();
+  },
+  methods: {
+    fetchData() {
+      this.$store.dispatch('GetServicestData').then(() => {
+      this.ServicesData = this.getStaticServicesData;
+    });
+    }
+  }
  
 }
 </script>

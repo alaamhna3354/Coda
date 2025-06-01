@@ -5,7 +5,6 @@
 @import './common/footer.scss';
 @import './home-page/home.scss';
 @import './pages/pages.scss';
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -36,12 +35,10 @@ body{
     background-color: #070b16 !important;
     color: $white !important;
     overflow-x: hidden !important;
+    font-family: 'Noto Kufi Arabic', Tahoma, Arial, sans-serif;
     // cursor: url('../img/global/bolt-solid.svg'), auto;
 }
-#home{
-    position: relative;
-    z-index: 3;
-}
+
 
 .dir-en{
     font-family: "Hanken Grotesk", sans-serif;
@@ -50,14 +47,42 @@ body{
     font-style: normal;
     line-height: 1.6;
 }
-.dir-ar{
+.dir-ar {
     direction: rtl;
-    font-family: "Noto Sans Arabic", "Arial", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 400; /* أو 700 حسب الحاجة */
     line-height: 1.6;
-}
-
+  }
+  h1, h2, h3, .btn-main {
+    min-height: 48px; /* حسب حجم الخط */
+  }
+  h1 {
+    font-size: clamp(2rem, 5vw, 3rem); /* بين 32px و48px */
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: clamp(1.75rem, 4.5vw, 2.5rem); /* بين 28px و40px */
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: clamp(1.5rem, 4vw, 2rem); /* بين 24px و32px */
+    font-weight: bold;
+  }
+  
+  h4 {
+    font-size: clamp(1.25rem, 3.5vw, 1.75rem); /* بين 20px و28px */
+    font-weight: bold;
+  }
+  
+  h5 {
+    font-size: clamp(1rem, 3vw, 1.5rem); /* بين 16px و24px */
+    font-weight: bold;
+  }
+  p {
+    font-weight: 400;
+  }
 img{
     width: 100%;
 }

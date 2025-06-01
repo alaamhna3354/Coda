@@ -1,186 +1,134 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Cookies from "universal-cookie"
+import { createRouter, createWebHistory } from 'vue-router';
+import Cookies from 'universal-cookie';
+import meta_seo from '../../public/data/seo-static-pages.json';
+
 const cookie = new Cookies();
-if(!cookie.get('languages')){
-  cookie.set('languages','ar');
+
+if (!cookie.get('languages')) {
+  cookie.set('languages', 'ar');
 }
-import meta_seo from '../../public/data/seo-static-pages.json'
+
+// دالة مساعدة لإعادة بناء أسماء الرواتس والميتا حسب اللغة
+function getRouteNameAndMeta(key, lang) {
+  const routeNames = {
+    home: { ar: 'الصفحة الرئيسية', en: 'Home Page' },
+    about: { ar: 'من نحن', en: 'About Us' },
+    services: { ar: 'الخدمات', en: 'Services' },
+    servicesDetails: { ar: 'تفاصيل الخدمة', en: 'Services Details' },
+    projects: { ar: 'المشاريع', en: 'Projects' },
+    projectsDetails: { ar: 'تفاصيل المشروع', en: 'Project Details' },
+    contact: { ar: 'تواصل معنا', en: 'Contact Us' },
+    signup: { ar: 'تسجيل حساب', en: 'SignUp' },
+    signin: { ar: 'تسجيل الدخول', en: 'Login' },
+    error: { ar: 'خطأ', en: 'Error' },
+  };
+
+  return {
+    name: routeNames[key][lang],
+    meta: {
+      title: meta_seo[`${key}_page`]?.[lang]?.title || 'Coda',
+      metaTags: [
+        {
+          name: 'description',
+          content: meta_seo[`${key}_page`]?.[lang]?.description || '',
+        },
+        {
+          name: 'keywords',
+          content: meta_seo[`${key}_page`]?.[lang]?.keywords || '',
+        },
+      ],
+    },
+  };
+}
+
+const getLang = () => cookie.get('languages') || 'ar';
+
 const routes = [
   {
     path: '/',
-    name: cookie.get('languages') == 'ar' ? 'الصفحة الرئيسية' : 'Home Page' ,
-    component: () => import(/* webpackChunkName: "Home" */'../views/pages/Home.vue'),
-    meta: {
-      title: meta_seo.home_page[cookie.get('languages')].title,
-      metaTags: [
-        {
-          name: 'description',
-          content: meta_seo.home_page[cookie.get('languages')].description
-        },
-        {
-         name: 'keywords',
-         content: meta_seo.home_page[cookie.get('languages')].keywords
-        }
-      ]
-        },
+    ...getRouteNameAndMeta('home', getLang()),
+    component: () => import(/* webpackChunkName: "Home" */ '../views/pages/Home.vue'),
   },
   {
     path: '/about',
-    name: cookie.get('languages') == 'ar' ? 'من نحن' : 'About Us' ,
-    component: () => import(/* webpackChunkName: "About" */'../views/pages/About.vue'),
-    meta: {
-      title: meta_seo.about_page[cookie.get('languages')].title,
-      metaTags: [
-        {
-          name: 'description',
-          content: meta_seo.about_page[cookie.get('languages')].description
-        },
-        {
-         name: 'keywords',
-         content: meta_seo.about_page[cookie.get('languages')].keywords
-        }
-      ]
-        },
+    ...getRouteNameAndMeta('about', getLang()),
+    component: () => import(/* webpackChunkName: "About" */ '../views/pages/About.vue'),
   },
   {
     path: '/services',
-    name: cookie.get('languages') == 'ar' ? 'الخدمات' : 'Services' ,
-    component: () => import(/* webpackChunkName: "Services" */'../views/pages/Services/index.vue'),
-    meta: {
-      title: meta_seo.services_page[cookie.get('languages')].title,
-      metaTags: [
-        {
-          name: 'description',
-          content: meta_seo.services_page[cookie.get('languages')].description
-        },
-        {
-         name: 'keywords',
-         content: meta_seo.services_page[cookie.get('languages')].keywords
-        }
-      ]
-        },
+    ...getRouteNameAndMeta('services', getLang()),
+    component: () => import(/* webpackChunkName: "Services" */ '../views/pages/Services/index.vue'),
   },
   {
     path: '/services/details/:slug',
-    name: cookie.get('languages') == 'ar' ? 'تفاصيل الخدمة' : 'Services Details' ,
-    component: () => import(/* webpackChunkName: "Services-Details" */'../views/pages/Services/Details.vue'),
+    ...getRouteNameAndMeta('servicesDetails', getLang()),
+    component: () => import(/* webpackChunkName: "Services-Details" */ '../views/pages/Services/Details.vue'),
   },
   {
     path: '/projects',
-    name: cookie.get('languages') == 'ar' ? 'المشاريع' : 'Projects' ,
-    component: () => import(/* webpackChunkName: "Projects" */'../views/pages/Projects/index.vue'),
-    meta: {
-      title: meta_seo.projects_page[cookie.get('languages')].title,
-      metaTags: [
-        {
-          name: 'description',
-          content: meta_seo.projects_page[cookie.get('languages')].description
-        },
-        {
-         name: 'keywords',
-         content: meta_seo.projects_page[cookie.get('languages')].keywords
-        }
-      ]
-        },
+    ...getRouteNameAndMeta('projects', getLang()),
+    component: () => import(/* webpackChunkName: "Projects" */ '../views/pages/Projects/index.vue'),
   },
   {
     path: '/projects/details/:slug',
-    name: cookie.get('languages') == 'ar' ? 'تفاصيل المشروع' : 'Project Details' ,
-    component: () => import(/* webpackChunkName: "Project-Details" */'../views/pages/Projects/Details.vue'),
+    ...getRouteNameAndMeta('projectsDetails', getLang()),
+    component: () => import(/* webpackChunkName: "Project-Details" */ '../views/pages/Projects/Details.vue'),
   },
   {
     path: '/contact',
-    name: cookie.get('languages') == 'ar' ? 'تواصل معنا' : 'Contact Us' ,
-    component: () => import(/* webpackChunkName: "Contact" */'../views/pages/Contact.vue'),
-    meta: {
-      title: meta_seo.contact_page[cookie.get('languages')].title,
-      metaTags: [
-        {
-          name: 'description',
-          content: meta_seo.contact_page[cookie.get('languages')].description
-        },
-        {
-         name: 'keywords',
-         content: meta_seo.contact_page[cookie.get('languages')].keywords
-        }
-      ]
-        },
+    ...getRouteNameAndMeta('contact', getLang()),
+    component: () => import(/* webpackChunkName: "Contact" */ '../views/pages/Contact.vue'),
   },
-    // ___________________ Auth  ___________________
-    {
-      path: '/sign-up',
-      name: cookie.get('lang') == 'ar' ? 'تسجيل حساب' : ' SignUp',
-      component: () => import(/* webpackChunkName: "SignUp" */'../views/auth/SignUp.vue'),
-      meta: {
-        title: meta_seo.signup_page[cookie.get('languages')].title,
-        metaTags: [
-          {
-            name: 'description',
-            content: meta_seo.signup_page[cookie.get('languages')].description
-          },
-          {
-           name: 'keywords',
-           content: meta_seo.signup_page[cookie.get('languages')].keywords
-          }
-        ]
-          },
-    },
-    {
-      path: '/sign-in',
-      name: cookie.get('lang') == 'ar' ? 'تسجيل الدخول' : 'Login ',
-      component: () => import(/* webpackChunkName: "Login" */'../views/auth/SignIn.vue'),
-      meta: {
-        title: meta_seo.signin_page[cookie.get('languages')].title,
-        metaTags: [
-          {
-            name: 'description',
-            content: meta_seo.signin_page[cookie.get('languages')].description
-          },
-          {
-           name: 'keywords',
-           content: meta_seo.signin_page[cookie.get('languages')].keywords
-          }
-        ]
-          },
-    },
-  { 
+  {
+    path: '/sign-up',
+    ...getRouteNameAndMeta('signup', getLang()),
+    component: () => import(/* webpackChunkName: "SignUp" */ '../views/auth/SignUp.vue'),
+  },
+  {
+    path: '/sign-in',
+    ...getRouteNameAndMeta('signin', getLang()),
+    component: () => import(/* webpackChunkName: "Login" */ '../views/auth/SignIn.vue'),
+  },
+  {
     path: '/:pathMatch(.*)*',
-    name: 'error',
-    component: () => import(/* webpackChunkName: "Error" */'../views/Error.vue')
- },  
-]
+    name: getLang() === 'ar' ? 'خطأ' : 'Error',
+    component: () => import(/* webpackChunkName: "Error" */ '../views/Error.vue'),
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
-//  for meta title
-router.beforeResolve((to) => {
-  document.title = to.meta.title || "Coda"
-  if (Object.prototype.hasOwnProperty.call(to.meta, 'metaTags')) {
-    for (let x = 0; x < to.meta.metaTags.length; x++) {
-        let oldMeta = document.getElementsByTagName('meta');
-        for (let m = 0; m < oldMeta.length; m++) {
-            if (oldMeta[m].name == to.meta.metaTags[x].name) {
-                oldMeta[m].remove();
-            }
-        }
-        let meta = document.createElement('meta');
-        if (to.meta.metaTags[x] && Object.prototype.hasOwnProperty.call(to.meta.metaTags[x], 'name')) {
-            meta.name = to.meta.metaTags[x].name;
-            meta.content = to.meta.metaTags[x].content;
-        }
-        if (Object.prototype.hasOwnProperty.call(to.meta.metaTags[x], 'property')) {
-            meta.property = to.meta.metaTags[x].name;
-            meta.content = to.meta.metaTags[x].content;
-        }
-        document.head.appendChild(meta);
-    }
-}
-  if (to.meta.requiresAuth && cookie.get('Userdata') == '') {
-    return {
-      path: '/login',
-    }
+  routes,
+});
+
+// تحديث العنوان والميتا تاجز عند التنقل
+router.beforeEach((to, from, next) => {
+  // حذف const lang لأنه غير مستخدم
+  // حذف const routeKey لأنه غير مستخدم
+
+  // تعيين العنوان وميتا تاجز من الميتا
+  if (to.meta && to.meta.title) {
+    document.title = to.meta.title;
+  } else {
+    document.title = 'Coda';
   }
-})
-export default router
+
+  // تحديث الميتا تاجز
+  if (to.meta?.metaTags) {
+    to.meta.metaTags.forEach(tag => {
+      let meta = document.querySelector(`meta[name="${tag.name}"]`);
+      if (meta) {
+        meta.setAttribute('content', tag.content);
+      } else {
+        meta = document.createElement('meta');
+        meta.setAttribute('name', tag.name);
+        meta.setAttribute('content', tag.content);
+        document.head.appendChild(meta);
+      }
+    });
+  }
+
+  next();
+});
+
+export default router;

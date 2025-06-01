@@ -24,12 +24,20 @@ export default {
   computed: {
     ...mapGetters(['getProjectsList']),
   },
-  mounted() {
-    this.$store.dispatch('GetProjectsList').then(() => {
-      this.ProjectsList = this.getProjectsList;
-      console.log(`Projects List "${this.ProjectsList}"`);
-      
-    });
+  watch: {
+    '$i18n.locale'() {
+      this.fetchData();
+    }
   },
+  mounted() {
+    this.fetchData();
+  },
+  methods: {
+    fetchData() {
+      this.$store.dispatch('GetProjectsList').then(() => {
+      this.ProjectsList = this.getProjectsList;
+    });
+    }
+  }
 }
 </script>

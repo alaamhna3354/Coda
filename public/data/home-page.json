@@ -7,11 +7,11 @@
         "button_url": "/contact",
         "link_type": "_self",
         "images": [
-          "/img/home-page/hero-tile-1.webp",
-          "/img/home-page/hero-tile-2.jpg",
-          "/img/home-page/hero-tile-3.jpg",
-          "/img/home-page/hero-tile-4.webp",
-          "/img/home-page/hero-tile-5.webp"
+          "/img/home-page/hero-tile-1.avif",
+          "/img/home-page/hero-tile-2.avif",
+          "/img/home-page/hero-tile-3.avif",
+          "/img/home-page/hero-tile-4.avif",
+          "/img/home-page/hero-tile-4.avif"
         ]
       },
       "ar": {
@@ -21,11 +21,11 @@
         "button_url": "/contact",
         "link_type": "_self",
         "images": [
-            "/img/home-page/hero-tile-1.webp",
-            "/img/home-page/hero-tile-2.jpg",
-            "/img/home-page/hero-tile-3.jpg",
-            "/img/home-page/hero-tile-4.webp",
-            "/img/home-page/hero-tile-5.webp"
+            "/img/home-page/hero-tile-1.avif",
+            "/img/home-page/hero-tile-2.avif",
+            "/img/home-page/hero-tile-3.avif",
+            "/img/home-page/hero-tile-4.avif",
+            "/img/home-page/hero-tile-4.avif"
           ]
       }
     },
@@ -51,10 +51,10 @@
         "subtitle": "Comprehensive digital solutions",
         "button_title": "Explore Services",
         "services": [
-          {"title": "Web Development", "image": "/img/home-page/services-1.webp", "preview_image": "/img/home-page/services-1.webp","slug": "web-development"},
-          {"title": "Mobile App Development", "image": "/img/home-page/services-2.webp", "preview_image": "/img/home-page/services-2.webp","slug": "app-development"},
-          {"title": "Tailored Software Solutions", "image": "/img/home-page/services-3.webp", "preview_image": "/img/home-page/services-3.webp","slug": "tailored-software-solutions"},
-          {"title": "Project Analysis & Feasibility Studies", "image": "/img/home-page/services-4.webp", "preview_image": "/img/home-page/services-4.webp","slug": "project-analysis"}
+          {"title": "Web Development", "image": "/img/home-page/services-1.avif", "preview_image": "/img/home-page/services-1.avif","slug": "web-development"},
+          {"title": "Mobile App Development", "image": "/img/home-page/services-2.avif", "preview_image": "/img/home-page/services-2.avif","slug": "app-development"},
+          {"title": "Tailored Software Solutions", "image": "/img/home-page/services-3.avif", "preview_image": "/img/home-page/services-3.avif","slug": "tailored-software-solutions"},
+          {"title": "Project Analysis & Feasibility Studies", "image": "/img/home-page/services-4.avif", "preview_image": "/img/home-page/services-4.avif","slug": "project-analysis"}
         ] 
       },
       "ar": {
@@ -62,10 +62,10 @@
         "subtitle": "حلول رقمية شاملة",
         "button_title": "استكشاف الخدمات",
         "services": [
-          {"title": "تطوير الويب", "image": "/img/home-page/services-1.webp", "preview_image": "/img/home-page/services-1.webp","slug": "web-development"},
-          {"title": "تطوير التطبيقات","image": "/img/home-page/services-2.webp", "preview_image": "/img/home-page/services-2.webp","slug": "app-development"},
-          {"title": "حلول برمجية مخصصة", "image": "/img/home-page/services-3.webp", "preview_image": "/img/home-page/services-3.webp","slug": "tailored-software-solutions"},
-          {"title": "تحليل المشاريع ودراسات الجدوى", "image": "/img/home-page/services-4.webp", "preview_image": "/img/home-page/services-4.webp","slug": "project-analysis"}
+          {"title": "تطوير الويب", "image": "/img/home-page/services-1.avif", "preview_image": "/img/home-page/services-1.avif","slug": "web-development"},
+          {"title": "تطوير التطبيقات","image": "/img/home-page/services-2.avif", "preview_image": "/img/home-page/services-2.avif","slug": "app-development"},
+          {"title": "حلول برمجية مخصصة", "image": "/img/home-page/services-3.avif", "preview_image": "/img/home-page/services-3.avif","slug": "tailored-software-solutions"},
+          {"title": "تحليل المشاريع ودراسات الجدوى", "image": "/img/home-page/services-4.avif", "preview_image": "/img/home-page/services-4.avif","slug": "project-analysis"}
         ]
       }
     },

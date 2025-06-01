@@ -1,33 +1,28 @@
 <template>
     <section class="projects ">
-      <div class="d-flex justify-content-between mb-3">
-        <div class="section-card-title" :class="this.$i18n.locale">
-            <span>//</span>
-            <span> {{ $t('Our Projects') }}</span>
+        <div class="d-flex justify-content-between mb-3">
+            <div class="section-card-title" :class="locale">
+                <span>//</span>
+                <span> {{ $t('Our Projects') }}</span>
+            </div>
+            <router-link to="/projects">
+                <Btn style="padding: 10px 20px;" :Text="$t('Show All')" :Icon="``" :Textcolor="`#b4d2f5`"
+                    :TextcolorHover="`#fff`" :backgroundColor="`transparent`" :backgroundColorHover="`#53b5ff`" />
+            </router-link>
         </div>
-        <router-link to="/projects">
-            <Btn style="padding: 10px 20px;"
-            :Text="$t('Show All')"
-            :Icon="``"
-            :Textcolor="`#b4d2f5`"
-            :TextcolorHover="`#fff`"
-            :backgroundColor="`transparent`"
-            :backgroundColorHover="`#53b5ff`"
-            />
-        </router-link>
-      </div>
         <div class="projects-content">
-            <swiper class="swiper pb-5" :loop="true" :speed="1500" :autoplay="{
+            <swiper class="swiper pb-5" 
+            v-if="showSwiper"
+            :loop="true" :speed="1500" :autoplay="{
                 delay: 5000,
             }" :navigation="{
                 enabled: true,
                 nextEl: '.myNext',
                 prevEl: '.myPrev',
-            }"
-            :breakpoints="swiperOptions.breakpoints">
+            }" :breakpoints="swiperOptions.breakpoints" >
                 <swiper-slide class="item box-animation" v-for="item in our_projects" :key="item.id">
                     <router-link :to="`/projects/details/${item.slug}`">
-                        <img v-if="item.image" :src="item.image" :alt="item.alt" loading="lazy">
+                        <img v-if="item.image" :src="item.image" :alt="item.alt">
                         <img v-else src="https://placehold.co/600x400" alt="placehold projects">
                         <div class="overlay-box">
                             <div class="info">
@@ -48,10 +43,19 @@
 
 </template>
 <script>
+import { nextTick } from 'vue';
+import '@/assets/swiper/navigation.scss'
+import '@/assets/swiper/pagination.scss'
+import "swiper/swiper.scss";
 import Btn from '@/components/Global/Btn.vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 export default {
     data() {
         return {
+            showSwiper: true,
             swiperOptions: {
                 breakpoints: {
 
@@ -81,12 +85,25 @@ export default {
         }
     },
     components: {
-        Btn
+        Btn, Swiper, SwiperSlide
     },
-    props:{
-        our_projects:{
-            type:Array,
+    props: {
+        our_projects: {
+            type: Array,
             required: true
+        }
+    },
+    watch: {
+        locale() {
+            this.showSwiper = false;
+            nextTick(() => {
+                this.showSwiper = true;
+            });
+        }
+    },
+    computed: {
+        locale() {
+            return this.$i18n.locale;
         }
     }
 

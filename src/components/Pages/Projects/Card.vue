@@ -17,8 +17,8 @@
                 <h3 class="title mb-3">
                    {{ ProjectItem.title }}
                 </h3>
-                <div class="d-flex justify-content-between align-items-center">
-                    <router-link class="d-flex" :to="`/projects/details/${ProjectItem.slug}`">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <router-link class="d-flex mb-2 relative z-3" :to="`/projects/details/${ProjectItem.slug}`">
                     <Btn 
                     :Text="$t('Discover More')"
                     :Icon="`fa-solid fa-eye`"
@@ -28,8 +28,8 @@
                     :backgroundColorHover="`#53b5ff`"
                 />
                 </router-link>
-                <a :href="ProjectItem.details.seo.url" target="_blank">
-                    <BtnElctric :Text="$t('Visit Site')" />
+                <a :href="ProjectItem.details.seo.url" class="relative z-1" target="_blank">
+                    <BtnElectric :Text="$t('Visit Site')" />
                 </a>
                 </div>
             </div>
@@ -37,7 +37,7 @@
 </template>
 <script>
 import Btn from '@/components/Global/Btn.vue';
-import BtnElctric from '@/components/Global/BtnElctric.vue';
+import BtnElectric from '@/components/Global/BtnElectric.vue';
 export default {
     data() {
         return {
@@ -45,7 +45,7 @@ export default {
     },
     components: {
         Btn,
-        BtnElctric
+        BtnElectric
     },
     props:{
         ProjectItem:Object

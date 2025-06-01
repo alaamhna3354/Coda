@@ -8,64 +8,64 @@
           "title": "Web Development",
           "slug": "web-development",
           "description": "We build high-quality, scalable websites tailored to your business requirements.",
-          "image": "/img/home-page/services-1.webp",
+          "image": "/img/home-page/services-1.avif",
           "features": [
             "Personalized Customer Engagement",
             "Proactive Support Services",
             "Continuous Improvement"
           ],
           "seo": {
-            "h1":"Web Development",
-            "title": "",
-            "description": "",
-            "keywords": "",
-            "ogTitle": "",
-            "ogDescription": ""
+            "h1": "Web Development",
+            "title": "Coda Web Development",
+            "description": "We build responsive, SEO-optimized websites tailored for your business goals.",
+            "keywords": "web development, business website, responsive design, SEO",
+            "ogTitle": "Professional Web Development Services",
+            "ogDescription": "Boost your online presence with custom-built websites by Coda."
           }
         },
         {
           "title": "App Development",
           "slug": "app-development",
           "description": "Custom mobile applications designed to enhance user experience and engagement.",
-          "image": "/img/home-page/services-2.webp",
+          "image": "/img/home-page/services-2.avif",
           "features": [],
           "seo": {
-            "h1":"App Development",
-            "title": "",
-            "description": "",
-            "keywords": "",
-            "ogTitle": "",
-            "ogDescription": ""
+            "h1": "App Development",
+            "title": "Coda App Development",
+            "description": "High-quality mobile apps for iOS and Android that deliver smooth user experiences.",
+            "keywords": "app development, mobile apps, iOS, Android, user experience",
+            "ogTitle": "Custom Mobile App Development",
+            "ogDescription": "Reach your customers on the go with tailored mobile apps from Coda."
           }
         },
         {
           "title": "Tailored Software Solutions",
           "slug": "tailored-software-solutions",
           "description": "Customized and secure software solutions to meet your business needs, including e-commerce stores and more.",
-          "image": "/img/home-page/services-3.webp",
+          "image": "/img/home-page/services-3.avif",
           "features": [],
           "seo": {
-            "h1":"Tailored Software Solutions",
-            "title": "",
-            "description": "",
-            "keywords": "",
-            "ogTitle": "",
-            "ogDescription": ""
+            "h1": "Tailored Software Solutions",
+            "title": "Coda Tailored Software Solutions",
+            "description": "Custom-built software systems for your unique business challenges.",
+            "keywords": "custom software, business solutions, secure systems, software development",
+            "ogTitle": "Tailored Business Software Solutions",
+            "ogDescription": "Empower your operations with secure and scalable software tailored to your needs."
           }
         },
         {
           "title": "Project Analysis & Feasibility Studies",
           "slug": "project-analysis",
           "description": "We provide accurate analyses and comprehensive feasibility studies to help you make successful strategic decisions.",
-          "image": "/img/home-page/services-4.webp",
+          "image": "/img/home-page/services-4.avif",
           "features": [],
           "seo": {
-            "h1":"Project Analysis & Feasibility Studies",
-            "title": "",
-            "description": "",
-            "keywords": "",
-            "ogTitle": "",
-            "ogDescription": ""
+            "h1": "Project Analysis & Feasibility Studies",
+            "title": "Coda Project Analysis & Feasibility Studies",
+            "description": "Make informed decisions with detailed project analysis and feasibility reports.",
+            "keywords": "feasibility studies, project analysis, business planning, consulting",
+            "ogTitle": "Project Analysis & Feasibility Services",
+            "ogDescription": "Ensure project success with in-depth studies and professional insights from Coda."
           }
         }
       ],
@@ -87,7 +87,7 @@
           "title": "تطوير الويب",
           "slug": "web-development",
           "description": "نقوم ببناء مواقع ويب عالية الجودة وقابلة للتطوير وفقًا لاحتياجات عملك.",
-          "image": "/img/home-page/services-1.webp",
+          "image": "/img/home-page/services-1.avif",
           "features": [
             "مشاركة العملاء الشخصية",
             "خدمات الدعم الاستباقية",
@@ -95,57 +95,56 @@
           ],
           "seo": {
             "h1": "تطوير الويب",
-            "title": "",
-            "description": "",
-            "keywords": "",
-            "ogTitle": "",
-            "ogDescription": ""
+            "title": "كودا تطوير الويب",
+            "description": "نقوم ببناء مواقع ويب متجاوبة ومحسّنة لمحركات البحث لتناسب أهداف عملك.",
+            "keywords": "تطوير الويب، موقع أعمال، تصميم متجاوب، تحسين محركات البحث",
+            "ogTitle": "خدمات تطوير الويب الاحترافية",
+            "ogDescription": "عزز حضورك الإلكتروني مع مواقع مصممة خصيصًا من كودا."
           }
-          
         },
         {
           "title": "تطوير التطبيقات",
           "slug": "app-development",
           "description": "تطبيقات مخصصة لتحسين تجربة المستخدم وزيادة التفاعل.",
-          "image": "/img/home-page/services-2.webp",
+          "image": "/img/home-page/services-2.avif",
           "features": [],
           "seo": {
-            "h1":"تطوير التطبيقات",
-            "title": "",
-            "description": "",
-            "keywords": "",
-            "ogTitle": "",
-            "ogDescription": ""
+            "h1": "تطوير التطبيقات",
+            "title": "كودا تطوير التطبيقات",
+            "description": "تطبيقات موبايل عالية الجودة لأنظمة iOS وAndroid تقدم تجربة مستخدم سلسة.",
+            "keywords": "تطوير التطبيقات، تطبيقات موبايل، أندرويد، آيفون، تجربة المستخدم",
+            "ogTitle": "تطوير تطبيقات مخصصة",
+            "ogDescription": "تواصل مع عملائك بسهولة عبر تطبيقات موبايل مخصصة من كودا."
           }
         },
         {
           "title": "حلول برمجية مخصصة",
           "slug": "tailored-software-solutions",
           "description": "حلول برمجية مخصصة وآمنة تلبي احتياجات أعمالك، بما في ذلك المتاجر الإلكترونية وغيرها.",
-          "image": "/img/home-page/services-3.webp",
+          "image": "/img/home-page/services-3.avif",
           "features": [],
           "seo": {
-            "h1":"حلول برمجية مخصصة",
-            "title": "",
-            "description": "",
-            "keywords": "",
-            "ogTitle": "",
-            "ogDescription": ""
+            "h1": "حلول برمجية مخصصة",
+            "title": "كودا حلول برمجية مخصصة",
+            "description": "أنظمة برمجية مخصصة لتحديات عملك الفريدة، آمنة وقابلة للتطوير.",
+            "keywords": "برمجيات مخصصة، حلول أعمال، أنظمة آمنة، تطوير برمجيات",
+            "ogTitle": "حلول برمجية مصممة خصيصًا للأعمال",
+            "ogDescription": "عزّز عملك بأنظمة برمجية مخصصة وآمنة من كودا."
           }
         },
         {
           "title": "تحليل المشاريع ودراسات الجدوى",
           "slug": "project-analysis",
           "description": "نقدم تحليلات دقيقة ودراسات جدوى شاملة لمساعدتك في اتخاذ قرارات استراتيجية ناجحة.",
-          "image": "/img/home-page/services-4.webp",
+          "image": "/img/home-page/services-4.avif",
           "features": [],
           "seo": {
-            "h1":"تحليل المشاريع ودراسات الجدوى",
-            "title": "",
-            "description": "",
-            "keywords": "",
-            "ogTitle": "",
-            "ogDescription": ""
+            "h1": "تحليل المشاريع ودراسات الجدوى",
+            "title": "كودا تحليل المشاريع ودراسات الجدوى",
+            "description": "اتخذ قرارات مبنية على دراسات تحليلية شاملة وتقارير جدوى دقيقة.",
+            "keywords": "دراسات جدوى، تحليل المشاريع، تخطيط الأعمال، استشارات",
+            "ogTitle": "خدمات تحليل المشاريع ودراسات الجدوى",
+            "ogDescription": "ضمن نجاح مشروعك من خلال دراسات متعمقة ورؤية احترافية مع كودا."
           }
         }
       ],

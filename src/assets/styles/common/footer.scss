@@ -1,9 +1,14 @@
 footer{
+    content-visibility: auto;
     background-color: $cardBackground;
     padding: 2rem 20px 1rem 20px;
     border-radius: .875rem;
     overflow: hidden;
     position: relative;
+    min-height: 372px; 
+    .footer-skeleton {
+        min-height: 372px;
+      }
     @media (max-width:758px) {
         text-align: center;
         *{
@@ -20,7 +25,6 @@ footer{
         z-index: 2;
         .title{
             text-transform: uppercase;
-            letter-spacing: 2px;
             font-weight: 800;
             &::first-letter{
                 color: #fff;
@@ -44,12 +48,14 @@ footer{
                 margin-bottom:.5rem;
             }
             font-weight: 800;
-            letter-spacing: .02rem;
         }
         .info-address{
             i{
                 font-size: 20px;
                 margin-inline-end: 12px;
+                width: 25px;
+                height: 25px;
+                display: inline-block;
             }
         }
         ul{
@@ -68,6 +74,7 @@ footer{
             }
         }
         .social{
+            min-height: 45px;
             li{
                 a{
                     margin-inline-end: 12px;
@@ -84,6 +91,9 @@ footer{
                 }
                 i{
                     font-size: 25px;
+                    width: 25px;
+                    height: 25px;
+                    display: inline-block;
                 }
             }
           
