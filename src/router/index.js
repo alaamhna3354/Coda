@@ -5,7 +5,7 @@ import meta_seo from '../../public/data/seo-static-pages.json';
 const cookie = new Cookies();
 
 if (!cookie.get('languages')) {
-  cookie.set('languages', 'ar');
+  cookie.set('languages', 'en');
 }
 
 // دالة مساعدة لإعادة بناء أسماء الرواتس والميتا حسب اللغة

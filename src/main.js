@@ -16,8 +16,8 @@ import en from '../public/data/i18n/en.json'
 import { createI18n } from 'vue-i18n'
 const i18n = createI18n({
     messages: {
-        ar: ar,
         en: en,
+        ar: ar,
     },
     locale: cookie.get('languages'),
     fallbackLocale: 'en' // set fallback locale
