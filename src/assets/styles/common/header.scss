@@ -8,7 +8,7 @@ header {
     padding-left: 30px;
     padding-top: 1rem;
     padding-bottom: 1rem;
-
+    height: 82px;
     @media (max-width:768px) {
         padding-right: 20px;
         padding-left: 20px;
@@ -32,14 +32,10 @@ header {
     .logo {
         position: relative;
 
-        a:nth-child(2) {
-            display: none;
-        }
 
         img {
             position: absolute;
-            top: -16px;
-
+            top: -9px;
             @media (max-width:768px) {
                 width: 80px;
                 left: -10px;
@@ -282,20 +278,11 @@ header {
         transition: 1s;
         border: 1px solid #328af1;
         // box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #328af1, 0 0 0.8rem #328af1, 0 0 2.8rem #328af1, inset 0 0 1.3rem #328af1;
-        box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, inset 0 0 1.3rem #328af1;
+        box-shadow: 0 0 0.1rem #ffffff94, 0 0 0.1rem #ffffff94, inset 0 0 1.3rem #328af1;
 
         .logo {
-            a:nth-child(1) {
-                display: none;
-            }
-
-            a:nth-child(2) {
-                display: block;
-            }
-
             img {
                 top: -10px;
-
                 @media (max-width:768px) {
                     left: -10px;
                 }

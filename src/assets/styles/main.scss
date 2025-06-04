@@ -96,6 +96,7 @@ a{
 }
 section{
     margin:40px 30px;
+    min-height: 300px;
     @media (max-width:768px) {
         margin:40px 20px;
     }
@@ -244,16 +245,29 @@ img.luminosity{
        
     }
 }
-
-.box-animation {
+  .box-animation {
     position: relative;
     border-radius: 0.875rem;
+    min-height: 330px; 
     transition: .5s;
+    &:hover {
+        border: 1px solid #328af1;
+        box-shadow: 0 0 0.1rem #ffffff94, 0 0 0.1rem #ffffff94, 0 0 2rem #328af1;
+    }
   }
-  .box-animation:hover {
-    border: 1px solid #328af1;
-    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #328af1, 0 0 0.8rem #328af1, 0 0 2.8rem #328af1, inset 0 0 1.3rem #328af1;
-  }
+ 
+// .box-animation {
+//     position: relative;
+//     border-radius: 0.875rem;
+//     transition: all 0.5s ease-in-out;
+//     min-height: 330px;
+//     border: 1px solid transparent;
+//     content-visibility: auto;
+//   }
+//   .box-animation:hover {
+//     border: 1px solid #328af1;
+//     box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #328af1, 0 0 0.8rem #328af1, 0 0 2.8rem #328af1, inset 0 0 1.3rem #328af1;
+//   }
 //   .box-animation::before,.box-animation::after{
 //     content: '';
 //     position: absolute;

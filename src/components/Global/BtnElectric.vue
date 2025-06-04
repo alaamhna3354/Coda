@@ -130,28 +130,28 @@ export default {
     }
 
     #y1{
-      top: -160%;
+      top: -150%;
       left: -5%;
       filter: blur(.5px);
 
     }
 
     #y2{
+      top: -200%;
       width: 120%;
       left: -10%;
-      top: -210%;
       filter: brightness(1);
     }
 
     #b1{
+      top: -165%;
       left: -5%;
-      top: -175%;
       /* filter: blur(.5px) */
     }
 
     #b2{
+      top: -222%;
       left: -10%;
-      top: -232%;
       width: 120%
       /* filter: blur(.5px) */
     }

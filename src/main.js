@@ -20,7 +20,7 @@ const i18n = createI18n({
         en: en,
     },
     locale: cookie.get('languages'),
-    fallbackLocale: 'ar' // set fallback locale
+    fallbackLocale: 'en' // set fallback locale
 })
 
 router.beforeEach((to, from, next) => {

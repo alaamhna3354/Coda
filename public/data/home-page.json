@@ -30,21 +30,34 @@
       }
     },
     "about_section": {
-      "en": {
-        "section_title": "Who We Are",
-        "title": "Innovative Tech Solutions",
-        "description": "We specialize in creating modern web and mobile solutions tailored to business needs.",
-        "list": ["Web Development", "App Development", "Business Solutions"],
-        "button_title": "Learn More"
-      },
-      "ar": {
-        "section_title": "من نحن",
-        "title": "حلول تقنية مبتكرة",
-        "description": "نحن متخصصون في إنشاء حلول ويب وتطبيقات حديثة مخصصة لاحتياجات الأعمال.",
-        "list": ["تطوير الويب", "تطوير التطبيقات", "حلول الأعمال"],
-        "button_title": "اعرف المزيد"
-      }
-    },
+  "en": {
+    "section_title": "Who We Are",
+    "title": "Leading Tech Innovation",
+    "description": "At Coda, we are proud to be recognized as the top software development company in Syria. With a passionate team of developers, designers, and tech experts, we deliver cutting-edge web and mobile solutions tailored to help businesses grow and thrive in the digital era. Our commitment to quality, innovation, and customer satisfaction sets us apart in the local and regional market.",
+    "list": [
+      "Custom Web Development",
+      "Mobile App Development",
+      "Business Automation Solutions",
+      "UI/UX Design",
+      "Tech Consulting"
+    ],
+    "button_title": "Learn More"
+  },
+  "ar": {
+    "section_title": "من نحن",
+    "title": "روّاد الابتكار التقني",
+    "description": "في شركة كودا، نفتخر بكوننا الشركة الأولى في مجال البرمجة في سوريا. يضم فريقنا نخبة من المطورين والمصممين وخبراء التكنولوجيا الذين يعملون بشغف لتقديم حلول ويب وتطبيقات مبتكرة تساعد الشركات على النمو والتميز في العصر الرقمي. التزامنا بالجودة والابتكار ورضا العملاء يجعلنا الخيار الأفضل في السوق المحلي والإقليمي.",
+    "list": [
+      "تطوير مواقع مخصصة",
+      "برمجة تطبيقات الموبايل",
+      "حلول أتمتة الأعمال",
+      "تصميم تجربة المستخدم",
+      "استشارات تقنية"
+    ],
+    "button_title": "اعرف المزيد"
+  }
+}
+,
     "our_service_section": {
       "en": {
         "title": "Our Services",

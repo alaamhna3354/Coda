@@ -17,7 +17,7 @@
                     <!-- <div class="col-md-4 mb-3">
                         <img class="luminosity" src="@/assets/img/global/coda_logo_1.webp" alt="about-us">
                     </div> -->
-                    <div class="col-md-8 mb-3">
+                    <div class="col-12 mb-3">
                         <h2 class="title">
                             {{ about_section.title }}
                             <!-- <span class="neon-text">partners</span> -->

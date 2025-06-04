@@ -5,11 +5,9 @@ footer{
     border-radius: .875rem;
     overflow: hidden;
     position: relative;
-    min-height: 372px; 
-    .footer-skeleton {
-        min-height: 372px;
-      }
+    margin:40px 30px;
     @media (max-width:758px) {
+        margin:20px 10px;
         text-align: center;
         *{
             text-align: center;
@@ -109,7 +107,6 @@ footer{
             }
         }
     }
-   
 }
 .dir-ar{
     footer{

@@ -3,7 +3,7 @@ const cookie = new Cookies();
 
 export default {
   state: {
-    Lang: cookie.get('languages') || 'ar',
+    Lang: cookie.get('languages') || 'en',
   
   },
   mutations: {

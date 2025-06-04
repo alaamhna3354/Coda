@@ -5,9 +5,6 @@
             <div class="col-md-1 col-3">
                 <div class="logo">
                     <router-link to="/">
-                        <img src="@/assets/img/global/coda_logo_1.webp" alt="logo">
-                    </router-link>
-                    <router-link to="/">
                         <img src="@/assets/img/global/coda_logo_icon.webp" alt="logo">
                     </router-link>
                 </div>
@@ -38,8 +35,13 @@
                             </li>
                         </ul>
                     </span>
-                    <router-link to="/sign-in">
+                    <!-- <router-link to="/sign-in">
                         <Btn class="d-none d-md-flex" :Text="$t('Sign In')" :Textcolor="`#b4d2f5`"
+                            :TextcolorHover="`#fff`" :backgroundColor="`transparent`"
+                            :backgroundColorHover="`#53b5ff`" />
+                    </router-link> -->
+                    <router-link to="/contact">
+                        <Btn class="d-none d-md-flex" :Text="$t('Contact Us')" :Textcolor="`#b4d2f5`"
                             :TextcolorHover="`#fff`" :backgroundColor="`transparent`"
                             :backgroundColorHover="`#53b5ff`" />
                     </router-link>
@@ -60,14 +62,11 @@
                         </router-link>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center justify-content-around auth-links">
-                    <!-- <router-link to="/auth">
+                <!-- <div class="d-flex align-items-center justify-content-around auth-links">
+                    <router-link to="/sign-in">
                         {{ $t('Sign In') }}
-                    </router-link> -->
-                    <router-link to="/auth">
-                        {{ $t('Sign Up') }}
                     </router-link>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
