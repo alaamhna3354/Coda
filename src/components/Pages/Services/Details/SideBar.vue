@@ -18,7 +18,7 @@
                 <img class="img-sidebar" src="@/assets/img/projects/services-sidebar.webp" alt="services sidebar">
             </div>
             <ul class="service-list mt-3">
-                <li v-show="item.slug != $route.params.slug" v-for="item in Services.cards" :key="item"><router-link :to="`/services/details/${item.slug}`">
+                <li v-show="item.slug != $route.params.slug" v-for="item in Services.cards" :key="item"><router-link :to="`/services/${item.slug}`">
                    <span> {{ item.title }}</span>
                    <i class="fas fa-arrow-right"></i>
                 </router-link></li>

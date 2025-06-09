@@ -1,98 +1,107 @@
-.project-details{
-    .project-sidebar{
+.project-details {
+    .project-sidebar {
         padding: 1rem 2rem;
         background-color: $cardBackground;
         border-radius: .875rem;
         position: sticky;
         top: 100px;
-       
-        .img-sidebar{
+
+        .img-sidebar {
             width: 264px;
             margin-top: -50px;
             margin-inline-start: -50px;
         }
-        h6{
+
+        h6 {
             color: $textgray;
             font-weight: 600;
         }
-        ul{
-            li{
+
+        ul {
+            li {
                 line-height: 2;
-                i{
+
+                i {
                     margin-inline-end: 12px;
                 }
             }
         }
     }
-    .content-details{
-        // max-height: 500px;
-        // overflow-y: scroll;
-        // scrollbar-width: none;
-        .card-content{
-            // background-color: $cardBackground;
-            // padding: 38px 20px;
-            // border-radius: .875rem;
-            // overflow: hidden;
+
+    .content-details {
+        .card-content {
             margin-bottom: 20px;
-            .cover{
+            .cover {
                 width: 100%;
                 position: absolute;
                 top: -50px;
                 right: -50%;
                 transition: $transition;
                 opacity: 1;
-                &.ar{
-                    right:auto;
+
+                &.ar {
+                    right: auto;
                     left: -50%;
                 }
+
                 @media (max-width:768px) {
                     top: -50px;
                     right: 0 !important;
                     left: 0 !important;
                 }
             }
-           .content{
-            position: relative;
-            z-index: 2;
-            .img-content{
-                max-height: 400px;
-                overflow: hidden;
-                border-radius: .875rem;
-                padding: 0;
-                img{
-                    cursor: pointer;
-                    transition: 20s;
-                    &:hover{
-                        transform: translateY(calc(-100% + 400px));
+
+            .content {
+                position: relative;
+                z-index: 2;
+
+                .img-content {
+                    max-height: 400px;
+                    overflow: hidden;
+                    border-radius: .875rem;
+                    padding: 0;
+
+                    img {
+                        cursor: pointer;
+                        transition: 20s;
+
+                        &:hover {
+                            transform: translateY(calc(-100% + 400px));
+                        }
+                    }
+                }
+
+                .title {
+                    font-size: 2.5rem;
+                    margin-bottom: 1rem;
+
+                    @media (max-width:768px) {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                p {
+                    margin-bottom: 2rem;
+                    line-height: 1.5;
+                }
+
+                ul {
+                    margin-bottom: 2rem;
+
+                    li {
+                        line-height: 2.5;
+
+                        i {
+                            margin-inline-end: 12px;
+                        }
+
+                        span {
+                            color: $white;
+                        }
                     }
                 }
             }
-           
-            .title{
-                font-size: 2.5rem;
-                margin-bottom: 1rem;
-                @media (max-width:768px) {
-                    font-size: 1.5rem;
-                }
-            }
-            p{
-                margin-bottom: 2rem;
-                line-height: 1.5;
-            }
-            ul{
-                margin-bottom: 2rem;
-                li{
-                line-height:2.5;
-                i{
-                        margin-inline-end: 12px;
-                    }
-                    span{
-                        color: $white;
-                    }
-                }
-            }
-           }
         }
     }
-  
+
 }

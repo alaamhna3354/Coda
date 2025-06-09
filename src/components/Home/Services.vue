@@ -5,7 +5,10 @@
             </div>
             <div class="col-md-8 position-relative">
                 <img v-for="(item, j) in service_section.services" :key="j"
-                :class="['cover', activeIndex == j ? 'show' : '']" :src="item.preview_image" alt="preview image">
+                :class="['cover', activeIndex == j ? 'show' : '']" 
+                :src="item.preview_image" class="img-fluid"  
+                width="400" height="200" loading="lazy"
+                alt="preview image">
             </div>
         </div>
         <div class="content">
@@ -30,10 +33,11 @@
                 </div>
                 <div class="col-md-3 mb-3" v-for="(item, j) in service_section.services" :key="j"
                     @mouseenter="activeIndex = j">
-                    <router-link :to="`/services/details/${item.slug}`" class="item"
+                    <router-link :to="`/services/${item.slug}`" class="item"
                         :class="[activeIndex == j ? 'active' : '']">
                         <div class="title">{{ item.title }}</div>
-                        <img :src="item.image" alt="service image">
+                        <img :src="item.image" alt="service image" 
+                        width="200" height="225" loading="lazy">
                     </router-link>
                 </div>
             </div>

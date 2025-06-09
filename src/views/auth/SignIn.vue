@@ -20,4 +20,8 @@
   
   }
   </script>
+  <style lang="scss">
+  @import '../../assets/styles/varible';
+  @import '../../assets/styles/pages/auth/sign-in.scss';
+  </style>
   

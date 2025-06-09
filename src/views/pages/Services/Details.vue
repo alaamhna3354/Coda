@@ -42,3 +42,7 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+@import '../../../assets/styles/varible';
+@import '../../../assets/styles/pages/services/services.scss';
+</style>

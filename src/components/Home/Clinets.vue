@@ -34,9 +34,6 @@
     </section>
 </template>
 <script>
-import '@/assets/swiper/navigation.scss'
-import '@/assets/swiper/pagination.scss'
-import "swiper/swiper.scss";
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
 import SwiperCore, { Navigation, Pagination,Autoplay } from "swiper";
@@ -70,6 +67,13 @@ export default {
                 }
             }
         }
+    },
+    async mounted() {
+        await Promise.all([
+            import('swiper/swiper.scss'),
+            import('@/assets/swiper/navigation.scss'),
+            import('@/assets/swiper/pagination.scss')
+        ])
     },
     components: {
         Swiper,SwiperSlide

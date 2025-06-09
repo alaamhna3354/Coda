@@ -60,7 +60,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "Services" */ '../views/pages/Services/index.vue'),
   },
   {
-    path: '/services/details/:slug',
+    path: '/services/:slug',
     ...getRouteNameAndMeta('servicesDetails', getLang()),
     component: () => import(/* webpackChunkName: "Services-Details" */ '../views/pages/Services/Details.vue'),
   },
@@ -70,7 +70,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "Projects" */ '../views/pages/Projects/index.vue'),
   },
   {
-    path: '/projects/details/:slug',
+    path: '/projects/:slug',
     ...getRouteNameAndMeta('projectsDetails', getLang()),
     component: () => import(/* webpackChunkName: "Project-Details" */ '../views/pages/Projects/Details.vue'),
   },

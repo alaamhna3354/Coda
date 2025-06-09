@@ -31,7 +31,7 @@
                     </ul>
                 </div>
                 <div class="col-md-5 mb-3 img-content">
-                    <img 
+                    <img class="img-fluid"  width="400" height="200"
                         :src="Project?.details?.seo.image" 
                         :alt="Project?.details?.seo?.alt || 'Default image description'" 
                     />

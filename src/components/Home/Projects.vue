@@ -11,19 +11,17 @@
             </router-link>
         </div>
         <div class="projects-content">
-            <swiper class="swiper pb-5" 
-            v-if="showSwiper"
-            :loop="true" :speed="1500" :autoplay="{
+            <swiper class="swiper pb-5" v-if="showSwiper" :loop="true" :speed="1500" :autoplay="{
                 delay: 5000,
             }" :navigation="{
                 enabled: true,
                 nextEl: '.myNext',
                 prevEl: '.myPrev',
-            }" :breakpoints="swiperOptions.breakpoints" >
+            }" :breakpoints="swiperOptions.breakpoints">
                 <swiper-slide class="item box-animation" v-for="item in our_projects" :key="item.id">
-                    <router-link :to="`/projects/details/${item.slug}`">
-                        <img v-if="item.image" :src="item.image" :alt="item.alt">
-                        <img v-else src="https://placehold.co/600x400" alt="placehold projects">
+                    <router-link :to="`/projects/${item.slug}`">
+                        <img v-if="item.image" class="img-fluid"  width="400" height="200" :src="item.image" :alt="item.alt" loading="lazy">
+                        <img v-else src="https://placehold.co/600x400" alt="placehold projects" loading="lazy">
                         <div class="overlay-box">
                             <div class="info">
                                 <h3>{{ item.title }}</h3>
@@ -44,12 +42,8 @@
 </template>
 <script>
 import { nextTick } from 'vue';
-import '@/assets/swiper/navigation.scss'
-import '@/assets/swiper/pagination.scss'
-import "swiper/swiper.scss";
 import Btn from '@/components/Global/Btn.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
-
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 export default {
@@ -85,7 +79,15 @@ export default {
         }
     },
     components: {
-        Btn, Swiper, SwiperSlide
+        Btn,
+        Swiper, SwiperSlide
+    },
+    async mounted() {
+        await Promise.all([
+            import('swiper/swiper.scss'),
+            import('@/assets/swiper/navigation.scss'),
+            import('@/assets/swiper/pagination.scss')
+        ])
     },
     props: {
         our_projects: {

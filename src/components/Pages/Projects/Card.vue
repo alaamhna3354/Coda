@@ -5,7 +5,7 @@
         <span class="dot dot-3"></span>
         <span class="dot dot-4"></span>
             <div class="image">
-                <img v-if="ProjectItem.details.seo.image" :src="ProjectItem.details.seo.image" :alt="ProjectItem.details.seo.alt">
+                <img v-if="ProjectItem.details.seo.image" :src="ProjectItem.details.seo.image" :alt="ProjectItem.details.seo.alt" class="img-fluid"  width="400" height="200" loading="lazy">
                 <img v-else src="https://placehold.co/600x400" alt="placehold project card">
             </div>
             <div class="content-card">
@@ -18,7 +18,7 @@
                    {{ ProjectItem.title }}
                 </h3>
                 <div class="d-flex justify-content-between align-items-center flex-wrap">
-                    <router-link class="d-flex mb-2 relative z-3" :to="`/projects/details/${ProjectItem.slug}`">
+                    <router-link class="d-flex mb-2 relative z-3" :to="`/projects/${ProjectItem.slug}`">
                     <Btn 
                     :Text="$t('Discover More')"
                     :Icon="`fa-solid fa-eye`"

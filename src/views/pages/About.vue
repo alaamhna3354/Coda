@@ -58,3 +58,7 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+@import '../../assets/styles/varible';
+@import '../../assets/styles/pages/about-us/hover-list.scss';
+</style>

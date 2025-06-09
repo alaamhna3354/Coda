@@ -1,87 +1,126 @@
 {
-    "hero_section": {
-      "en": {
-        "title": "Empowering Your Business with Cutting-Edge Technology",
-        "description": "We provide web and app development solutions to help businesses thrive in the digital era.",
-        "button_title": "Get Started",
-        "button_url": "/contact",
-        "link_type": "_self",
-        "images": [
-          "/img/home-page/hero-tile-1.avif",
-          "/img/home-page/hero-tile-2.avif",
-          "/img/home-page/hero-tile-3.avif",
-          "/img/home-page/hero-tile-4.avif",
-          "/img/home-page/hero-tile-4.avif"
-        ]
-      },
-      "ar": {
-        "title": "نمكن عملك بأحدث التقنيات",
-        "description": "نقدم حلول تطوير المواقع والتطبيقات لمساعدة الشركات على الازدهار في العصر الرقمي.",
-        "button_title": "ابدأ الآن",
-        "button_url": "/contact",
-        "link_type": "_self",
-        "images": [
-            "/img/home-page/hero-tile-1.avif",
-            "/img/home-page/hero-tile-2.avif",
-            "/img/home-page/hero-tile-3.avif",
-            "/img/home-page/hero-tile-4.avif",
-            "/img/home-page/hero-tile-4.avif"
-          ]
-      }
+   "hero_section": {
+    "en": {
+      "title": "Empower Your Business Growth with Innovative Web & Mobile Solutions",
+      "description": "At Coda Tech Solutions, we specialize in custom web development, mobile app creation, and digital transformation services designed to boost your business efficiency and customer engagement in today’s competitive market. Partner with us to leverage the latest technologies and accelerate your digital success.",
+      "button_title": "Start Your Digital Transformation Today",
+      "button_url": "/contact",
+      "link_type": "_self",
+      "images": [
+        "/img/home-page/hero-tile-1.avif",
+        "/img/home-page/hero-tile-2.avif",
+        "/img/home-page/hero-tile-3.avif",
+        "/img/home-page/hero-tile-4.avif",
+        "/img/home-page/hero-tile-4.avif"
+      ]
     },
-    "about_section": {
-  "en": {
-    "section_title": "Who We Are",
-    "title": "Leading Tech Innovation",
-    "description": "At Coda, we are proud to be recognized as the top software development company in Syria. With a passionate team of developers, designers, and tech experts, we deliver cutting-edge web and mobile solutions tailored to help businesses grow and thrive in the digital era. Our commitment to quality, innovation, and customer satisfaction sets us apart in the local and regional market.",
-    "list": [
-      "Custom Web Development",
-      "Mobile App Development",
-      "Business Automation Solutions",
-      "UI/UX Design",
-      "Tech Consulting"
-    ],
-    "button_title": "Learn More"
+    "ar": {
+      "title": "نمكّن نمو عملك بحلول ويب وتطبيقات مبتكرة",
+      "description": "في كودا لحلول التكنولوجيا، نختص بتطوير مواقع إلكترونية مخصصة، وبرمجة تطبيقات الموبايل، وخدمات التحول الرقمي التي تهدف لتعزيز كفاءة عملك وزيادة تفاعل عملائك في سوق تنافسية. تعاون معنا للاستفادة من أحدث التقنيات وتسريع نجاحك الرقمي.",
+      "button_title": "ابدأ رحلة التحول الرقمي الآن",
+      "button_url": "/contact",
+      "link_type": "_self",
+      "images": [
+        "/img/home-page/hero-tile-1.avif",
+        "/img/home-page/hero-tile-2.avif",
+        "/img/home-page/hero-tile-3.avif",
+        "/img/home-page/hero-tile-4.avif",
+        "/img/home-page/hero-tile-4.avif"
+      ]
+    }
   },
-  "ar": {
-    "section_title": "من نحن",
-    "title": "روّاد الابتكار التقني",
-    "description": "في شركة كودا، نفتخر بكوننا الشركة الأولى في مجال البرمجة في سوريا. يضم فريقنا نخبة من المطورين والمصممين وخبراء التكنولوجيا الذين يعملون بشغف لتقديم حلول ويب وتطبيقات مبتكرة تساعد الشركات على النمو والتميز في العصر الرقمي. التزامنا بالجودة والابتكار ورضا العملاء يجعلنا الخيار الأفضل في السوق المحلي والإقليمي.",
-    "list": [
-      "تطوير مواقع مخصصة",
-      "برمجة تطبيقات الموبايل",
-      "حلول أتمتة الأعمال",
-      "تصميم تجربة المستخدم",
-      "استشارات تقنية"
-    ],
-    "button_title": "اعرف المزيد"
-  }
-}
-,
-    "our_service_section": {
-      "en": {
-        "title": "Our Services",
-        "subtitle": "Comprehensive digital solutions",
-        "button_title": "Explore Services",
-        "services": [
-          {"title": "Web Development", "image": "/img/home-page/services-1.avif", "preview_image": "/img/home-page/services-1.avif","slug": "web-development"},
-          {"title": "Mobile App Development", "image": "/img/home-page/services-2.avif", "preview_image": "/img/home-page/services-2.avif","slug": "app-development"},
-          {"title": "Tailored Software Solutions", "image": "/img/home-page/services-3.avif", "preview_image": "/img/home-page/services-3.avif","slug": "tailored-software-solutions"},
-          {"title": "Project Analysis & Feasibility Studies", "image": "/img/home-page/services-4.avif", "preview_image": "/img/home-page/services-4.avif","slug": "project-analysis"}
-        ] 
-      },
-      "ar": {
-        "title": "خدماتنا",
-        "subtitle": "حلول رقمية شاملة",
-        "button_title": "استكشاف الخدمات",
-        "services": [
-          {"title": "تطوير الويب", "image": "/img/home-page/services-1.avif", "preview_image": "/img/home-page/services-1.avif","slug": "web-development"},
-          {"title": "تطوير التطبيقات","image": "/img/home-page/services-2.avif", "preview_image": "/img/home-page/services-2.avif","slug": "app-development"},
-          {"title": "حلول برمجية مخصصة", "image": "/img/home-page/services-3.avif", "preview_image": "/img/home-page/services-3.avif","slug": "tailored-software-solutions"},
-          {"title": "تحليل المشاريع ودراسات الجدوى", "image": "/img/home-page/services-4.avif", "preview_image": "/img/home-page/services-4.avif","slug": "project-analysis"}
-        ]
-      }
+  "about_section": {
+    "en": {
+      "section_title": "Who We Are — Leaders in Digital Innovation and Software Development",
+      "title": "Leading Tech Innovation",
+      "description": "Coda Tech Solutions is Syria’s premier software development company, delivering tailor-made web and mobile applications that empower businesses across diverse industries. Our expert team of developers, designers, and strategists works relentlessly to craft scalable, secure, and user-friendly digital products. We prioritize innovation, quality, and customer satisfaction, making us the trusted technology partner in the Middle East and beyond.",
+      "list": [
+        "Custom Web Development",
+        "Mobile App Development",
+        "Business Automation Solutions",
+        "UI/UX Design",
+        "Tech Consulting"
+      ],
+      "button_title": "Learn More"
     },
+    "ar": {
+      "section_title": "من نحن — روّاد الابتكار الرقمي وتطوير البرمجيات",
+      "title": "روّاد الابتكار التقني",
+      "description": "تعد شركة كودا لحلول التكنولوجيا الشركة الرائدة في تطوير البرمجيات في سوريا، حيث نقدم تطبيقات ويب وموبايل مصممة خصيصًا تلبي احتياجات الأعمال في مختلف القطاعات. يعمل فريقنا الخبير من المطورين والمصممين والاستراتيجيين بشغف على تصميم حلول رقمية قابلة للتوسع، آمنة، وسهلة الاستخدام. نضع الابتكار والجودة ورضا العملاء في مقدمة أولوياتنا، مما يجعلنا الشريك التقني الموثوق في الشرق الأوسط وخارجه.",
+      "list": [
+        "تطوير مواقع مخصصة",
+        "برمجة تطبيقات الموبايل",
+        "حلول أتمتة الأعمال",
+        "تصميم تجربة المستخدم",
+        "استشارات تقنية"
+      ],
+      "button_title": "اعرف المزيد"
+    }
+  },
+  "our_service_section": {
+    "en": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive digital solutions",
+      "button_title": "Explore Services",
+      "services": [
+        {
+          "title": "Custom Web Development",
+          "image": "/img/home-page/services-1.avif",
+          "preview_image": "/img/home-page/services-1.avif",
+          "slug": "web-development"
+        },
+        {
+          "title": "Mobile App Development",
+          "image": "/img/home-page/services-2.avif",
+          "preview_image": "/img/home-page/services-2.avif",
+          "slug": "app-development"
+        },
+        {
+          "title": "Tailored Software Solutions",
+          "image": "/img/home-page/services-3.avif",
+          "preview_image": "/img/home-page/services-3.avif",
+          "slug": "tailored-software-solutions"
+        },
+        {
+          "title": "Project Analysis & Feasibility Studies",
+          "image": "/img/home-page/services-4.avif",
+          "preview_image": "/img/home-page/services-4.avif",
+          "slug": "project-analysis"
+        }
+      ]
+    },
+    "ar": {
+      "title": "خدماتنا",
+      "subtitle": "حلول رقمية شاملة",
+      "button_title": "استكشاف الخدمات",
+      "services": [
+        {
+          "title": "تطوير مواقع مخصصة",
+          "image": "/img/home-page/services-1.avif",
+          "preview_image": "/img/home-page/services-1.avif",
+          "slug": "web-development"
+        },
+        {
+          "title": "تطوير تطبيقات الموبايل",
+          "image": "/img/home-page/services-2.avif",
+          "preview_image": "/img/home-page/services-2.avif",
+          "slug": "app-development"
+        },
+        {
+          "title": "حلول برمجية مخصصة",
+          "image": "/img/home-page/services-3.avif",
+          "preview_image": "/img/home-page/services-3.avif",
+          "slug": "tailored-software-solutions"
+        },
+        {
+          "title": "تحليل المشاريع ودراسات الجدوى",
+          "image": "/img/home-page/services-4.avif",
+          "preview_image": "/img/home-page/services-4.avif",
+          "slug": "project-analysis"
+        }
+      ]
+    }
+  },
     "our_projects": {
       "en": [
         {
@@ -224,7 +263,7 @@
         "brand_title": "Coda Tech Solutions",
         "description": "Leading provider of web and app development solutions.",
         "address": "123 Tech Street, Innovation City, TX",
-        "phone": "+963933080648",
+        "phone": "+963988571878",
         "email": "info@Coda.com",
         "social": ["fa-brands fa-facebook", "fa-brands fa-x-twitter", "fa-brands fa-whatsapp"]
       },
@@ -241,10 +280,10 @@
       "col_2": {
         "coltitle": "Services",
         "list": [
-          {"title": "Web Development", "url": "/services/details/web-development"},
-          {"title": "Mobile App Development", "url": "/services/details/app-development"},
-          {"title": "Tailored Software Solutions", "url": "/services/details/tailored-software-solutions"},
-          {"title": "Project Analysis & Feasibility Studies", "url": "/services/details/project-analysis"}
+          {"title": "Web Development", "url": "/services/web-development"},
+          {"title": "Mobile App Development", "url": "/services/app-development"},
+          {"title": "Tailored Software Solutions", "url": "/services/tailored-software-solutions"},
+          {"title": "Project Analysis & Feasibility Studies", "url": "/services/project-analysis"}
         ]
       },
       "col_3": {
@@ -266,7 +305,7 @@
         "brand_title": "كودا لحلول التكنولوجيا",
         "description": "مزود رائد لحلول تطوير الويب والتطبيقات.",
         "address": "123 شارع التكنولوجيا، مدينة الابتكار، تكساس",
-        "phone": "+963933080648",
+        "phone": "+963988571878",
         "email": "info@Coda.com",
         "social": ["fa-brands fa-facebook", "fa-brands fa-x-twitter", "fa-brands fa-whatsapp"]
       },
@@ -282,10 +321,10 @@
       "col_2": {
         "coltitle": "الخدمات",
         "list": [
-          {"title": " تطوير الويب", "url": "/services/details/web-development"},
-          {"title": "تطوير التطبيقات", "url": "/services/details/app-development"},
-          {"title": "حلول برمجية مخصصة", "url": "/services/details/tailored-software-solutions"},
-          {"title": "تحليل المشاريع ودراسات الجدوى", "url": "/services/details/project-analysis"}
+          {"title": " تطوير الويب", "url": "/services/web-development"},
+          {"title": "تطوير التطبيقات", "url": "/services/app-development"},
+          {"title": "حلول برمجية مخصصة", "url": "/services/tailored-software-solutions"},
+          {"title": "تحليل المشاريع ودراسات الجدوى", "url": "/services/project-analysis"}
         ]
       },
       "col_3": {

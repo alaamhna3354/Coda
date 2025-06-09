@@ -8,8 +8,8 @@
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-8 position-relative">
-                    <img src="@/assets/img/home-page/about-us.avif" alt="about" class="cover"
-                        :class="locale">
+                    <img width="400" height="200" src="@/assets/img/home-page/about-us.avif" alt="about"  class="img-fluid cover"
+                        :class="locale" loading="lazy">
                 </div>
             </div>
             <div class="content">
